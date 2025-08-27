@@ -1,26 +1,133 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Configure your theme variables here */
+  --font-display: "Inter", "sans-serif";
+  --color-primary-500: oklch(0.84 0.18 117.33);
+  --spacing: 0.25rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+.background {
+  background-image: url(../assets/Frame\ 25.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.background2 {
+  background-image: url(../assets/nbg2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.background3 {
+  background-image: url(../assets/nbg3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.background4 {
+  background-image: url(../assets/nbg4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.background-vid {
+  background-image: url(../assets/Frame\ 21.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.logo-bg {
+  background-image: url(../assets/zachtechindustries_logo.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mission-bg {
+  background-image: url(../assets/mission.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mission-bg-res {
+  background-image: linear-gradient(rgba(12, 13, 17, 0.7), rgba(15, 18, 29, 0.7)), url(../assets/mission.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.vision-bg {
+  background-image: url(../assets/vision.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.vision-bg-res {
+  background-image: linear-gradient(rgba(12, 13, 17, 0.7), rgba(15, 18, 29, 0.7)), url(../assets/vision.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.core-bg {
+  background-image: url(../assets/core.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.core-bg-res {
+  background-image: linear-gradient(rgba(12, 13, 17, 0.7), rgba(15, 18, 29, 0.7)), url(../assets/core.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-bg {
+  background-image: url(../assets/Subtract.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Add this custom class for the clipped orange triangle */
+.clip-orange {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.apexium {
+  background-image: url(../assets/apexium.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.eCommerce {
+  background-image: url(../assets/ecommercewebsite.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.skinny {
+  background-image: url(../assets/skinny.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sugma {
+  background-image: url(../assets/sugma.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
