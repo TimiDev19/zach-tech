@@ -82,26 +82,30 @@ const Contact = () => {
                     <div className=" h-full w-[45%] flex-col items-center justify-between max-sm:w-full ">
                         <input
                             value={name}
+                            onChange={(e) => setName(e.target.value)}
                             type="text"
                             placeholder="Name"
-                            className=" w-full border-b-2 border-b-[#eead0e] text-black mb-[90px] h-[50px]"
+                            className=" w-full border-b-2 border-b-[#eead0e] text-black mb-[90px] h-[50px] focus:outline-none"
                         />
                         <input
                             value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                             type="email"
                             placeholder="Email"
-                            className=" w-full border-b-2 border-b-[#eead0e] text-black mb-[90px] h-[50px]"
+                            className=" w-full border-b-2 border-b-[#eead0e] text-black mb-[90px] h-[50px] focus:outline-none"
                         />
                         <input
                             value={phone}
+                            onChange={(e) => setPhone(e.target.value)}
                             type="text"
                             placeholder="Phone"
-                            className=" w-full border-b-2 border-b-[#eead0e] text-black mb-[90px] h-[50px]"
+                            className=" w-full border-b-2 border-b-[#eead0e] text-black mb-[90px] h-[50px] focus:outline-none"
                         />
                     </div>
                     <div className=" h-full w-[45%] flex-col items-center  max-sm:w-full justify-between ">
                         <textarea
                             value={message}
+                            onChange={(e) => setMessage(e.target.value)}
                             className="w-full min-h-[50vh] resize-none p-2 rounded border border-[#eead0e] focus:outline-none focus:shadow-[#eead0e] focus:shadow-sm"
                             placeholder="Leave message..."
                         />
