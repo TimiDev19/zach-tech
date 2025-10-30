@@ -11,22 +11,28 @@ import Team from './sections/Team'
 import Client from './sections/Client'
 import Partners from './sections/Partners'
 import Contact from './sections/Contact'
+import Footer from './sections/Footer'
+import MissionVision from './sections/MissionVision'
+import Carousel from '../Carousel'
+import InfiniteCarousel from './InfiniteCarousel'
 
 const Homepage = () => {
     return (
-        <div className=" w-[100vw] h-[auto] overflow-y-scroll scroll-smooth">
+        <div className=" w-[100vw] h-[auto] overflow-y-scroll overflow-x-hidden scroll-smooth">
             <Hero />
             <OurServices />
             <WhyUs />
             <ProjectVideo />
-            <Mission />
+            <MissionVision />
+            {/* <Mission />
             <Vision />
-            <CoreValue />
+            <CoreValue /> */}
             <Expertise />
             <Team />
             <Client />
             <Partners />
             <Contact />
+            <Footer />
         </div>
     )
 }

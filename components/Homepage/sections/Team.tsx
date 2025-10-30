@@ -1,7 +1,11 @@
+"use client"
 import React from 'react'
 import { Goldman } from 'next/font/google';
 import Image from 'next/image';
 import techstack from '@/helpers/helpers';
+import ProfileCard from '@/components/ProfileCard'
+import TitledCard from '@/components/TiltedCard'
+import TiltedCard from '@/components/TiltedCard';
 
 const goldman = Goldman({
     subsets: ['latin'],

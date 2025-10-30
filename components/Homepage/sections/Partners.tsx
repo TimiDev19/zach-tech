@@ -2,6 +2,7 @@ import React from 'react'
 import { Goldman } from 'next/font/google';
 import Image from 'next/image';
 import techstack from '@/helpers/helpers';
+import InfiniteCarousel from '@/components/Carousel';
 
 const goldman = Goldman({
     subsets: ['latin'],
@@ -14,23 +15,7 @@ const Partners = () => {
     return (
         <div id="partners" className='pt-[100px]'>
             <h1 className={` text-center text-[#000033] text-[45px] mb-4`}>Our <span className=' text-[#EEAD0E]'>Partners</span></h1>
-            <div className='w-full overflow-x-auto flex flex-col lg:flex-row items-center lg:items-start justify-center flex-nowrap whitespace-nowrap p-[2.5%]'>
-                {
-                    techstack.partners.map((person, index) => (
-                        <div
-                            key={index}
-                            className={` flex-shrink-0 inline-block w-[300px] bg-transparent  mx-[10px]`}
-                        >
-                            <Image
-                                src={person.image}
-                                alt=''
-                                className='w-full h-auto mb-2 object-cover'
-                            />
-                            <h1 className='text-black text-center text-xl break-words whitespace-normal w-full'>{person.name}</h1>
-                        </div>
-                    ))
-                }
-            </div>
+            <InfiniteCarousel />
         </div>
     )
 }

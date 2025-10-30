@@ -21,7 +21,7 @@ const WhyUs = () => {
             id="whyus"
             className="relative pb-[200px] max-sm:h-[100vh] lg:flex lg:flex-row z-10 overflow-y-visible flex items-center lg:items-start justify-center px-[2.5%]"
         >
-            <div className=" w-[45%] h-full">
+            {/* <div className=" w-[45%] h-full">
                 <Image
                     src={laptop}
                     alt=""
@@ -55,7 +55,7 @@ const WhyUs = () => {
                         digital world.
                     </p>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

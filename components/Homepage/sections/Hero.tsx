@@ -14,6 +14,8 @@ import laptop from "@/assets/Frame 26.png";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ReactNode } from "react";
+import Typewriter from "@/components/Typewriter";
+import { FadeInFromBottom } from "@/components/FadeInFromBottom";
 
 interface Slide {
     bg: string;
@@ -106,35 +108,61 @@ const Hero = () => {
     }, []);
 
     return (
+        // <div
+        //     id="home"
+        //     className="z-[3] h-auto w-[100vw] relative flex flex-col items-center justify-end"
+        // >
+        //     <div className="relative w-full h-full">
+        //         {/* Top Section (overlapping) */}
+        //         <div
+        //             id="home"
+        //             className={`relative z-10 overflow-y-visible  min-h-[100vh] h-[150vh] w-[100vw] flex items-center justify-start  px-[2.5%] ${slides[index].bg}`}
+        //         >
+        //             {/* <div className=" lg:w-[40%]">
+        //     <h1
+        //       className={`${goldman.className} text-white text-[45px] capitalize mb-4`}
+        //     >
+        //       Build your <span className="text-[#EEAD0E]">dream</span> website
+        //       today
+        //     </h1>
+        //     <h1
+        //       className={`${goldman.className} text-[40px] text-white lg:text-[#000033]`}
+        //     >
+        //       Technologies beyond possibility
+        //     </h1>
+        //   </div> */}
+        //             {slides[index].content}
+        //         </div>
+
+        //         {/* Bottom Section (pushed up behind the top) */}
+
+        //     </div>
+        // </div>
+
         <div
             id="home"
-            className="z-[3] h-auto w-[100vw] relative flex flex-col items-center justify-end"
+            className=" w-full pt-[80px] h-[100vh] heroBackground flex items-center justify-center text-white"
         >
-            <div className="relative w-full h-full">
-                {/* Top Section (overlapping) */}
-                <div
-                    id="home"
-                    className={`relative z-10 overflow-y-visible  min-h-[100vh] h-[150vh] w-[100vw] flex items-center justify-start  px-[2.5%] ${slides[index].bg}`}
-                >
-                    {/* <div className=" lg:w-[40%]">
-            <h1
-              className={`${goldman.className} text-white text-[45px] capitalize mb-4`}
-            >
-              Build your <span className="text-[#EEAD0E]">dream</span> website
-              today
-            </h1>
-            <h1
-              className={`${goldman.className} text-[40px] text-white lg:text-[#000033]`}
-            >
-              Technologies beyond possibility
-            </h1>
-          </div> */}
-                    {slides[index].content}
-                </div>
-
-                {/* Bottom Section (pushed up behind the top) */}
-                
-            </div>
+                <FadeInFromBottom>
+                    <div className=" h-full flex flex-col items-center justify-center w-[95%] mx-auto text-center">
+                        <h1 className=" font-extrabold text-4xl lg:text-7xl text-center mb-[30px]">
+                            Technologies beyond possibility <br /> <span className=" italic font-thin">with</span> <br />
+                            <span className=" text-[#EEAD0E]"> Zach Technologies Industries</span>
+                        </h1>
+                        <Typewriter
+                            texts={[
+                                "Build your dream website.",
+                                "Learn an industry level tech skill.",
+                                "Build your dream mobile app.",
+                                "Get your aesthetic graphics.",
+                                "Get a tech consultation",
+                            ]}
+                            typingSpeed={100}
+                            deletingSpeed={50}
+                            pauseTime={2000}
+                        />
+                    </div>
+                </FadeInFromBottom>
         </div>
     )
 }
