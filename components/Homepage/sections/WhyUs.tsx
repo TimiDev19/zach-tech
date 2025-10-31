@@ -51,6 +51,8 @@ const WhyUs = () => {
                                 separator=","
                                 direction="up"
                                 duration={1}
+                                onStart={() => { }}
+                                onEnd={() => { }}
                                 className="count-up-text text-[#000033] font-extrabold text-6xl"
                             />%
                         </div>
@@ -65,6 +67,8 @@ const WhyUs = () => {
                                 separator=","
                                 direction="up"
                                 duration={1}
+                                onStart={() => { }}
+                                onEnd={() => { }}
                                 className="count-up-text text-[#000033] font-extrabold text-6xl"
                             />+
                         </div>
