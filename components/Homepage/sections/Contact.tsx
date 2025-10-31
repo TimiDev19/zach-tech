@@ -145,7 +145,7 @@ const Contact = () => {
                         </div>
                         <div className=" max-sm:justify-start flex items-center justify-between text-3xl mb-[20px]">
                             <BusinessIcon className="text-[#eead0e]" />
-                            <h1 className="max-sm:text-[14px]">123 mile stree opposite, long road.</h1>
+                            <h1 className="max-sm:text-[14px]">Abuja</h1>
                         </div>
                     </div>
 

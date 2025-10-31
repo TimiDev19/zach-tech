@@ -141,7 +141,7 @@ const Hero = () => {
 
         <div
             id="home"
-            className=" w-full pt-[80px] h-[100vh] heroBackground flex items-center justify-center text-white"
+            className=" w-full pt-[80px] h-[100vh] heroBackground flex items-center justify-center text-white mb-[100px]"
         >
                 <FadeInFromBottom>
                     <div className=" h-full flex flex-col items-center justify-center w-[95%] mx-auto text-center">

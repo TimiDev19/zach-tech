@@ -29,7 +29,7 @@ const OurServices = () => {
                 className=" bg-white pt-0 w-full text-xl mb-[30px]"
             >
                 <h1
-                    className={`text-center text-[#000033] text-[45px]`}
+                    className={`text-center text-[#000033] text-[45px] mb-[30px]`}
                 >
                     Our <span className=" text-[#EEAD0E]">Services</span>
                 </h1>

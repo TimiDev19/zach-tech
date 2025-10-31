@@ -18,7 +18,7 @@ const Navbar = () => {
     };
     return (
         <div  >
-            <div className=' fixed z-50 w-screen h-[80px] text-white'>
+            <div className=' fixed z-50 w-screen h-[80px] text-white backdrop-blur-xl'>
                 {/* <FadeIn> */}
                 <div className=' w-full min-h-[80px] flex items-center justify-between px-[10px] py-[2px]  bg-black/15 backdrop-blur-xs'>
                     {/* Left Container */}
