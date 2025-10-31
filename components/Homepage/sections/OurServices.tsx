@@ -23,109 +23,65 @@ const OurServices = () => {
     return (
         <div
             id="service"
-            className=" h-[100vh] w-[100vw] flex items-center justify-center"
+            className=" min-h-[100vh] w-[100vw] flex items-center justify-center bg-gradient-to-b from-[#000033] to-[#EEAD0E]"
         >
             <div
-                className=" bg-white pt-0 w-full text-xl mb-[30px]"
+                className=" pt-0 h-full w-full text-xl mb-[30px]"
             >
                 <h1
-                    className={`text-center text-[#000033] text-[45px] mb-[30px]`}
+                    className={`text-center text-[#EEAD0E] text-[45px] mb-[30px]`}
                 >
                     Our <span className=" text-[#EEAD0E]">Services</span>
                 </h1>
-                <div className=" h-auto max-sm:h-auto w-full bg-transparent flex items-center justify-between px-[2.5%] max-sm:flex-col">
-                    <div className=" w-[30%] max-sm:w-full h-full flex flex-col items-center justify-between">
-                        <FadeInFromLeft>
-                            <div className=" w-full flex items-center justify-between mb-4">
-                                <div
-                                    className={` w-[calc(100%-60px)] text-black`}
-                                >
-                                    <h1>UI/UX Design</h1>
-                                    <p className=" text-[16px]">
-                                        Wireframing, UI design (mobile and website), UX design
-                                        (mobile and website),
-                                        Rebranding, Graphic design ,Motion pictures
-                                    </p>
-                                </div>
-
-                                <div className=" h-[50px] w-[50px] p-2 rounded-full bg-[#EEAD0E] flex items-center justify-center">
-                                    <Image src={service} alt="" />
-                                </div>
-                            </div>
-                        </FadeInFromLeft>
-
-                        <FadeInFromLeft>
-                            <div className=" w-full flex items-center justify-between mb-4">
-                                <div
-                                    className={`w-[calc(100%-60px)] text-black`}
-                                >
-                                    <h1>Graphics Designs</h1>
-                                    <p className=" text-[16px]">
-                                        Figma, Coral draw, Photoshop Rebranding, Graphic design,
-                                        Polotno studio, Motion pictures
-                                    </p>
-                                </div>
-                                <div className=" h-[50px] w-[50px] p-2 rounded-full bg-[#EEAD0E] flex items-center justify-center">
-                                    <Image src={service3} alt="" />
-                                </div>
-                            </div>
-                        </FadeInFromLeft>
+                <div className=' min-h-[100vh] w-full grid grid-cols-1 lg:grid-cols-3 px-[2%]'>
+                    <div className=' mb-[20px] w-[95%] block h-[60vh] max-sm:mb-[20px]  bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-white hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex-col items-center justify-start'>
+                        <div className=' w-full h-[45%] webDev-bg rounded-t-xl mb-[30px]'></div>
+                        <div className=' w-full'>
+                            <h1 className=' text-2xl font-extrabold'>Web Development</h1>
+                            <p>
+                                Blog website, serach engine optimization (SEO), corpoare website, Real estate website, SME website, eCommerce website, dating website, website upgrading and scaling, host migration.
+                            </p>
+                        </div>
                     </div>
 
-                    <div className=" w-[30%] max-sm:w-50% max-sm:mt-5  max-sm:mb-5 h-full flex items-center justify-center ">
-                        <FadeInFromBottom>
-                            <Image src={transparentLogo} alt="zach tech logo" />
-                        </FadeInFromBottom>
+                    <div className=' mb-[20px] w-[95%] block h-[60vh] max-sm:mb-[20px] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-white hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex-col items-center justify-start'>
+                        <div className=' w-full h-[45%] uiux-bg rounded-t-xl mb-[30px]'></div>
+                        <div className=' w-full'>
+                            <h1 className=' text-2xl font-extrabold'>Ui/Ux Design</h1>
+                            <p>
+                                Wireframing, UI design (mobile and website), UX design (mobile and website), Rebranding, Graphic design ,Motion pictures
+                            </p>
+                        </div>
                     </div>
 
-                    <div className=" w-[30%] max-sm:w-full h-full flex flex-col items-center justify-center">
-                        <FadeInFromRight>
-                            <div className=" w-full flex flex-row-reverse items-center justify-between mb-4">
-                                <div
-                                    className={` w-[calc(100%-60px)] text-black`}
-                                >
-                                    <h1>Back End</h1>
-                                    <p className=" text-[16px]">
-                                        Server maintenance,web hosting,server migration and much more.
-                                    </p>
-                                </div>
-                                <div className=" h-[50px] w-[50px] p-2 rounded-full bg-[#EEAD0E] flex items-center justify-center">
-                                    <Image src={service2} alt="" />
-                                </div>
-                            </div>
-                        </FadeInFromRight>
+                    <div className=' mb-[20px] w-[95%] block h-[60vh] max-sm:mb-[20px] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-white hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex-col items-center justify-start'>
+                        <div className=' w-full h-[45%] graphics-bg rounded-t-xl mb-[30px]'></div>
+                        <div className=' w-full'>
+                            <h1 className=' text-2xl font-extrabold'>Graphics Design</h1>
+                            <p>
+                                Figma, Corel draw, Photoshop Rebranding, Graphic design, Polotno studio, Motion pictures
+                            </p>
+                        </div>
+                    </div>
 
-                        <FadeInFromRight>
-                            <div className=" w-full flex flex-row-reverse items-center justify-between mb-4">
-                                <div
-                                    className={` w-[calc(100%-60px)] text-black`}
-                                >
-                                    <h1>Mobile Development</h1>
-                                    <p className=" text-[16px]">
-                                        maintenance,optimization, development and many more world class services
-                                    </p>
-                                </div>
-                                <div className=" h-[50px] w-[50px] p-2 rounded-full bg-[#EEAD0E] flex items-center justify-center">
-                                    <Image src={service4} alt="" />
-                                </div>
-                            </div>
-                        </FadeInFromRight>
+                    <div className=' mb-[20px] w-[95%] block h-[60vh] max-sm:mb-[20px] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-white hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex-col items-center justify-start'>
+                        <div className=' w-full h-[45%] mobile-bg rounded-t-xl mb-[30px]'></div>
+                        <div className=' w-full'>
+                            <h1 className=' text-2xl font-extrabold'>Mobile Development</h1>
+                            <p>
+                                Figma, Corel draw, Photoshop Rebranding, Graphic design, Polotno studio, Motion pictures
+                            </p>
+                        </div>
+                    </div>
 
-                        <FadeInFromRight>
-                            <div className=" w-full flex flex-row-reverse items-center justify-between mb-4">
-                                <div
-                                    className={`w-[calc(100%-60px)] text-black`}
-                                >
-                                    <h1>Web Development</h1>
-                                    <p className=" text-[16px] ">
-                                        Blog website, serach engine optimization (SEO), corpoare website, Real estate website, SME website, eCommerce website, dating website, website upgrading and scaling, host migration.
-                                    </p>
-                                </div>
-                                <div className=" h-[50px] w-[50px] p-2 rounded-full bg-[#EEAD0E] flex items-center justify-center">
-                                    <Image src={service5} alt="" />
-                                </div>
-                            </div>
-                        </FadeInFromRight>
+                    <div className=' mb-[20px] w-[95%] block h-[60vh] max-sm:mb-[20px] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-white hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex-col items-center justify-start'>
+                        <div className=' w-full h-[45%] backend-bg rounded-t-xl mb-[30px]'></div>
+                        <div className=' w-full'>
+                            <h1 className=' text-2xl font-extrabold'>Backend Development</h1>
+                            <p>
+                                Server maintenance,web hosting,server migration and much more.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

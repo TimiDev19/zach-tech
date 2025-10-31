@@ -78,6 +78,41 @@
   background-size: cover;
 }
 
+.webDev-bg {
+  background-image: url(../assets/webDev.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.uiux-bg {
+  background-image: url(../assets/uiux.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mobile-bg {
+  background-image: url(../assets/mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.graphics-bg {
+  background-image: url(../assets/graphics.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.backend-bg {
+  background-image: url(../assets/backend.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .vision-bg-res {
   background-image: linear-gradient(rgba(12, 13, 17, 0.7), rgba(15, 18, 29, 0.7)), url(../assets/vision.png);
   background-repeat: no-repeat;
