@@ -15,6 +15,7 @@ import Footer from './sections/Footer'
 import MissionVision from './sections/MissionVision'
 import Carousel from '../Carousel'
 import InfiniteCarousel from './InfiniteCarousel'
+import Training from './sections/Training'
 
 const Homepage = () => {
     return (
@@ -28,6 +29,7 @@ const Homepage = () => {
             <Vision />
             <CoreValue /> */}
             <Expertise />
+            <Training />
             <Team />
             <Client />
             <Partners />

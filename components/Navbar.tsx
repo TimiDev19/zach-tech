@@ -65,6 +65,14 @@ const Navbar = () => {
                                     </Link>
 
                                     <Link
+                                        href="/#projects"
+                                        className="relative group ml-[25px]"
+                                    >
+                                        Projects
+                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                    </Link>
+                                    
+                                    <Link
                                         href="/#about"
                                         className="relative group ml-[25px]"
                                     >
@@ -72,11 +80,12 @@ const Navbar = () => {
                                         <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </Link>
 
+
                                     <Link
-                                        href="/#projects"
+                                        href="/#training"
                                         className="relative group ml-[25px]"
                                     >
-                                        Projects
+                                        Trainings
                                         <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </Link>
 
