@@ -9,6 +9,7 @@ import CallIcon from "@mui/icons-material/Call";
 import MailIcon from "@mui/icons-material/Mail";
 import BusinessIcon from "@mui/icons-material/Business";
 import Link from "next/link";
+import toast from "react-hot-toast";
 
 const goldman = Goldman({
     subsets: ["latin"],
@@ -23,6 +24,7 @@ const Contact = () => {
     const [message, setMessage] = useState("")
     const [isLoading, setIsLoading] = useState(false)
     const [error, setError] = useState("")
+    const [loading, setLoading] = useState(false);
 
     const sendEmail = async () => {
         if (!email) {
@@ -58,6 +60,7 @@ const Contact = () => {
             const res = await emailjs.send(serviceID, templateID, templatePrams, userID);
             if (res.status === 200) {
                 console.log("Email sent successfully!");
+                toast.success("✅ Email sent successfully!");
                 setIsLoading(false)
             }
         } catch (error) {
@@ -117,7 +120,7 @@ const Contact = () => {
                         disabled={isLoading}
                         className={`  text-white text-2xl px-[10px] py-[6px] rounded-md bg-[#EEAD0E]`}
                     >
-                        Contact Us
+                        {loading ? "Sending..." : "Send Email"}
                     </button>
                 </div>
             </form>

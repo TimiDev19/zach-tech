@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,7 +32,24 @@ export default function RootLayout({
         className={`antialiased ${inter.className} overflow-x-hidden max-w-[100dvw]`}
       >
         <Navbar />
-        <main className=" max-w-[100dvw] overflow-x-hidden">{children}</main>
+        <main className=" max-w-[100dvw] overflow-x-hidden">{children}
+          <Toaster
+            position="top-right"
+            toastOptions={{
+              style: {
+                background: "#1E1E3F",
+                color: "#fff",
+                borderRadius: "12px",
+              },
+              success: {
+                iconTheme: {
+                  primary: "#00E0FF",
+                  secondary: "#1E1E3F",
+                },
+              },
+            }}
+          />
+        </main>
       </body>
     </html>
   );
