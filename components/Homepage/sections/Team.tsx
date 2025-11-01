@@ -375,9 +375,13 @@ const cardVariants = {
     y: 0,
     scale: 1,
     rotateX: 0,
-    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] },
+    transition: {
+      duration: 0.8,
+      ease: [0.16, 1, 0.3, 1],
+    } as any, // 👈 Fix the TypeScript conflict
   },
 };
+
 
 export default function TeamSection() {
   return (
