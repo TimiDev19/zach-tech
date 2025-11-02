@@ -18,7 +18,7 @@ const Navbar = () => {
     };
     return (
         <div  >
-            <div className=' fixed z-50 w-screen h-[80px] text-white backdrop-blur-xl'>
+            <div className=' fixed z-50 w-screen h-[80px] text-[#000033] bg-white/50 backdrop-blur-xl'>
                 {/* <FadeIn> */}
                 <div className=' w-full min-h-[80px] flex items-center justify-between px-[10px] py-[2px]  bg-black/15 backdrop-blur-xs'>
                     {/* Left Container */}
@@ -45,7 +45,7 @@ const Navbar = () => {
                                         className="relative group ml-[25px]"
                                     >
                                         Home
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-[#000033] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </Link>
 
                                     <Link
@@ -53,7 +53,7 @@ const Navbar = () => {
                                         className="relative group ml-[25px]"
                                     >
                                         Service
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-[#000033] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </Link>
 
                                     <Link
@@ -61,7 +61,7 @@ const Navbar = () => {
                                         className="relative group ml-[25px]"
                                     >
                                         Why Us?
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-[#000033] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </Link>
 
                                     <Link
@@ -69,7 +69,7 @@ const Navbar = () => {
                                         className="relative group ml-[25px]"
                                     >
                                         Projects
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-[#000033] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </Link>
                                     
                                     <Link
@@ -77,7 +77,7 @@ const Navbar = () => {
                                         className="relative group ml-[25px]"
                                     >
                                         About
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-[#000033] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </Link>
 
 
@@ -86,7 +86,7 @@ const Navbar = () => {
                                         className="relative group ml-[25px]"
                                     >
                                         Trainings
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-[#000033] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </Link>
 
                                     <Link
@@ -94,7 +94,7 @@ const Navbar = () => {
                                         className="relative group ml-[25px]"
                                     >
                                         Team
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-[#000033] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </Link>
 
                                     <Link
@@ -102,7 +102,7 @@ const Navbar = () => {
                                         className="relative group ml-[25px]"
                                     >
                                         Clients
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-[#000033] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </Link>
 
                                     <Link
@@ -110,7 +110,7 @@ const Navbar = () => {
                                         className="relative group ml-[25px] mr-[25px]"
                                     >
                                         Contact
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-[#000033] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </Link>
                                 </nav>
 

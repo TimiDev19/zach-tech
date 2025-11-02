@@ -31,56 +31,83 @@ const OurServices = () => {
                 <h1
                     className={`text-center text-[#EEAD0E] text-[45px] mb-[30px]`}
                 >
-                    Our <span className=" text-[#EEAD0E]">Services</span>
+                    Our Services
                 </h1>
+
                 <div className=' min-h-[100vh] w-full grid grid-cols-1 lg:grid-cols-3 px-[2%]'>
-                    <div className=' mb-[20px] w-[95%] block h-[60vh] max-sm:mb-[20px]  bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-white hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex-col items-center justify-start'>
-                        <div className=' w-full h-[45%] webDev-bg rounded-t-xl mb-[30px]'></div>
-                        <div className=' w-full'>
-                            <h1 className=' text-2xl font-extrabold'>Web Development</h1>
-                            <p>
+                    <div className="group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-white hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
+
+                        {/* Image area that shrinks on hover */}
+                        <div className="w-full h-[200px] webDev-bg rounded-t-xl mb-[30px] transition-all duration-500 group-hover:h-[120px]"></div>
+                        <h1 className="text-xl font-extrabold group-hover:opacity-0 group-hover:translate-y-3 transition-all duration-500 opacity-100 translate-y-0">Web Development</h1>
+                        {/* Text area appears + pushes card taller */}
+                        <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px]">
+                            <h1 className="text-xl font-extrabold">Web Development</h1>
+                            <p className=" text-sm">
                                 Blog website, serach engine optimization (SEO), corpoare website, Real estate website, SME website, eCommerce website, dating website, website upgrading and scaling, host migration.
                             </p>
+                            <Link href={"/services/i"} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
                         </div>
                     </div>
 
-                    <div className=' mb-[20px] w-[95%] block h-[60vh] max-sm:mb-[20px] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-white hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex-col items-center justify-start'>
-                        <div className=' w-full h-[45%] uiux-bg rounded-t-xl mb-[30px]'></div>
-                        <div className=' w-full'>
-                            <h1 className=' text-2xl font-extrabold'>Ui/Ux Design</h1>
-                            <p>
+                    <div className="group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-white hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
+
+                        {/* Image area that shrinks on hover */}
+                        <div className="w-full h-[200px] uiux-bg rounded-t-xl mb-[30px] transition-all duration-500 group-hover:h-[120px]"></div>
+                        <h1 className="text-xl font-extrabold group-hover:opacity-0 group-hover:translate-y-3 transition-all duration-500 opacity-100 translate-y-0">Ui/Ux Design</h1>
+                        {/* Text area appears + pushes card taller */}
+                        <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px]">
+                            <h1 className="text-xl font-extrabold">Ui/Ux Design</h1>
+                            <p className=" text-sm">
                                 Wireframing, UI design (mobile and website), UX design (mobile and website), Rebranding, Graphic design ,Motion pictures
                             </p>
+                            <Link href={"/services/i"} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
                         </div>
                     </div>
 
-                    <div className=' mb-[20px] w-[95%] block h-[60vh] max-sm:mb-[20px] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-white hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex-col items-center justify-start'>
-                        <div className=' w-full h-[45%] graphics-bg rounded-t-xl mb-[30px]'></div>
-                        <div className=' w-full'>
-                            <h1 className=' text-2xl font-extrabold'>Graphics Design</h1>
-                            <p>
+                    <div className="group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-white hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
+
+                        {/* Image area that shrinks on hover */}
+                        <div className="w-full h-[200px] graphics-bg rounded-t-xl mb-[30px] transition-all duration-500 group-hover:h-[120px]"></div>
+                        <h1 className="text-xl font-extrabold group-hover:opacity-0 group-hover:translate-y-3 transition-all duration-500 opacity-100 translate-y-0">Graphics Design</h1>
+                        {/* Text area appears + pushes card taller */}
+                        <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px]">
+                            <h1 className="text-xl font-extrabold">Graphics Design</h1>
+                            <p className=" text-sm">
                                 Figma, Corel draw, Photoshop Rebranding, Graphic design, Polotno studio, Motion pictures
                             </p>
+                            <Link href={"/services/i"} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
                         </div>
                     </div>
 
-                    <div className=' mb-[20px] w-[95%] block h-[60vh] max-sm:mb-[20px] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-white hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex-col items-center justify-start'>
-                        <div className=' w-full h-[45%] mobile-bg rounded-t-xl mb-[30px]'></div>
-                        <div className=' w-full'>
-                            <h1 className=' text-2xl font-extrabold'>Mobile Development</h1>
-                            <p>
-                                Figma, Corel draw, Photoshop Rebranding, Graphic design, Polotno studio, Motion pictures
+                    <div className="group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-white hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
+
+                        {/* Image area that shrinks on hover */}
+                        <div className="w-full h-[200px] mobile-bg rounded-t-xl mb-[30px] transition-all duration-500 group-hover:h-[120px]"></div>
+                        <h1 className="text-xl font-extrabold group-hover:opacity-0 group-hover:translate-y-3 transition-all duration-500 opacity-100 translate-y-0">Mobile Development</h1>
+                        {/* Text area appears + pushes card taller */}
+                        <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[300px]">
+                            <h1 className="text-xl font-extrabold">Mobile Developm4nt</h1>
+                            <p className=" text-sm">
+                                Figma, Corel draw, Photoshop Rebranding, Graphic design,
+                                Polotno studio, Motion pictures
                             </p>
+                            <Link href={"/services/i"} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
                         </div>
                     </div>
 
-                    <div className=' mb-[20px] w-[95%] block h-[60vh] max-sm:mb-[20px] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-white hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex-col items-center justify-start'>
-                        <div className=' w-full h-[45%] backend-bg rounded-t-xl mb-[30px]'></div>
-                        <div className=' w-full'>
-                            <h1 className=' text-2xl font-extrabold'>Backend Development</h1>
-                            <p>
+                    <div className="group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-white hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
+
+                        {/* Image area that shrinks on hover */}
+                        <div className="w-full h-[200px] backend-bg rounded-t-xl mb-[30px] transition-all duration-500 group-hover:h-[120px]"></div>
+                        <h1 className="text-xl font-extrabold group-hover:opacity-0 group-hover:translate-y-3 transition-all duration-500 opacity-100 translate-y-0">Backend Development</h1>
+                        {/* Text area appears + pushes card taller */}
+                        <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px]">
+                            <h1 className="text-xl font-extrabold">Backend Development</h1>
+                            <p className=" text-sm">
                                 Server maintenance,web hosting,server migration and much more.
                             </p>
+                            <Link href={"/services/i"} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
                         </div>
                     </div>
                 </div>

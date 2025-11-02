@@ -145,9 +145,9 @@ const Hero = () => {
         >
                 <FadeInFromBottom>
                     <div className=" h-full flex flex-col items-center justify-center w-[95%] mx-auto text-center">
-                        <h1 className=" font-extrabold text-4xl lg:text-7xl text-center mb-[30px]">
+                        <h1 className=" font-extrabold text-2xl lg:text-5xl text-center mb-[30px]">
                             Technologies beyond possibility <br /> <span className=" italic font-thin">with</span> <br />
-                            <span className=" text-[#EEAD0E]"> Zach Technologies Industries</span>
+                            <span className=" text-[#EEAD0E] text-4xl lg:text-7xl uppercase"> Zach Technologies Industries</span>
                         </h1>
                         <Typewriter
                             texts={[
