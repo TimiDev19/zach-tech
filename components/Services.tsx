@@ -1,7 +1,11 @@
 import Link from 'next/link'
 import React from 'react'
 
-const Services = ({ type }) => {
+type ServicesProps = {
+    type: string;
+};
+
+const Services = ({ type }: ServicesProps) => {
     return (
         <div className=' h-[100vh] w-[100vw] overflow-x-hidden overflow-y-scroll text-white'>
             {
