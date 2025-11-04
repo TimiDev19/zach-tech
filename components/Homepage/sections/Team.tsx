@@ -385,7 +385,7 @@ const cardVariants = {
 
 export default function TeamSection() {
   return (
-    <section className="relative py-28 overflow-hidden bg-gradient-to-br from-[#0A0A2A] to-[#000033] text-white">
+    <section id="team" className="relative py-28 overflow-hidden bg-gradient-to-br from-[#0A0A2A] to-[#000033] text-white">
       {/* Background Glow */}
       <div className="absolute inset-0">
         <div className="absolute top-1/3 left-1/4 w-[300px] h-[300px] bg-indigo-500/30 blur-[120px] rounded-full"></div>

@@ -18,7 +18,7 @@ const Navbar = () => {
     };
     return (
         <div  >
-            <div className=' fixed z-50 w-screen h-[80px] text-[#000033] bg-white/50 backdrop-blur-xl'>
+            <div className=' fixed z-[48] w-screen h-[80px] text-[#000033] bg-white/50 backdrop-blur-xl'>
                 {/* <FadeIn> */}
                 <div className=' w-full min-h-[80px] flex items-center justify-between px-[10px] py-[2px]  bg-black/15 backdrop-blur-xs'>
                     {/* Left Container */}
@@ -106,7 +106,7 @@ const Navbar = () => {
                                     </Link>
 
                                     <Link
-                                        href="/#contact"
+                                        href="/contact"
                                         className="relative group ml-[25px] mr-[25px]"
                                     >
                                         Contact

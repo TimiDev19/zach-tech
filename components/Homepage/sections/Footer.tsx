@@ -1,3 +1,4 @@
+"use client"
 import { Email, Facebook, LinkedIn, LocationCity, LocationOn, Phone, WhatsApp, X } from '@mui/icons-material'
 import Link from 'next/link'
 import React from 'react'

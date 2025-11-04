@@ -1,8 +1,11 @@
+import Contact from '@/components/Homepage/sections/Contact'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div>
+      <Contact />
+    </div>
   )
 }
 

@@ -18,8 +18,16 @@ import { FadeInFromLeft } from "@/components/FadeInFromLeft";
 import { FadeInFromBottom } from "@/components/FadeInFromBottom";
 import { FadeInFromRight } from "@/components/FadeInFromRight";
 import { div } from "framer-motion/client";
+import Services from "@/components/Services";
 
 const OurServices = () => {
+    const [open, setOpen] = useState(false)
+    const [service, setService] = useState("")
+    const web_id = "web"
+    const ui_id = "ui"
+    const graphics_id = "graphics"
+    const mobile_id = "mobile"
+    const backend_id = "backend"
     return (
         <div
             id="service"
@@ -46,7 +54,7 @@ const OurServices = () => {
                             <p className=" text-sm">
                                 Blog website, serach engine optimization (SEO), corpoare website, Real estate website, SME website, eCommerce website, dating website, website upgrading and scaling, host migration.
                             </p>
-                            <Link href={"/services/i"} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
+                            <Link href={`/services/${web_id}`} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
                         </div>
                     </div>
 
@@ -61,7 +69,7 @@ const OurServices = () => {
                             <p className=" text-sm">
                                 Wireframing, UI design (mobile and website), UX design (mobile and website), Rebranding, Graphic design ,Motion pictures
                             </p>
-                            <Link href={"/services/i"} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
+                            <Link href={`/services/${ui_id}`} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
                         </div>
                     </div>
 
@@ -76,7 +84,7 @@ const OurServices = () => {
                             <p className=" text-sm">
                                 Figma, Corel draw, Photoshop Rebranding, Graphic design, Polotno studio, Motion pictures
                             </p>
-                            <Link href={"/services/i"} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
+                            <Link href={`/services/${graphics_id}`} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
                         </div>
                     </div>
 
@@ -87,12 +95,12 @@ const OurServices = () => {
                         <h1 className="text-xl font-extrabold group-hover:opacity-0 group-hover:translate-y-3 transition-all duration-500 opacity-100 translate-y-0">Mobile Development</h1>
                         {/* Text area appears + pushes card taller */}
                         <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[300px]">
-                            <h1 className="text-xl font-extrabold">Mobile Developm4nt</h1>
+                            <h1 className="text-xl font-extrabold">Mobile Development</h1>
                             <p className=" text-sm">
                                 Figma, Corel draw, Photoshop Rebranding, Graphic design,
                                 Polotno studio, Motion pictures
                             </p>
-                            <Link href={"/services/i"} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
+                            <Link href={`/services/${mobile_id}`} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
                         </div>
                     </div>
 
@@ -107,11 +115,14 @@ const OurServices = () => {
                             <p className=" text-sm">
                                 Server maintenance,web hosting,server migration and much more.
                             </p>
-                            <Link href={"/services/i"} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
+                            <Link href={`/services/${backend_id}`} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
                         </div>
                     </div>
                 </div>
             </div>
+            {/* {
+                open && <Services setOpen={setOpen} type={"teemi"}/>
+            } */}
         </div>
     )
 }
