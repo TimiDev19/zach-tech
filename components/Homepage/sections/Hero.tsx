@@ -138,16 +138,25 @@ const Hero = () => {
 
         //     </div>
         // </div>
-
-        <div
-            id="home"
-            className=" w-full pt-[80px] h-[100vh] bg-[#000033] flex items-center justify-center text-white"
-        >
+        <section id="home" className="h-screen relative bg-black">
+            <video
+                src="/bg-vid.mp4"
+                className="absolute inset-0 object-cover w-full h-full opacity-50"
+                autoPlay
+                loop
+                playsInline
+                muted
+                controls={false}
+            ></video>
+            <div
+                className=" w-full pt-[80px] h-[100vh] relative flex items-center justify-center text-white"
+            >
                 <FadeInFromBottom>
                     <div className=" h-full flex flex-col items-center justify-center w-[95%] mx-auto text-center">
                         <h1 className=" font-extrabold text-2xl lg:text-5xl text-center mb-[30px]">
-                            Technologies beyond possibility <br /> <span className=" italic font-thin">with</span> <br />
-                            <span className=" text-[#EEAD0E] text-4xl lg:text-7xl uppercase"> Zach Technologies Industries</span>
+                            Welcome To <br />
+                            <span className=" text-[#EEAD0E] text-4xl lg:text-7xl uppercase"> Zach Technologies Industries</span> <br />
+                            <span className=" italic font-thin">Technologies beyond possibilities</span>
                         </h1>
                         <Typewriter
                             texts={[
@@ -163,7 +172,8 @@ const Hero = () => {
                         />
                     </div>
                 </FadeInFromBottom>
-        </div>
+            </div>
+        </section>
     )
 }
 
