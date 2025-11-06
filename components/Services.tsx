@@ -7,7 +7,7 @@ type ServicesProps = {
 
 const Services = ({ type }: ServicesProps) => {
     return (
-        <div className=' h-[100vh] w-[100vw] overflow-x-hidden overflow-y-scroll text-white'>
+        <div className=' min-h-[100vh] w-[100vw] overflow-x-hidden overflow-y-scroll text-white'>
             {
                 type === "web" &&
                 <div className=' pt-[85px] p-[2.5%] h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
@@ -102,7 +102,43 @@ const Services = ({ type }: ServicesProps) => {
                     <div className=' w-full lg:w-[45%] h-[40%] lg:h-[65%] flex flex-col items-start justify-center backend-bg rounded-2xl'></div>
                 </div>
             }
-            {/* <div className=' h-[100vh] w-[100vw] bg-gradient-to-b to-[#000033] from-[#EEAD0E]'></div> */}
+            <div className=' min-h-[100vh] w-[100vw] bg-gradient-to-b to-[#000033] from-[#EEAD0E] pt-[90px] px-[2.5%]'>
+                <h1 className=' font-extrabold text-3xl lg:text-7xl mb-[50px] text-center'>Our Process</h1>
+                <div className=' w-full grid grid-cols-1 lg:grid-cols-3 mb-[20px]'>
+                    <div className=' mx-2'>
+                        <div className=' h-[50px] w-[50px] flex items-center justify-center bg-[#000033] rounded-full font-extrabold mb-[10px]'>1</div>
+                        <h1 className=' font-extrabold text-xl mb-[5px]'>Strategic Consultation</h1>
+                        <p>
+                            We kick off with a strategic consultation to understand your brand, goals, and audience.
+                        </p>
+                    </div>
+
+                    <div className=' mx-2'>
+                        <div className=' h-[50px] w-[50px] flex items-center justify-center bg-[#000033] rounded-full font-extrabold mb-[10px]'>2</div>
+                        <h1 className=' font-extrabold text-xl mb-[5px]'>Collaboration</h1>
+                        <p>
+                            We collaborate closely to ensure the end result meets your expectations and makes you happy.
+                        </p>
+                    </div>
+
+                    <div className=' mx-2'>
+                        <div className=' h-[50px] w-[50px] flex items-center justify-center bg-[#000033] rounded-full font-extrabold mb-[10px]'>3</div>
+                        <h1 className=' font-extrabold text-xl mb-[5px]'>Delivery</h1>
+                        <p>
+                            Our delivery rate is 100%; our clients deserve nothing less.
+                        </p>
+                    </div>
+                </div>
+                <div className=' w-[90%] h-[50vh] border border-[#EEAD0E] mx-auto flex flex-col items-center justify-center'>
+                    <h1 className=' font-semibold text-3xl lg:text-5xl'>Read to build something great?</h1>
+                    <Link
+                        href={"/contact"}
+                        className=' py-2 px-[20px] bg-[#000033] rounded-xl hover:bg-transparent hover:text-white transition-all duration-500'
+                    >
+                        Get Started
+                    </Link>
+                </div>
+            </div>
         </div>
     )
 }

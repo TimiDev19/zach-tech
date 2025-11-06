@@ -12,7 +12,7 @@ const goldman = Goldman({
 
 const Client = () => {
     return (
-        <div id="clients" className='pt-[100px] relative h-auto'>
+        <div id="clients" className='pt-[100px] relative h-auto bg-white'>
             <h1 className={` text-center text-[#000033] text-[45px] mb-4`}>Our <span className=' text-[#EEAD0E]'>Clients</span></h1>
             <InfiniteCarousel />
         </div>

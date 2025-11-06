@@ -19,64 +19,65 @@ import { FadeInFromBottom } from "@/components/FadeInFromBottom";
 
 const WhyUs = () => {
     return (
-        <div
-            id="whyus"
-            className=" w-[100vw] min-h-[100vh] lg:h-[100vh] mb-[50px] flex flex-col lg:flex-row items-center justify-between p-[50px] pt-[90px]"
-        >
-            <div className=" w-[100%] lg:w-[45%] h-full flex items-center justify-center mb-[50px]">
-                <FadeInFromBottom>
-                    <Image src={transparentLogo} alt="zach tech logo" />
-                </FadeInFromBottom>
-            </div>
-
-            <div className=" w-[100%] lg:w-[45%] h-full flex flex-col items-center justify-start text-[#000033]">
-                <div className=" mb-[30px] w-full h-[40%] bg-transparent flex flex-col items-center justify-center">
-                    <h1 className=" text-4xl font-extrabold mb-[10px]">Why Trust Us?</h1>
-                    <p>
-                        Zachtech industries is a tech startup, redefining how businesses and individuals
-                        harness the power of technology to achieve meaningful
-                        progress. As a forward-thinking technology firm, we specialize
-                        in delivering innovative, scalable solutions that empower
-                        startups, SMES, and large enterprises to thrive in today's
-                        digital world.
-                    </p>
+        <>
+            <div
+                id="whyus"
+                className=" w-[100vw] min-h-[100vh] bg-white lg:h-[100vh] flex flex-col lg:flex-row items-center justify-between p-[50px] pt-[90px]"
+            >
+                <div className=" w-[100%] lg:w-[45%] h-full flex items-center justify-center mb-[50px]">
+                    <FadeInFromBottom>
+                        <Image src={transparentLogo} alt="zach tech logo" />
+                    </FadeInFromBottom>
                 </div>
 
-                <div className=" w-full h-[40%] bg-transparent flex flex-col lg:flex-row items-center justify-between">
-                    <div className=" bg-transparent mb-[20px] flex flex-col items-center justify-center rounded-lg text-[#000033] font-extrabold text-3xl lg:text-6xl">
-                        <div>
-                            <CountUp
-                                from={0}
-                                to={100}
-                                separator=","
-                                direction="up"
-                                duration={1}
-                                onStart={() => { }}
-                                onEnd={() => { }}
-                                className="count-up-text text-[#000033] font-extrabold text-6xl"
-                            />%
-                        </div>
-                        <h1 className="text-lg lg:text-xl">Customer Satisfaction</h1>
+                <div className=" w-[100%] lg:w-[45%] h-full flex flex-col items-center justify-start text-[#000033]">
+                    <div className=" mb-[30px] w-full h-[40%] bg-transparent flex flex-col items-center justify-center">
+                        <h1 className=" text-4xl font-extrabold mb-[10px]">Why Trust Us?</h1>
+                        <p>
+                            Zachtech industries is a tech startup, redefining how businesses and individuals
+                            harness the power of technology to achieve meaningful
+                            progress. As a forward-thinking technology firm, we specialize
+                            in delivering innovative, scalable solutions that empower
+                            startups, SMES, and large enterprises to thrive in today's
+                            digital world.
+                        </p>
                     </div>
 
-                    <div className=" bg-transparent mb-[20px] flex flex-col items-center justify-center rounded-lg text-[#000033] font-extrabold text-3xl lg:text-6xl">
-                        <div>
-                            <CountUp
-                                from={0}
-                                to={6}
-                                separator=","
-                                direction="up"
-                                duration={1}
-                                onStart={() => { }}
-                                onEnd={() => { }}
-                                className="count-up-text text-[#000033] font-extrabold text-6xl"
-                            />+
+                    <div className=" w-full h-[40%] bg-transparent flex flex-col lg:flex-row items-center justify-between">
+                        <div className=" bg-transparent mb-[20px] flex flex-col items-center justify-center rounded-lg text-[#000033] font-extrabold text-3xl lg:text-6xl">
+                            <div>
+                                <CountUp
+                                    from={0}
+                                    to={100}
+                                    separator=","
+                                    direction="up"
+                                    duration={1}
+                                    onStart={() => { }}
+                                    onEnd={() => { }}
+                                    className="count-up-text text-[#000033] font-extrabold text-6xl"
+                                />%
+                            </div>
+                            <h1 className="text-lg lg:text-xl">Customer Satisfaction</h1>
                         </div>
-                        <h1 className=" text-xl">Projects</h1>
+
+                        <div className=" bg-transparent mb-[20px] flex flex-col items-center justify-center rounded-lg text-[#000033] font-extrabold text-3xl lg:text-6xl">
+                            <div>
+                                <CountUp
+                                    from={0}
+                                    to={6}
+                                    separator=","
+                                    direction="up"
+                                    duration={1}
+                                    onStart={() => { }}
+                                    onEnd={() => { }}
+                                    className="count-up-text text-[#000033] font-extrabold text-6xl"
+                                />+
+                            </div>
+                            <h1 className=" text-xl">Projects</h1>
+                        </div>
                     </div>
                 </div>
-            </div>
-            {/* <div className=" w-[45%] h-full">
+                {/* <div className=" w-[45%] h-full">
                 <Image
                     src={laptop}
                     alt=""
@@ -111,7 +112,12 @@ const WhyUs = () => {
                     </p>
                 </div>
             </div> */}
-        </div>
+            </div>
+
+            <div className=" w-full h-[50px] bg-white">
+
+            </div>
+        </>
     )
 }
 

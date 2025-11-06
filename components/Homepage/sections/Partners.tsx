@@ -13,7 +13,7 @@ const goldman = Goldman({
 
 const Partners = () => {
     return (
-        <div id="partners" className='pt-[100px]'>
+        <div id="partners" className='pt-[100px] bg-white'>
             <h1 className={` text-center text-[#000033] text-[45px] mb-4`}>Our <span className=' text-[#EEAD0E]'>Partners</span></h1>
             <InfiniteCarousel />
         </div>

@@ -72,14 +72,14 @@ const Contact = () => {
     }
     return (
         <>
-            <div id="contact" className={`  pt-[100px]`}>
+            <div id="contact" className={` bg-white pt-[100px]`}>
                 <h1
                     className={`  text-center text-[#000033] text-[45px] mb-4`}
                 >
                     Contact <span className=" text-[#EEAD0E]">Us</span>
                 </h1>
                 <form
-                    action="" className=" min-h-[50vh] max-sm:h-auto w-screen mb-[100px] block ">
+                    action="" className=" min-h-[50vh] max-sm:h-auto w-screen block ">
                     <div
 
                         className=" flex items-center justify-between w-[90%] mx-auto h-full max-sm:flex-col"
@@ -120,14 +120,19 @@ const Contact = () => {
                         <button
                             onClick={sendEmail}
                             disabled={isLoading}
-                            className={`  text-white text-2xl px-[10px] py-[6px] rounded-md bg-[#EEAD0E]`}
+                            className={`relative text-white text-2xl px-4 py-2 rounded-md bg-[#EEAD0E] flex items-center justify-center ${isLoading ? 'bg-[#EEAD0E]/50 cursor-not-allowed' : 'hover:bg-[#e0a30d]'
+                                }`}
                         >
-                            {loading ? "Sending..." : "Send Email"}
+                            {isLoading ? (
+                                <span className="loading-spinner w-6 h-6 border-4 border-white border-t-transparent rounded-full animate-spin"></span>
+                            ) : (
+                                "Send Email"
+                            )}
                         </button>
                     </div>
                 </form>
 
-                <div className=" min-h-[90vh] max-sm:h-auto w-screen mb-[50px] mt-[30px] flex max-sm:flex-col items-center justify-between px-[2.5%]">
+                <div className=" min-h-[90vh] max-sm:h-auto w-screen mt-[30px] flex max-sm:flex-col items-center justify-between px-[2.5%]">
                     <div className=" w-[45%] max-sm:w-full  h-full">
                         <h1 className=" text-6xl max-sm:text-3xl mb-5">
                             Make sure to keep in touch with us!
@@ -215,6 +220,7 @@ const Contact = () => {
                     <div className=" w-full lg:w-[50%] min-h-[90vh] contact-bg"></div>
                 </div>
             </div>
+            <div className=" h-[100px] w-full bg-white"></div>
             <Footer />
         </>
     );

@@ -10,7 +10,7 @@ const goldman = Goldman({
 
 const Expertise = () => {
     return (
-        <div className={` w-[100vw] px-[2.5%] mb-[30px]`}>
+        <div className={` bg-white w-[100vw] px-[2.5%] pb-[30px]`}>
             <h1 className={`text-center text-[#000033] text-[45px] mb-4`}>Our <span className=' text-[#EEAD0E]'>Expertise</span></h1>
             <div className=' w-full text-center'>
                 <h1 className=' mb-[50px] text-2xl max-sm:text-xl mx-auto'>Our expertise spans a wide array of cutting-edge domains, including:</h1>
