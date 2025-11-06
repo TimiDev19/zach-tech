@@ -31,7 +31,7 @@ const OurServices = () => {
     return (
         <div
             id="service"
-            className=" min-h-[100vh] w-[100vw] flex items-center justify-center bg-gradient-to-b from-[#000033] to-[#EEAD0E] mt-[30px]"
+            className=" min-h-[100vh] w-[100vw] flex items-center justify-center bg-gradient-to-b from-[#000033] to-[#EEAD0E]/60 mt-[30px]"
         >
             <div
                 className=" pt-0 h-full w-full text-xl mb-[30px]"
