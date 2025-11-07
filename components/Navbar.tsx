@@ -17,7 +17,7 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     };
     return (
-        <div  >
+        <div>
             <div className=' fixed z-[48] w-screen h-[80px] text-[#000033] bg-white/50 backdrop-blur-xl'>
                 {/* <FadeIn> */}
                 <div className=' w-full min-h-[80px] flex items-center justify-between px-[10px] py-[2px]  bg-black/15 backdrop-blur-xs'>
@@ -71,7 +71,7 @@ const Navbar = () => {
                                         Projects
                                         <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-[#000033] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </Link>
-                                    
+
                                     <Link
                                         href="/#about"
                                         className="relative group ml-[25px]"

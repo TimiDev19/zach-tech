@@ -120,6 +120,13 @@
   background-size: cover;
 }
 
+.fs-bg {
+  background-image: url(../assets/fullstack.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .motion-bg {
   background-image: url(../assets/motion\ graphics.jpg);
   background-repeat: no-repeat;

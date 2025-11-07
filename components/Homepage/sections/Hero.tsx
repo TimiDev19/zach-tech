@@ -108,36 +108,6 @@ const Hero = () => {
     }, []);
 
     return (
-        // <div
-        //     id="home"
-        //     className="z-[3] h-auto w-[100vw] relative flex flex-col items-center justify-end"
-        // >
-        //     <div className="relative w-full h-full">
-        //         {/* Top Section (overlapping) */}
-        //         <div
-        //             id="home"
-        //             className={`relative z-10 overflow-y-visible  min-h-[100vh] h-[150vh] w-[100vw] flex items-center justify-start  px-[2.5%] ${slides[index].bg}`}
-        //         >
-        //             {/* <div className=" lg:w-[40%]">
-        //     <h1
-        //       className={`${goldman.className} text-white text-[45px] capitalize mb-4`}
-        //     >
-        //       Build your <span className="text-[#EEAD0E]">dream</span> website
-        //       today
-        //     </h1>
-        //     <h1
-        //       className={`${goldman.className} text-[40px] text-white lg:text-[#000033]`}
-        //     >
-        //       Technologies beyond possibility
-        //     </h1>
-        //   </div> */}
-        //             {slides[index].content}
-        //         </div>
-
-        //         {/* Bottom Section (pushed up behind the top) */}
-
-        //     </div>
-        // </div>
         <section id="home" className="h-screen relative bg-black">
             <video
                 src="/bg-vid.mp4"
@@ -155,16 +125,17 @@ const Hero = () => {
                     <div className=" h-full flex flex-col items-center justify-center w-[95%] mx-auto text-center">
                         <h1 className=" font-extrabold text-2xl lg:text-5xl text-center mb-[30px]">
                             Welcome To <br />
-                            <span className=" text-[#EEAD0E] text-4xl lg:text-7xl uppercase"> Zach Technologies Industries</span> <br />
-                            <span className=" italic font-thin">Technologies beyond possibilities</span>
+                            <span className=" text-[#EEAD0E] text-2xl lg:text-7xl uppercase"> Zach Technologies Industries</span> <br />
+                            <span className=" text-xl lg:text-3xl italic font-thin">Technologies beyond possibilities</span>
                         </h1>
                         <Typewriter
                             texts={[
                                 "Build your dream website.",
                                 "Learn an industry level tech skill.",
                                 "Build your dream mobile app.",
+                                "Transform your business with cutting-edge technology",
                                 "Get your aesthetic graphics.",
-                                "Get a tech consultation",
+                                "Get free professional consultation",
                             ]}
                             typingSpeed={100}
                             deletingSpeed={50}
