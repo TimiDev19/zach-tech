@@ -7,14 +7,25 @@ type ServicesProps = {
 
 const Services = ({ type }: ServicesProps) => {
     return (
-        <div className=' min-h-[100vh] w-[100vw] overflow-x-hidden overflow-y-scroll text-white'>
+        <div className=' min-h-[100vh] w-[100vw] overflow-x-hidden overflow-y-scroll text-white pt-[85px]'>
             {
                 type === "web" &&
-                <div className=' pt-[85px] p-[2.5%] h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
+                <div className=' pt-[85px] p-[2.5%] h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between '>
                     <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
-                        <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-2'>Web Development</h1>
+                        <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-[10px]'>Web Development</h1>
                         <p className=' mb-[10px]'>
-                            Blog website, serach engine optimization (SEO), corpoare website, Real estate website, SME website, eCommerce website, dating website, website upgrading and scaling, host migration.
+                            <b>Your Website. Your Digital Empire. Your Success Story.</b> <br />
+                            In today's digital-first world, your website isn't just an online presence, it's your 24/7 sales team, brand ambassador, and growth engine. We build stunning, high-performance websites that don't just look amazing they convert visitors into customers and grow your business while you sleep. <br />
+                            From sleek corporate websites to powerful e-commerce platforms, we transform your vision into a digital reality that outshines your competition and delivers real ROI.
+                        </p>
+                        <p className=' mb-[10px]'>
+                            <b>✨ What makes us different:</b> <br />
+                            Lightning-fast loading speeds that keep visitors engaged. <br />
+                            Mobile-responsive designs that work flawlessly on every device. <br />
+                            SEO-optimized to rank higher on Google and attract organic traffic. <br />
+                            Conversion-focused layouts that turn browsers into buyers. <br />
+                            Ongoing support that keeps your site secure and up-to-date. <br /> <br />
+                            <b>Ready to dominate your industry online?</b>
                         </p>
                         <Link
                             href={"/contact"}
@@ -33,7 +44,21 @@ const Services = ({ type }: ServicesProps) => {
                     <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
                         <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-2'>Ui/Ux Design</h1>
                         <p className=' mb-[10px]'>
-                            Wireframing, UI design (mobile and website), UX design (mobile and website), Rebranding, Graphic design ,Motion pictures
+                            <b>Beautiful Designs That Make People Click, Buy & Come Back.</b> <br />
+                            Great design isn't just about making things pretty it's about creating experiences that users love, remember, and recommend. We blend psychology, aesthetics, and data to design interfaces that are not only visually stunning but also intuitive, accessible, and proven to convert.<br />
+                            Every color choice, every button placement, every animation is strategically crafted to guide users effortlessly from curiosity to conversion. Because at the end of the day, good design isn't just seen it's felt, and it drives results.
+                        </p>
+                        <p className=' mb-[10px]'>
+                            <b>🎨 Our design process includes:</b> <br />
+                            Deep user research and competitor analysis. <br />
+                            Strategic wireframing and information architecture. <br />
+                            High-fidelity mockups that bring your vision to life. <br />
+                            Interactive prototypes you can test before development. <br />
+                            User testing and data-driven design iterations. <br />
+                            Complete design systems and brand guidelines. <br />
+                            Mobile, web, and app UI/UX expertise. <br /> <br />
+
+                            <b>First impressions matter. Make yours unforgettable.</b>
                         </p>
                         <Link
                             href={"/contact"}
@@ -52,7 +77,21 @@ const Services = ({ type }: ServicesProps) => {
                     <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
                         <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-2'>Graphics Design</h1>
                         <p className=' mb-[10px]'>
-                            Figma, Corel draw, Photoshop Rebranding, Graphic design, Polotno studio, Motion pictures
+                            <b>Visuals That Stop Scrolls, Spark Emotions & Sell Ideas.</b> <br />
+                            In a world drowning in content, exceptional design is your secret weapon. We create bold, memorable visuals that cut through the noise whether it's a logo that becomes iconic, social media graphics that go viral, or marketing materials that convert like crazy.<br />
+                            Every brand has a story. We make yours impossible to ignore. From startups needing their first brand identity to established businesses ready for a fresh look, we craft designs that don't just look good they work hard for your business.
+                        </p>
+                        <p className=' mb-[10px]'>
+                            <b>✨ Design services that deliver:</b> <br />
+                            Brand identity design (logos, color palettes, typography systems). <br />
+                            Social media graphics that boost engagement. <br />
+                            Marketing materials (flyers, brochures, banners, business cards). <br />
+                            Product packaging and label design. <br />
+                            Infographics that simplify complex ideas. <br />
+                            Print and digital design in any format you need. <br />
+                            Complete rebranding for businesses ready to level up. <br /> <br />
+
+                            <b>Your brand deserves to be seen. Let's make it unforgettable.</b>
                         </p>
                         <Link
                             href={"/contact"}
@@ -71,7 +110,20 @@ const Services = ({ type }: ServicesProps) => {
                     <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
                         <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-2'>Mobile Development</h1>
                         <p className=' mb-[10px]'>
-                            Figma, Corel draw, Photoshop Rebranding, Graphic design, Polotno studio, Motion pictures
+                            <b>Put Your Business in Every Customer's Pocket.</b> <br />
+                            With over 150 million smartphone users in Nigeria and billions worldwide, mobile apps aren't the future they're the now. We craft powerful, intuitive mobile applications that keep your customers engaged, boost loyalty, and open new revenue streams you never knew existed.<br />
+                            Whether you need a stunning consumer app, a robust enterprise solution, or a game-changing startup MVP, we build cross-platform apps that work seamlessly on both iOS and Android saving you time and money while maximizing your reach.
+                        </p>
+                        <p className=' mb-[10px]'>
+                            <b>📱 What we deliver:</b> <br />
+                            Native iOS and Android apps that feel premium and polished <br />
+                            Cross-platform solutions (Flutter, React Native) for faster deployment <br />
+                            Seamless integration with payment systems, APIs, and cloud services <br />
+                            App Store and Google Play optimization and publishing <br />
+                            Push notifications, analytics, and features that drive engagement <br />
+                            Post-launch support and updates to keep your app competitive <br /> <br />
+
+                            <b>Your customers are on their phones. Are you?.</b>
                         </p>
                         <Link
                             href={"/contact"}
@@ -90,7 +142,21 @@ const Services = ({ type }: ServicesProps) => {
                     <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
                         <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-2'>Backend Development</h1>
                         <p className=' mb-[10px]'>
-                            Server maintenance,web hosting,server migration and much more.
+                            <b>The Invisible Power Behind Every Great Digital Experience.</b> <br />
+                            Your users never see it, but your backend is the engine that powers everything from processing payments to managing millions of users, from securing sensitive data to delivering lightning-fast performance. We build robust, scalable backend systems that handle complexity effortlessly so your business can grow without limits.<br />
+                            Think of us as the architects building an unshakeable foundation beneath your digital empire secure, efficient, and ready to scale from hundreds to millions of users without breaking a sweat.
+                        </p>
+                        <p className=' mb-[10px]'>
+                            <b>⚙️ What we engineer:</b> <br />
+                            High-performance APIs and server-side applications. <br />
+                            Secure database design and optimization (SQL, NoSQL, MongoDB). <br />
+                            Cloud infrastructure setup and management (AWS, Azure, Google Cloud). <br />
+                            Payment gateway integration (Paystack, Flutterwave, Stripe). <br />
+                            Authentication systems and enterprise-grade security. <br />
+                            Server migration, optimization, and ongoing maintenance. <br />
+                            Real-time features, webhooks, and third-party integrations <br /> <br />
+
+                            <b>Your business runs on data. We make it run smoothly.</b>
                         </p>
                         <Link
                             href={"/contact"}
@@ -102,6 +168,74 @@ const Services = ({ type }: ServicesProps) => {
                     <div className=' w-full lg:w-[45%] h-[40%] lg:h-[65%] flex flex-col items-start justify-center backend-bg rounded-2xl'></div>
                 </div>
             }
+
+            {
+                type === "fullstack" &&
+                <div className=' pt-[85px] p-[2.5%] h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
+                    <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
+                        <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-2'>Full Stack Development</h1>
+                        <p className=' mb-[10px]'>
+                            <b>Complete Solutions. From Idea to Launch. One Expert Team.</b> <br />
+                            Why juggle multiple vendors when you can have one powerhouse team that handles everything? We're full-stack specialists meaning we build your entire digital product from the ground up: beautiful frontends users love, powerful backends that handle anything you throw at them, and everything in between.<br />
+                            From concept to deployment, we're your single source of truth faster timelines, seamless integration, unified vision, and no finger-pointing when things need fixing. Just one team obsessed with turning your idea into a thriving digital product.
+                        </p>
+                        <p className=' mb-[10px]'>
+                            <b>🚀 End-to-end expertise:</b> <br />
+                            Complete web application development <br />
+                            Frontend + Backend seamlessly integrated <br />
+                            Database design, API development, and cloud deployment <br />
+                            Responsive design across all devices <br />
+                            Payment systems, user authentication, and admin dashboards <br />
+                            Testing, debugging, and quality assurance <br />
+                            Launch strategy and ongoing support <br /> <br />
+
+                            <b>One vision. One team. Infinite possibilities.</b>
+                        </p>
+                        <Link
+                            href={"/contact"}
+                            className=' py-2 px-[20px] bg-[#000033] rounded-xl hover:bg-transparent hover:text-[#000] transition-all duration-500'
+                        >
+                            Get Started
+                        </Link>
+                    </div>
+                    <div className=' w-full lg:w-[45%] h-[40%] lg:h-[65%] flex flex-col items-start justify-center fs-bg rounded-2xl'></div>
+                </div>
+            }
+
+            {
+                type === "data" &&
+                <div className=' pt-[85px] p-[2.5%] h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
+                    <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
+                        <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-2'>Data Analysis & Business Intelligence</h1>
+                        <p className=' mb-[10px]'>
+                            <b>Turn Your Data Into Your Competitive Advantage.</b> <br />
+                            Your business generates tons of data every day customer behavior, sales patterns, market trends but are you actually using it to make smarter decisions? We transform raw data into crystal clear insights that reveal opportunities you didn't know existed and help you make decisions with confidence, not guesswork.<br />
+                            Stop flying blind. Start making data-driven decisions that accelerate growth, optimize operations, and give you an unfair advantage over competitors still relying on intuition alone.
+                        </p>
+                        <p className=' mb-[10px]'>
+                            <b>📊 What we unlock for you:</b> <br />
+                            Custom dashboards and visual reports you can actually understand. <br />
+                            Predictive analytics to forecast trends and plan ahead. <br />
+                            Customer behavior analysis to improve marketing ROI. <br />
+                            Sales and performance tracking with actionable insights. <br />
+                            Data cleaning, organization, and automation. <br />
+                            Excel, Power BI, Python, and SQL expertise. <br />
+                            Training your team to become data-literate <br /> <br />
+
+                            <b>Stop guessing. Start knowing. Make data your superpower.</b>
+                        </p>
+                        <Link
+                            href={"/contact"}
+                            className=' py-2 px-[20px] bg-[#000033] rounded-xl hover:bg-transparent hover:text-[#000] transition-all duration-500'
+                        >
+                            Get Started
+                        </Link>
+                    </div>
+                    <div className=' w-full lg:w-[45%] h-[40%] lg:h-[65%] flex flex-col items-start justify-center fs-bg rounded-2xl'></div>
+                </div>
+            }
+
+
             <div className=' min-h-[100vh] w-[100vw] bg-gradient-to-b to-[#000033] from-[#EEAD0E] pt-[90px] px-[2.5%]'>
                 <h1 className=' font-extrabold text-3xl lg:text-7xl mb-[50px] text-center'>Our Process</h1>
                 <div className=' w-full grid grid-cols-1 lg:grid-cols-3 mb-[20px]'>
@@ -130,7 +264,7 @@ const Services = ({ type }: ServicesProps) => {
                     </div>
                 </div>
                 <div className=' w-[90%] h-[50vh] border border-[#EEAD0E] mx-auto flex flex-col items-center justify-center'>
-                    <h1 className=' font-semibold text-3xl lg:text-5xl'>Read to build something great?</h1>
+                    <h1 className=' font-semibold text-3xl lg:text-5xl text-center'>Read to build something great?</h1>
                     <Link
                         href={"/contact"}
                         className=' py-2 px-[20px] bg-[#000033] rounded-xl hover:bg-transparent hover:text-white transition-all duration-500'

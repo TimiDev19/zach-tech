@@ -28,6 +28,8 @@ const OurServices = () => {
     const graphics_id = "graphics"
     const mobile_id = "mobile"
     const backend_id = "backend"
+    const fullstack_id = "fullstack" 
+    const data_id = "data"
     return (
         <div
             id="service"
@@ -137,7 +139,7 @@ const OurServices = () => {
                                 "Complete Solutions. From Idea to Launch. One Expert Team."
                                 Why juggle multiple vendors when you can have one powerhouse team that handles everything?
                             </p>
-                            <Link href={`/services/${backend_id}`} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
+                            <Link href={`/services/${fullstack_id}`} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
                         </div>
                     </div>
 
@@ -153,7 +155,7 @@ const OurServices = () => {
                             "Turn Your Data Into Your Competitive Advantage." <br />
 Turn messy data into actionable insights. Make smarter decisions faster with custom dashboards and predictive analytics.
                             </p>
-                            <Link href={`/services/${backend_id}`} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
+                            <Link href={`/services/${data_id}`} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
                         </div>
                     </div>
                 </div>
