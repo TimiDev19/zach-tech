@@ -7,24 +7,24 @@ type ServicesProps = {
 
 const Services = ({ type }: ServicesProps) => {
     return (
-        <div className=' min-h-[100vh] w-[100vw] overflow-x-hidden overflow-y-scroll text-white pt-[85px]'>
+        <div className=' min-h-[100vh] w-[100vw] overflow-x-hidden overflow-y-scroll text-white pt-[85px] text-justify'>
             {
                 type === "web" &&
                 <div className=' pt-[85px] p-[2.5%] h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between '>
-                    <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
-                        <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-[10px]'>Web Development</h1>
-                        <p className=' mb-[10px]'>
+                    <div className=' text-justify w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
+                        <h1 className=' font-extrabold text-3xl lg:text-7xl mb-[10px]'>Web Development</h1>
+                        <p className=' mb-[10px] text-justify w-full'>
                             <b>Your Website. Your Digital Empire. Your Success Story.</b> <br />
                             In today's digital-first world, your website isn't just an online presence, it's your 24/7 sales team, brand ambassador, and growth engine. We build stunning, high-performance websites that don't just look amazing they convert visitors into customers and grow your business while you sleep. <br />
                             From sleek corporate websites to powerful e-commerce platforms, we transform your vision into a digital reality that outshines your competition and delivers real ROI.
                         </p>
                         <p className=' mb-[10px]'>
                             <b>✨ What makes us different:</b> <br />
-                            Lightning-fast loading speeds that keep visitors engaged. <br />
-                            Mobile-responsive designs that work flawlessly on every device. <br />
-                            SEO-optimized to rank higher on Google and attract organic traffic. <br />
-                            Conversion-focused layouts that turn browsers into buyers. <br />
-                            Ongoing support that keeps your site secure and up-to-date. <br /> <br />
+                            1. Lightning-fast loading speeds that keep visitors engaged. <br />
+                            2. Mobile-responsive designs that work flawlessly on every device. <br />
+                            3. SEO-optimized to rank higher on Google and attract organic traffic. <br />
+                            4. Conversion-focused layouts that turn browsers into buyers. <br />
+                            5. Ongoing support that keeps your site secure and up-to-date. <br /> <br />
                             <b>Ready to dominate your industry online?</b>
                         </p>
                         <Link
@@ -43,20 +43,20 @@ const Services = ({ type }: ServicesProps) => {
                 <div className=' pt-[85px] p-[2.5%] h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
                     <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
                         <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-2'>Ui/Ux Design</h1>
-                        <p className=' mb-[10px]'>
-                            <b>Beautiful Designs That Make People Click, Buy & Come Back.</b> <br />
+                        <p className=' mb-[10px] text-justify'>
+                            <b className=' block'>Beautiful Designs That Make People Click, Buy & Come Back.</b>
                             Great design isn't just about making things pretty it's about creating experiences that users love, remember, and recommend. We blend psychology, aesthetics, and data to design interfaces that are not only visually stunning but also intuitive, accessible, and proven to convert.<br />
                             Every color choice, every button placement, every animation is strategically crafted to guide users effortlessly from curiosity to conversion. Because at the end of the day, good design isn't just seen it's felt, and it drives results.
                         </p>
                         <p className=' mb-[10px]'>
                             <b>🎨 Our design process includes:</b> <br />
-                            Deep user research and competitor analysis. <br />
-                            Strategic wireframing and information architecture. <br />
-                            High-fidelity mockups that bring your vision to life. <br />
-                            Interactive prototypes you can test before development. <br />
-                            User testing and data-driven design iterations. <br />
-                            Complete design systems and brand guidelines. <br />
-                            Mobile, web, and app UI/UX expertise. <br /> <br />
+                            1. Deep user research and competitor analysis. <br />
+                            2. Strategic wireframing and information architecture. <br />
+                            3. High-fidelity mockups that bring your vision to life. <br />
+                            4. Interactive prototypes you can test before development. <br />
+                            5. User testing and data-driven design iterations. <br />
+                            6. Complete design systems and brand guidelines. <br />
+                            7. Mobile, web, and app UI/UX expertise. <br /> <br />
 
                             <b>First impressions matter. Make yours unforgettable.</b>
                         </p>
@@ -83,13 +83,13 @@ const Services = ({ type }: ServicesProps) => {
                         </p>
                         <p className=' mb-[10px]'>
                             <b>✨ Design services that deliver:</b> <br />
-                            Brand identity design (logos, color palettes, typography systems). <br />
-                            Social media graphics that boost engagement. <br />
-                            Marketing materials (flyers, brochures, banners, business cards). <br />
-                            Product packaging and label design. <br />
-                            Infographics that simplify complex ideas. <br />
-                            Print and digital design in any format you need. <br />
-                            Complete rebranding for businesses ready to level up. <br /> <br />
+                            1. Brand identity design (logos, color palettes, typography systems). <br />
+                            2. Social media graphics that boost engagement. <br />
+                            3. Marketing materials (flyers, brochures, banners, business cards). <br />
+                            4. Product packaging and label design. <br />
+                            5. Infographics that simplify complex ideas. <br />
+                            6. Print and digital design in any format you need. <br />
+                            7. Complete rebranding for businesses ready to level up. <br /> <br />
 
                             <b>Your brand deserves to be seen. Let's make it unforgettable.</b>
                         </p>
@@ -116,12 +116,12 @@ const Services = ({ type }: ServicesProps) => {
                         </p>
                         <p className=' mb-[10px]'>
                             <b>📱 What we deliver:</b> <br />
-                            Native iOS and Android apps that feel premium and polished <br />
-                            Cross-platform solutions (Flutter, React Native) for faster deployment <br />
-                            Seamless integration with payment systems, APIs, and cloud services <br />
-                            App Store and Google Play optimization and publishing <br />
-                            Push notifications, analytics, and features that drive engagement <br />
-                            Post-launch support and updates to keep your app competitive <br /> <br />
+                            1. Native iOS and Android apps that feel premium and polished <br />
+                            2. Cross-platform solutions (Flutter, React Native) for faster deployment <br />
+                            3. Seamless integration with payment systems, APIs, and cloud services <br />
+                            4. App Store and Google Play optimization and publishing <br />
+                            5. Push notifications, analytics, and features that drive engagement <br />
+                            6. Post-launch support and updates to keep your app competitive <br /> <br />
 
                             <b>Your customers are on their phones. Are you?.</b>
                         </p>
@@ -148,13 +148,13 @@ const Services = ({ type }: ServicesProps) => {
                         </p>
                         <p className=' mb-[10px]'>
                             <b>⚙️ What we engineer:</b> <br />
-                            High-performance APIs and server-side applications. <br />
-                            Secure database design and optimization (SQL, NoSQL, MongoDB). <br />
-                            Cloud infrastructure setup and management (AWS, Azure, Google Cloud). <br />
-                            Payment gateway integration (Paystack, Flutterwave, Stripe). <br />
-                            Authentication systems and enterprise-grade security. <br />
-                            Server migration, optimization, and ongoing maintenance. <br />
-                            Real-time features, webhooks, and third-party integrations <br /> <br />
+                            1. High-performance APIs and server-side applications. <br />
+                            2. Secure database design and optimization (SQL, NoSQL, MongoDB). <br />
+                            3. Cloud infrastructure setup and management (AWS, Azure, Google Cloud). <br />
+                            4. Payment gateway integration (Paystack, Flutterwave, Stripe). <br />
+                            5. Authentication systems and enterprise-grade security. <br />
+                            6. Server migration, optimization, and ongoing maintenance. <br />
+                            7. Real-time features, webhooks, and third-party integrations <br /> <br />
 
                             <b>Your business runs on data. We make it run smoothly.</b>
                         </p>
@@ -181,13 +181,13 @@ const Services = ({ type }: ServicesProps) => {
                         </p>
                         <p className=' mb-[10px]'>
                             <b>🚀 End-to-end expertise:</b> <br />
-                            Complete web application development <br />
-                            Frontend + Backend seamlessly integrated <br />
-                            Database design, API development, and cloud deployment <br />
-                            Responsive design across all devices <br />
-                            Payment systems, user authentication, and admin dashboards <br />
-                            Testing, debugging, and quality assurance <br />
-                            Launch strategy and ongoing support <br /> <br />
+                            1. Complete web application development <br />
+                            2. Frontend + Backend seamlessly integrated <br />
+                            3. Database design, API development, and cloud deployment <br />
+                            4. Responsive design across all devices <br />
+                            5. Payment systems, user authentication, and admin dashboards <br />
+                            6. Testing, debugging, and quality assurance <br />
+                            7. Launch strategy and ongoing support <br /> <br />
 
                             <b>One vision. One team. Infinite possibilities.</b>
                         </p>
@@ -214,13 +214,13 @@ const Services = ({ type }: ServicesProps) => {
                         </p>
                         <p className=' mb-[10px]'>
                             <b>📊 What we unlock for you:</b> <br />
-                            Custom dashboards and visual reports you can actually understand. <br />
-                            Predictive analytics to forecast trends and plan ahead. <br />
-                            Customer behavior analysis to improve marketing ROI. <br />
-                            Sales and performance tracking with actionable insights. <br />
-                            Data cleaning, organization, and automation. <br />
-                            Excel, Power BI, Python, and SQL expertise. <br />
-                            Training your team to become data-literate <br /> <br />
+                            1. Custom dashboards and visual reports you can actually understand. <br />
+                            2. Predictive analytics to forecast trends and plan ahead. <br />
+                            3. Customer behavior analysis to improve marketing ROI. <br />
+                            4. Sales and performance tracking with actionable insights. <br />
+                            5. Data cleaning, organization, and automation. <br />
+                            6. Excel, Power BI, Python, and SQL expertise. <br />
+                            7. Training your team to become data-literate <br /> <br />
 
                             <b>Stop guessing. Start knowing. Make data your superpower.</b>
                         </p>
