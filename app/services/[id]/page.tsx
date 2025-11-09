@@ -11,7 +11,7 @@ export default async function page({
     const { id } = await params; // ✅ unwrap Promise
 
     return (
-        <div className=' h-[100vh] w-[100vw] overflow-x-hidden overflow-y-scroll text-white'>
+        <div className=' min-h-[100vh] w-[100vw] overflow-x-hidden overflow-y-scroll text-white pt-[85px]'>
             <Services type={id} />
             <Footer />
         </div>

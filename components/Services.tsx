@@ -7,10 +7,10 @@ type ServicesProps = {
 
 const Services = ({ type }: ServicesProps) => {
     return (
-        <div className=' min-h-[100vh] w-[100vw] overflow-x-hidden overflow-y-scroll text-white pt-[85px] text-justify'>
+        <div className=' min-h-[100vh] w-[100vw] overflow-x-hidden overflow-y-scroll text-white block text-justify'>
             {
                 type === "web" &&
-                <div className=' pt-[85px] p-[2.5%] h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between '>
+                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between '>
                     <div className=' text-justify w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
                         <h1 className=' font-extrabold text-3xl lg:text-7xl mb-[10px]'>Web Development</h1>
                         <p className=' mb-[10px] text-justify w-full'>
@@ -34,13 +34,13 @@ const Services = ({ type }: ServicesProps) => {
                             Get Started
                         </Link>
                     </div>
-                    <div className=' w-full lg:w-[45%] h-[40%] lg:h-[65%] flex flex-col items-start justify-center webDev-bg rounded-2xl'></div>
+                    <div className=' w-full lg:w-[45%] h-[40vh] lg:h-[65vh] block mt-[20px] webDev-bg rounded-2xl'></div>
                 </div>
             }
 
             {
                 type === "ui" &&
-                <div className=' pt-[85px] p-[2.5%] h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
+                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
                     <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
                         <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-2'>Ui/Ux Design</h1>
                         <p className=' mb-[10px] text-justify'>
@@ -67,13 +67,13 @@ const Services = ({ type }: ServicesProps) => {
                             Get Started
                         </Link>
                     </div>
-                    <div className=' w-full lg:w-[45%] h-[40%] lg:h-[65%] flex flex-col items-start justify-center uiux-bg rounded-2xl'></div>
+                    <div className=' w-full lg:w-[45%] h-[40vh] lg:h-[65vh] flex flex-col items-start justify-center uiux-bg rounded-2xl'></div>
                 </div>
             }
 
             {
                 type === "graphics" &&
-                <div className=' pt-[85px] p-[2.5%] h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
+                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
                     <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
                         <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-2'>Graphics Design</h1>
                         <p className=' mb-[10px]'>
@@ -100,13 +100,13 @@ const Services = ({ type }: ServicesProps) => {
                             Get Started
                         </Link>
                     </div>
-                    <div className=' w-full lg:w-[45%] h-[40%] lg:h-[65%] flex flex-col items-start justify-center graphics-bg rounded-2xl'></div>
+                    <div className=' w-full lg:w-[45%] h-[40vh] lg:h-[65vh] flex flex-col items-start justify-center graphics-bg rounded-2xl'></div>
                 </div>
             }
 
             {
                 type === "mobile" &&
-                <div className=' pt-[85px] p-[2.5%] h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
+                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
                     <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
                         <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-2'>Mobile Development</h1>
                         <p className=' mb-[10px]'>
@@ -132,13 +132,13 @@ const Services = ({ type }: ServicesProps) => {
                             Get Started
                         </Link>
                     </div>
-                    <div className=' w-full lg:w-[45%] h-[40%] lg:h-[65%] flex flex-col items-start justify-center mobile-bg rounded-2xl'></div>
+                    <div className=' w-full lg:w-[45%] h-[40vh] lg:h-[65vh] flex flex-col items-start justify-center mobile-bg rounded-2xl'></div>
                 </div>
             }
 
             {
                 type === "backend" &&
-                <div className=' pt-[85px] p-[2.5%] h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
+                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
                     <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
                         <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-2'>Backend Development</h1>
                         <p className=' mb-[10px]'>
@@ -165,13 +165,13 @@ const Services = ({ type }: ServicesProps) => {
                             Get Started
                         </Link>
                     </div>
-                    <div className=' w-full lg:w-[45%] h-[40%] lg:h-[65%] flex flex-col items-start justify-center backend-bg rounded-2xl'></div>
+                    <div className=' w-full lg:w-[45%] h-[40vh] lg:h-[65vh] flex flex-col items-start justify-center backend-bg rounded-2xl'></div>
                 </div>
             }
 
             {
                 type === "fullstack" &&
-                <div className=' pt-[85px] p-[2.5%] h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
+                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
                     <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
                         <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-2'>Full Stack Development</h1>
                         <p className=' mb-[10px]'>
@@ -198,13 +198,13 @@ const Services = ({ type }: ServicesProps) => {
                             Get Started
                         </Link>
                     </div>
-                    <div className=' w-full lg:w-[45%] h-[40%] lg:h-[65%] flex flex-col items-start justify-center fs-bg rounded-2xl'></div>
+                    <div className=' w-full lg:w-[45%] h-[40vh] lg:h-[65vh] flex flex-col items-start justify-center fs-bg rounded-2xl'></div>
                 </div>
             }
 
             {
                 type === "data" &&
-                <div className=' pt-[85px] p-[2.5%] h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
+                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
                     <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
                         <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-2'>Data Analysis & Business Intelligence</h1>
                         <p className=' mb-[10px]'>
@@ -231,7 +231,7 @@ const Services = ({ type }: ServicesProps) => {
                             Get Started
                         </Link>
                     </div>
-                    <div className=' w-full lg:w-[45%] h-[40%] lg:h-[65%] flex flex-col items-start justify-center fs-bg rounded-2xl'></div>
+                    <div className=' w-full lg:w-[45%] h-[40vh] lg:h-[65vh] flex flex-col items-start justify-center fs-bg rounded-2xl'></div>
                 </div>
             }
 
