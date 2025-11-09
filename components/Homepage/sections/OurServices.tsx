@@ -55,7 +55,7 @@ const OurServices = () => {
                         <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px]">
                             <h1 className="text-xl font-extrabold">Web Development</h1>
                             <p className=" text-sm">
-                                <b>Your Website. Your Digital Empire. Your Success Story.</b> <br />
+                                <b className="text-black">Your Website. Your Digital Empire. Your Success Story.</b> <br />
                                 Transform your business with stunning, high performance websites that convert visitors into customers. From corporate sites to e-commerce powerhouses. We make your online presence impossible to ignore.
                             </p>
                             <Link href={`/services/${web_id}`} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
@@ -71,7 +71,7 @@ const OurServices = () => {
                         <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px]">
                             <h1 className="text-xl font-extrabold">Ui/Ux Design</h1>
                             <p className=" text-sm">
-                                <b>Beautiful Designs That Make People Click, Buy & Come Back.</b> <br />
+                                <b className="text-black">Beautiful Designs That Make People Click, Buy & Come Back.</b> <br />
                                 Reach millions with powerful mobile apps for iOS and Android. We build cross-platform solutions that keep customers engaged and revenue flowing.
                             </p>
                             <Link href={`/services/${ui_id}`} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
@@ -87,7 +87,7 @@ const OurServices = () => {
                         <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px]">
                             <h1 className="text-xl font-extrabold">Graphics Design</h1>
                             <p className=" text-sm">
-                                <b>Visuals That Stop Scrolls, Spark Emotions & Sell Ideas.</b> <br />
+                                <b className="text-black">Visuals That Stop Scrolls, Spark Emotions & Sell Ideas.</b> <br />
                                 From iconic logos to scroll-stopping social media graphics. We create designs that capture attention and convert browsers into believer
                             </p>
                             <Link href={`/services/${graphics_id}`} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
@@ -103,7 +103,7 @@ const OurServices = () => {
                         <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[300px]">
                             <h1 className="text-xl font-extrabold">Mobile Development</h1>
                             <p className=" text-sm">
-                                <b>Put Your Business in Every Customer's Pocket.</b> <br />
+                                <b className="text-black">Put Your Business in Every Customer's Pocket.</b> <br />
                                 Reach millions with powerful mobile apps for iOS and Android. We build cross-platform solutions that keep customers engaged and revenue flowing.
 
                             </p>
@@ -120,7 +120,7 @@ const OurServices = () => {
                         <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px]">
                             <h1 className="text-xl font-extrabold">Backend Development</h1>
                             <p className=" text-sm">
-                                <b>The Invisible Power Behind Every Great Digital Experience.</b> <br />
+                                <b className="text-black">The Invisible Power Behind Every Great Digital Experience.</b> <br />
                                 Scalable, secure backend systems that handle millions of users effortlessly. Fast APIs, robust databases, cloud-ready infrastructure.
                             </p>
                             <Link href={`/services/${backend_id}`} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
@@ -136,7 +136,7 @@ const OurServices = () => {
                         <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px]">
                             <h1 className="text-xl font-extrabold">Full Stack Development</h1>
                             <p className=" text-sm">
-                                <b>Complete Solutions. From Idea to Launch. One Expert Team.</b> <br />
+                                <b className="text-black">Complete Solutions. From Idea to Launch. One Expert Team.</b> <br />
                                 Why juggle multiple vendors when you can have one powerhouse team that handles everything?
                             </p>
                             <Link href={`/services/${fullstack_id}`} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
@@ -152,7 +152,7 @@ const OurServices = () => {
                         <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px]">
                             <h1 className="text-xl font-extrabold">Data Analysis</h1>
                             <p className=" text-sm">
-                                <b>Turn Your Data Into Your Competitive Advantage.</b> <br />
+                                <b className="text-black">Turn Your Data Into Your Competitive Advantage.</b> <br />
                                 Turn messy data into actionable insights. Make smarter decisions faster with custom dashboards and predictive analytics.
                             </p>
                             <Link href={`/services/${data_id}`} className=" text-sm underline text-[#000033] hover:text-white duration-500 transition-all">Read More</Link>
