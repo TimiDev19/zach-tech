@@ -385,7 +385,7 @@ const cardVariants = {
 
 export default function TeamSection() {
   return (
-    <section id="team" className="relative py-28 overflow-hidden bg-gradient-to-br from-[#0A0A2A] to-[#000033] text-white">
+    <section id="team" className="relative py-28 overflow-hidden bg-white  text-white">
       {/* Background Glow */}
       <div className="absolute inset-0">
         <div className="absolute top-1/3 left-1/4 w-[300px] h-[300px] bg-indigo-500/30 blur-[120px] rounded-full"></div>
@@ -400,10 +400,10 @@ export default function TeamSection() {
         viewport={{ once: true }}
         className="relative z-10 text-center mb-16"
       >
-        <h2 className="text-5xl font-extrabold mb-4 bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">
+        <h2 className="text-5xl font-extrabold mb-4 bg-[#000033] bg-clip-text text-transparent">
           Meet Our Team
         </h2>
-        <p className="text-gray-300 text-lg">
+        <p className="text-cyan-400 text-lg">
           Innovative minds behind our creative solutions.
         </p>
       </motion.div>
@@ -427,7 +427,7 @@ export default function TeamSection() {
               scale: 1.03,
             }}
             transition={{ type: "spring", stiffness: 150, damping: 10 }}
-            className="group relative bg-white/10 backdrop-blur-lg rounded-3xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 cursor-pointer"
+            className="group relative bg-[#000033] backdrop-blur-lg rounded-3xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 cursor-pointer"
           >
             {/* Image */}
             <div className="overflow-hidden">

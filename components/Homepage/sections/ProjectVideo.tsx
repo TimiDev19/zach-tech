@@ -51,67 +51,20 @@ const ProjectVideo = () => {
         return () => clearInterval(timer);
     }, []);
     return (
-        // <div
-        //     id="projects"
-        //     className=" z-0 bg-white pt-0 w-full text-xl mt-[60px] mb-[10vh] lg:mb-[30vh]"
-        // >
-        //     <h1
-        //         className={`text-center text-[#000033] text-[45px]`}
-        //     >
-        //         Our <span className=" text-[#EEAD0E]">Projects</span>
-        //     </h1>
-        //     <div className="relative w-full h-full">
-        //         <div
-        //             id=""
-        //             className={`relative z-0 overflow-y-visibl h-[30vh] lg:h-[100vh] w-[100vw] border border-[#EEAD0E] flex items-center justify-start  px-[2.5%] ${slides[index].bg}`}
-        //         >
-        //             {slides[index].content}
-        //         </div>
-        //     </div>
-        // </div>
         <div
             id='projects'
-            className=' lg:h-[90vh] w-[100vw] pt-[85px] block px-[20px] bg-gradient-to-br from-[#EEAD0E] to-[#000033]'
+            className=' lg:h-[90vh] w-[100vw] pt-[85px] block px-[20px] bg-white'
         >
             <h1
                 className={`text-center text-[#000033] text-[45px]`}
             >
                 Our <span className=" text-[#EEAD0E]">Projects</span>
             </h1>
-            {/* <div
-                className=' h-[50vh] lg:h-[70%] w-[100vw] overflow-x-scroll py-[10px]'
-            >
-                <div className=' text-white p-[10px] inline-block mr-[10px] h-full w-[80vw] lg:w-[400px] bg-[#000033]/50 backdrop-blur-md border-2 border-[#000033] rounded-xl flex-col items-center justify-start'>
-                    <div className=' apexium w-full h-[45%] rounded-t-xl mb-[20px]'>
-                    </div>
-                    <h1 className=' text-2xl font-extrabold'>Company Website</h1>
-                    <p>
-                    This is a fully funtional and responsive website for the world's FIRST web3 HR service, clearly stating various things about them mixing aesthetics with efficiency.
-                    </p>
-                </div>
-
-                <div className=' text-white p-[10px] inline-block mr-[10px] h-full w-[80vw] lg:w-[400px] bg-[#000033]/50 backdrop-blur-md border-2 border-[#000033] rounded-xl flex-col items-center justify-start'>
-                    <div className=' apexium w-full h-[45%] rounded-t-xl mb-[20px]'>
-                    </div>
-                    <h1 className=' text-2xl font-extrabold'>Company Website</h1>
-                    <p>
-                    This is a fully funtional and responsive website for the world's FIRST web3 HR service, clearly stating various things about them mixing aesthetics with efficiency.
-                    </p>
-                </div>
-
-                <div className=' text-white p-[10px] inline-block mr-[10px] h-full w-[80vw] lg:w-[400px] bg-[#000033]/50 backdrop-blur-md border-2 border-[#000033] rounded-xl flex-col items-center justify-start'>
-                    <div className=' apexium w-full h-[45%] rounded-t-xl mb-[20px]'>
-                    </div>
-                    <h1 className=' text-2xl font-extrabold'>Company Website</h1>
-                    <p>
-                    This is a fully funtional and responsive website for the world's FIRST web3 HR service, clearly stating various things about them mixing aesthetics with efficiency.
-                    </p>
-                </div>
-            </div> */}
+            
             <div
                 className="h-[50vh] lg:h-[70%] w-screen overflow-x-auto flex space-x-4 py-2 px-2 snap-x snap-mandatory"
             >
-                <div className="text-white p-4 flex-shrink-0 h-full w-[80vw] lg:w-[400px] bg-[#000033]/50 backdrop-blur-md border-2 border-[#000033] rounded-xl flex flex-col items-start justify-start snap-center">
+                <div className="text-white p-4 flex-shrink-0 h-full w-[80vw] lg:w-[400px] bg-[#000033]/80 backdrop-blur-md border-2 border-[#000033] rounded-xl flex flex-col items-start justify-start snap-center">
                     <div className="apexium w-full h-[45%] rounded-t-xl mb-5"></div>
                     <h1 className="text-2xl font-extrabold">Company Website</h1>
                     <p>
@@ -120,7 +73,7 @@ const ProjectVideo = () => {
                     </p>
                 </div>
 
-                <div className="text-white p-4 flex-shrink-0 h-full w-[80vw] lg:w-[400px] bg-[#000033]/50 backdrop-blur-md border-2 border-[#000033] rounded-xl flex flex-col items-start justify-start snap-center">
+                <div className="text-white p-4 flex-shrink-0 h-full w-[80vw] lg:w-[400px] bg-[#000033]/80 backdrop-blur-md border-2 border-[#000033] rounded-xl flex flex-col items-start justify-start snap-center">
                     <div className="apexium w-full h-[45%] rounded-t-xl mb-5"></div>
                     <h1 className="text-2xl font-extrabold">Company Website</h1>
                     <p>
@@ -129,7 +82,7 @@ const ProjectVideo = () => {
                     </p>
                 </div>
 
-                <div className="text-white p-4 flex-shrink-0 h-full w-[80vw] lg:w-[400px] bg-[#000033]/50 backdrop-blur-md border-2 border-[#000033] rounded-xl flex flex-col items-start justify-start snap-center">
+                <div className="text-white p-4 flex-shrink-0 h-full w-[80vw] lg:w-[400px] bg-[#000033]/80 backdrop-blur-md border-2 border-[#000033] rounded-xl flex flex-col items-start justify-start snap-center">
                     <div className="apexium w-full h-[45%] rounded-t-xl mb-5"></div>
                     <h1 className="text-2xl font-extrabold">Company Website</h1>
                     <p>

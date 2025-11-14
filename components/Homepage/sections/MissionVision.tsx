@@ -3,10 +3,10 @@ import React from 'react'
 
 const MissionVision = () => {
     return (
-        <div id='about' className=' lg:h-[100vh] w-[100vw] bg-gradient-to-bl from-[#000033] to-[#EEAD0E] pt-[85px]'>
+        <div id='about' className=' lg:h-[100vh] w-[100vw] bg-white pt-[85px]'>
             <FadeInFromTop>
                 <div className=' h-full w-full flex flex-col lg:flex-row items-center justify-between px-[2%]'>
-                    <div className=' w-[95%] lg:w-[30%] h-[60vh] max-sm:mb-[20px] lg:h-[85%] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-white hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex-col items-center justify-start'>
+                    <div className=' w-[95%] lg:w-[30%] h-[60vh] max-sm:mb-[20px] lg:h-[85%] bg-[#EEAD0E]/60 border-2 rounded-xl border-[#EEAD0E]/80 backdrop-blur-md text-[#000033] cursor-pointer hover:bg-[#EEAD0E]/40 transition-all duration-300 p-[20px] flex-col items-center justify-start'>
                         <div className=' w-full h-[45%] mission-bg rounded-t-xl mb-[30px]'></div>
                         <div className=' w-full'>
                             <h1 className=' text-2xl font-extrabold'>Our Mission</h1>
@@ -16,7 +16,7 @@ const MissionVision = () => {
                         </div>
                     </div>
 
-                    <div className=' w-[95%] lg:w-[30%] h-[60vh] max-sm:mb-[20px] lg:h-[85%] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-white hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex-col items-center justify-start'>
+                    <div className=' w-[95%] lg:w-[30%] h-[60vh] max-sm:mb-[20px] lg:h-[85%] bg-[#EEAD0E]/60 border-2 rounded-xl border-[#EEAD0E]/80 backdrop-blur-md text-[#000033] cursor-pointer hover:bg-[#EEAD0E]/40 transition-all duration-300 p-[20px] flex-col items-center justify-start'>
                         <div className=' w-full h-[45%] vision-bg rounded-t-xl mb-[30px]'></div>
                         <div className=' w-full'>
                             <h1 className=' text-2xl font-extrabold'>Our Vision</h1>
@@ -26,7 +26,7 @@ const MissionVision = () => {
                         </div>
                     </div>
 
-                    <div className=' w-[95%] lg:w-[30%] h-[60vh] max-sm:mb-[20px] lg:h-[85%] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-white hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex-col items-center justify-start'>
+                    <div className=' w-[95%] lg:w-[30%] h-[60vh] max-sm:mb-[20px] lg:h-[85%] bg-[#EEAD0E]/60 border-2 rounded-xl border-[#EEAD0E]/80 backdrop-blur-md text-[#000033] cursor-pointer hover:bg-[#EEAD0E]/40 transition-all duration-300 p-[20px] flex-col items-center justify-start'>
                         <div className=' w-full h-[45%] core-bg rounded-t-xl mb-[30px]'></div>
                         <div className=' w-full'>
                             <h1 className=' text-2xl font-extrabold'>Our Core Values</h1>
