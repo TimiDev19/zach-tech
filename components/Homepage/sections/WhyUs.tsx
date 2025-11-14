@@ -64,6 +64,22 @@ const WhyUs = () => {
                             <div>
                                 <CountUp
                                     from={0}
+                                    to={5}
+                                    separator=","
+                                    direction="up"
+                                    duration={1}
+                                    onStart={() => { }}
+                                    onEnd={() => { }}
+                                    className="count-up-text text-[#000033] font-extrabold text-6xl"
+                                />
+                            </div>
+                            <h1 className="text-lg lg:text-xl">Clients</h1>
+                        </div>
+
+                        <div className=" bg-transparent mb-[20px] flex flex-col items-center justify-center rounded-lg text-[#000033] font-extrabold text-3xl lg:text-6xl">
+                            <div>
+                                <CountUp
+                                    from={0}
                                     to={6}
                                     separator=","
                                     direction="up"

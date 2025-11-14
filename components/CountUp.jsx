@@ -1,5 +1,6 @@
 // import { useEffect, useRef } from 'react';
-// import { useInView, useMotionValue, useSpring } from 'motion/react';
+// import { useMotionValue, useSpring } from 'motion/react';
+// import { useInView } from 'react-intersection-observer';
 
 // export default function CountUp({
 //   to,
@@ -11,32 +12,37 @@
 //   startWhen = true,
 //   separator = '',
 //   onStart,
-//   onEnd
+//   onEnd,
+//   threshold = 0.4, // how much should be visible before triggering
 // }) {
 //   const ref = useRef(null);
 //   const motionValue = useMotionValue(direction === 'down' ? to : from);
+//   const { ref: inViewRef, inView } = useInView({
+//     triggerOnce: false, // 👈 re-triggers every time it comes into view
+//     threshold,          // how much of the element must be visible
+//   });
 
+//   // Combine refs (so both motion and intersection observers work)
+//   const setRefs = (node) => {
+//     ref.current = node;
+//     inViewRef(node);
+//   };
+
+//   // --- Motion spring setup ---
 //   const damping = 20 + 40 * (1 / duration);
 //   const stiffness = 100 * (1 / duration);
 
 //   const springValue = useSpring(motionValue, {
 //     damping,
-//     stiffness
+//     stiffness,
 //   });
 
-//   const isInView = useInView(ref, { once: true, margin: '0px' });
-
-//   const getDecimalPlaces = num => {
+//   const getDecimalPlaces = (num) => {
 //     const str = num.toString();
-
 //     if (str.includes('.')) {
 //       const decimals = str.split('.')[1];
-
-//       if (parseInt(decimals) !== 0) {
-//         return decimals.length;
-//       }
+//       if (parseInt(decimals) !== 0) return decimals.length;
 //     }
-
 //     return 0;
 //   };
 
@@ -48,50 +54,52 @@
 //     }
 //   }, [from, to, direction]);
 
+//   // --- Main animation trigger ---
 //   useEffect(() => {
-//     if (isInView && startWhen) {
+//     if (inView && startWhen) {
 //       if (typeof onStart === 'function') onStart();
+
+//       // reset to start
+//       motionValue.set(direction === 'down' ? to : from);
 
 //       const timeoutId = setTimeout(() => {
 //         motionValue.set(direction === 'down' ? from : to);
 //       }, delay * 1000);
 
-//       const durationTimeoutId = setTimeout(
-//         () => {
-//           if (typeof onEnd === 'function') onEnd();
-//         },
-//         delay * 1000 + duration * 1000
-//       );
+//       const durationTimeoutId = setTimeout(() => {
+//         if (typeof onEnd === 'function') onEnd();
+//       }, delay * 1000 + duration * 1000);
 
 //       return () => {
 //         clearTimeout(timeoutId);
 //         clearTimeout(durationTimeoutId);
 //       };
 //     }
-//   }, [isInView, startWhen, motionValue, direction, from, to, delay, onStart, onEnd, duration]);
+//   }, [inView, startWhen, motionValue, direction, from, to, delay, onStart, onEnd, duration]);
 
+//   // --- Update text content ---
 //   useEffect(() => {
-//     const unsubscribe = springValue.on('change', latest => {
+//     const unsubscribe = springValue.on('change', (latest) => {
 //       if (ref.current) {
 //         const hasDecimals = maxDecimals > 0;
-
 //         const options = {
 //           useGrouping: !!separator,
 //           minimumFractionDigits: hasDecimals ? maxDecimals : 0,
-//           maximumFractionDigits: hasDecimals ? maxDecimals : 0
+//           maximumFractionDigits: hasDecimals ? maxDecimals : 0,
 //         };
-
 //         const formattedNumber = Intl.NumberFormat('en-US', options).format(latest);
-
-//         ref.current.textContent = separator ? formattedNumber.replace(/,/g, separator) : formattedNumber;
+//         ref.current.textContent = separator
+//           ? formattedNumber.replace(/,/g, separator)
+//           : formattedNumber;
 //       }
 //     });
 
 //     return () => unsubscribe();
 //   }, [springValue, separator, maxDecimals]);
 
-//   return <span className={className} ref={ref} />;
+//   return <span className={className} ref={setRefs} />;
 // }
+
 
 import { useEffect, useRef } from 'react';
 import { useMotionValue, useSpring } from 'motion/react';
@@ -108,22 +116,21 @@ export default function CountUp({
   separator = '',
   onStart,
   onEnd,
-  threshold = 0.4, // how much should be visible before triggering
+  threshold = 0.4,
 }) {
   const ref = useRef(null);
   const motionValue = useMotionValue(direction === 'down' ? to : from);
+
   const { ref: inViewRef, inView } = useInView({
-    triggerOnce: false, // 👈 re-triggers every time it comes into view
-    threshold,          // how much of the element must be visible
+    triggerOnce: false,
+    threshold,
   });
 
-  // Combine refs (so both motion and intersection observers work)
   const setRefs = (node) => {
     ref.current = node;
     inViewRef(node);
   };
 
-  // --- Motion spring setup ---
   const damping = 20 + 40 * (1 / duration);
   const stiffness = 100 * (1 / duration);
 
@@ -143,36 +150,43 @@ export default function CountUp({
 
   const maxDecimals = Math.max(getDecimalPlaces(from), getDecimalPlaces(to));
 
+  // Set initial text
   useEffect(() => {
     if (ref.current) {
       ref.current.textContent = String(direction === 'down' ? to : from);
     }
   }, [from, to, direction]);
 
-  // --- Main animation trigger ---
+  // --- FIXED: Repeat animation whenever inView becomes true ---
   useEffect(() => {
-    if (inView && startWhen) {
+    // Leaving view → reset so the animation is ready again
+    if (!inView) {
+      motionValue.set(direction === 'down' ? to : from);
+      return;
+    }
+
+    // Entering view → run animation
+    if (startWhen && inView) {
       if (typeof onStart === 'function') onStart();
 
-      // reset to start
       motionValue.set(direction === 'down' ? to : from);
 
       const timeoutId = setTimeout(() => {
         motionValue.set(direction === 'down' ? from : to);
       }, delay * 1000);
 
-      const durationTimeoutId = setTimeout(() => {
+      const endId = setTimeout(() => {
         if (typeof onEnd === 'function') onEnd();
       }, delay * 1000 + duration * 1000);
 
       return () => {
         clearTimeout(timeoutId);
-        clearTimeout(durationTimeoutId);
+        clearTimeout(endId);
       };
     }
-  }, [inView, startWhen, motionValue, direction, from, to, delay, onStart, onEnd, duration]);
+  }, [inView, startWhen, direction, from, to, delay, onStart, onEnd, duration, motionValue]);
 
-  // --- Update text content ---
+  // Update number on screen
   useEffect(() => {
     const unsubscribe = springValue.on('change', (latest) => {
       if (ref.current) {

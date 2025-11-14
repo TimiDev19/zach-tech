@@ -170,7 +170,7 @@ const Navbar = () => {
                             top: 0,
                             left: 0,
                         }}
-                        className=' shadow-md shadow-black bg-black navbar-bg text-white'
+                        className=' shadow-md shadow-black heroBackground bg-black navbar-bg text-white'
                     >
                         {/* Sidebar content */}
                         <motion.div
@@ -219,19 +219,19 @@ const Navbar = () => {
                                         <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </Link>
                                     <Link
-                                        href="/#about"
-                                        className="relative group text-white block w-fit mb-4 text-3xl"
-                                        onClick={toggleSidebar}
-                                    >
-                                        About
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
-                                    </Link>
-                                    <Link
-                                        href="/#services"
+                                        href="/#service"
                                         className="relative group text-white block w-fit mb-4 text-3xl"
                                         onClick={toggleSidebar}
                                     >
                                         Services
+                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                    </Link>
+                                    <Link
+                                        href="/#whyus"
+                                        className="relative group text-white block w-fit mb-4 text-3xl"
+                                        onClick={toggleSidebar}
+                                    >
+                                        Why Us?
                                         <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </Link>
                                     <Link
@@ -243,11 +243,43 @@ const Navbar = () => {
                                         <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </Link>
                                     <Link
-                                        href="/#partnerships"
+                                        href="/#about"
                                         className="relative group text-white block w-fit mb-4 text-3xl"
                                         onClick={toggleSidebar}
                                     >
-                                        Partnerships
+                                        About
+                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                    </Link>
+                                    <Link
+                                        href="/#training"
+                                        className="relative group text-white block w-fit mb-4 text-3xl"
+                                        onClick={toggleSidebar}
+                                    >
+                                        Training
+                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                    </Link>
+                                    <Link
+                                        href="/#team"
+                                        className="relative group text-white block w-fit mb-4 text-3xl"
+                                        onClick={toggleSidebar}
+                                    >
+                                        Team
+                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                    </Link>
+                                    <Link
+                                        href="/#clients"
+                                        className="relative group text-white block w-fit mb-4 text-3xl"
+                                        onClick={toggleSidebar}
+                                    >
+                                        Clients
+                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                                    </Link>
+                                    <Link
+                                        href="/contact"
+                                        className="relative group text-white block w-fit mb-4 text-3xl"
+                                        onClick={toggleSidebar}
+                                    >
+                                        Contact
                                         <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                     </Link>
 

@@ -46,7 +46,7 @@ const OurServices = () => {
                 </h1>
 
                 <div className=' min-h-[100vh] w-full grid grid-cols-1 lg:grid-cols-3 px-[2%]'>
-                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
+                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
 
                         {/* Image area that shrinks on hover */}
                         <div className="w-full h-[300px] webDev-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px]"></div>
@@ -62,7 +62,7 @@ const OurServices = () => {
                         </div>
                     </div>
 
-                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
+                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
 
                         {/* Image area that shrinks on hover */}
                         <div className="w-full h-[300px] uiux-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px]"></div>
@@ -78,7 +78,7 @@ const OurServices = () => {
                         </div>
                     </div>
 
-                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
+                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
 
                         {/* Image area that shrinks on hover */}
                         <div className="w-full h-[300px] graphics-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px]"></div>
@@ -94,7 +94,7 @@ const OurServices = () => {
                         </div>
                     </div>
 
-                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
+                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
 
                         {/* Image area that shrinks on hover */}
                         <div className="w-full h-[300px] mobile-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px]"></div>
@@ -111,7 +111,7 @@ const OurServices = () => {
                         </div>
                     </div>
 
-                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
+                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
 
                         {/* Image area that shrinks on hover */}
                         <div className="w-full h-[300px] backend-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px]"></div>
@@ -127,7 +127,7 @@ const OurServices = () => {
                         </div>
                     </div>
 
-                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
+                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
 
                         {/* Image area that shrinks on hover */}
                         <div className="w-full h-[300px] fs-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px]"></div>
@@ -143,7 +143,7 @@ const OurServices = () => {
                         </div>
                     </div>
 
-                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/20 border-2 rounded-xl border-[#EEAD0E]/30 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
+                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
 
                         {/* Image area that shrinks on hover */}
                         <div className="w-full h-[300px] data-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px]"></div>
