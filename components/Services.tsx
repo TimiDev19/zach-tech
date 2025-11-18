@@ -7,10 +7,10 @@ type ServicesProps = {
 
 const Services = ({ type }: ServicesProps) => {
     return (
-        <div className=' min-h-[100vh] w-[100vw] overflow-x-hidden overflow-y-scroll text-white block text-justify'>
+        <div className=' min-h-[100vh] w-[100vw] overflow-x-hidden overflow-y-scroll text-[#000033] block text-justify'>
             {
                 type === "web" &&
-                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between '>
+                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-white flex flex-col lg:flex-row items-center lg:justify-between '>
                     <div className=' text-justify w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
                         <h1 className=' font-extrabold text-3xl lg:text-7xl mb-[10px]'>Web Development</h1>
                         <p className=' mb-[10px] text-justify w-full'>
@@ -29,7 +29,7 @@ const Services = ({ type }: ServicesProps) => {
                         </p>
                         <Link
                             href={"/contact"}
-                            className=' py-2 px-[20px] bg-[#000033] rounded-xl hover:bg-transparent hover:text-[#000] transition-all duration-500'
+                            className=' py-2 px-[20px] bg-[#000033] rounded-xl text-white hover:bg-transparent hover:text-[#000] transition-all duration-500'
                         >
                             Get Started
                         </Link>
@@ -40,7 +40,7 @@ const Services = ({ type }: ServicesProps) => {
 
             {
                 type === "ui" &&
-                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
+                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-white flex flex-col lg:flex-row items-center lg:justify-between'>
                     <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
                         <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-2'>Ui/Ux Design</h1>
                         <p className=' mb-[10px] text-justify'>
@@ -62,7 +62,7 @@ const Services = ({ type }: ServicesProps) => {
                         </p>
                         <Link
                             href={"/contact"}
-                            className=' py-2 px-[20px] bg-[#000033] rounded-xl hover:bg-transparent hover:text-[#000] transition-all duration-500'
+                            className=' py-2 px-[20px] bg-[#000033] rounded-xl text-white hover:bg-transparent hover:text-[#000] transition-all duration-500'
                         >
                             Get Started
                         </Link>
@@ -73,7 +73,7 @@ const Services = ({ type }: ServicesProps) => {
 
             {
                 type === "graphics" &&
-                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
+                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-white flex flex-col lg:flex-row items-center lg:justify-between'>
                     <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
                         <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-2'>Graphics Design</h1>
                         <p className=' mb-[10px]'>
@@ -95,7 +95,7 @@ const Services = ({ type }: ServicesProps) => {
                         </p>
                         <Link
                             href={"/contact"}
-                            className=' py-2 px-[20px] bg-[#000033] rounded-xl hover:bg-transparent hover:text-[#000] transition-all duration-500'
+                            className=' py-2 px-[20px] bg-[#000033] rounded-xl text-white hover:bg-transparent hover:text-[#000] transition-all duration-500'
                         >
                             Get Started
                         </Link>
@@ -106,7 +106,7 @@ const Services = ({ type }: ServicesProps) => {
 
             {
                 type === "mobile" &&
-                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
+                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-white flex flex-col lg:flex-row items-center lg:justify-between'>
                     <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
                         <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-2'>Mobile Development</h1>
                         <p className=' mb-[10px]'>
@@ -127,7 +127,7 @@ const Services = ({ type }: ServicesProps) => {
                         </p>
                         <Link
                             href={"/contact"}
-                            className=' py-2 px-[20px] bg-[#000033] rounded-xl hover:bg-transparent hover:text-[#000] transition-all duration-500'
+                            className=' py-2 px-[20px] bg-[#000033] rounded-xl text-white hover:bg-transparent hover:text-[#000] transition-all duration-500'
                         >
                             Get Started
                         </Link>
@@ -138,7 +138,7 @@ const Services = ({ type }: ServicesProps) => {
 
             {
                 type === "backend" &&
-                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
+                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-white flex flex-col lg:flex-row items-center lg:justify-between'>
                     <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
                         <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-2'>Backend Development</h1>
                         <p className=' mb-[10px]'>
@@ -160,7 +160,7 @@ const Services = ({ type }: ServicesProps) => {
                         </p>
                         <Link
                             href={"/contact"}
-                            className=' py-2 px-[20px] bg-[#000033] rounded-xl hover:bg-transparent hover:text-[#000] transition-all duration-500'
+                            className=' py-2 px-[20px] bg-[#000033] rounded-xl text-white hover:bg-transparent hover:text-[#000] transition-all duration-500'
                         >
                             Get Started
                         </Link>
@@ -171,7 +171,7 @@ const Services = ({ type }: ServicesProps) => {
 
             {
                 type === "fullstack" &&
-                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
+                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-white flex flex-col lg:flex-row items-center lg:justify-between'>
                     <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
                         <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-2'>Full Stack Development</h1>
                         <p className=' mb-[10px]'>
@@ -193,7 +193,7 @@ const Services = ({ type }: ServicesProps) => {
                         </p>
                         <Link
                             href={"/contact"}
-                            className=' py-2 px-[20px] bg-[#000033] rounded-xl hover:bg-transparent hover:text-[#000] transition-all duration-500'
+                            className=' py-2 px-[20px] bg-[#000033] rounded-xl text-white hover:bg-transparent hover:text-[#000] transition-all duration-500'
                         >
                             Get Started
                         </Link>
@@ -204,7 +204,7 @@ const Services = ({ type }: ServicesProps) => {
 
             {
                 type === "data" &&
-                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-gradient-to-b from-[#000033] to-[#EEAD0E] flex flex-col lg:flex-row items-center lg:justify-between'>
+                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] w-[100vw] bg-white flex flex-col lg:flex-row items-center lg:justify-between'>
                     <div className=' w-full lg:w-[45%] h-[40%] lg:h-full flex flex-col items-start justify-center max-sm:mb-[20px]'>
                         <h1 className=' text-left font-extrabold text-3xl lg:text-7xl mb-2'>Data Analysis & Business Intelligence</h1>
                         <p className=' mb-[10px]'>
@@ -226,7 +226,7 @@ const Services = ({ type }: ServicesProps) => {
                         </p>
                         <Link
                             href={"/contact"}
-                            className=' py-2 px-[20px] bg-[#000033] rounded-xl hover:bg-transparent hover:text-[#000] transition-all duration-500'
+                            className=' py-2 px-[20px] bg-[#000033] rounded-xl text-white hover:bg-transparent hover:text-[#000] transition-all duration-500'
                         >
                             Get Started
                         </Link>
@@ -236,11 +236,11 @@ const Services = ({ type }: ServicesProps) => {
             }
 
 
-            <div className=' min-h-[100vh] w-[100vw] bg-gradient-to-b to-[#000033] from-[#EEAD0E] pt-[90px] px-[2.5%]'>
+            <div className=' min-h-[100vh] w-[100vw] bg-white pt-[90px] px-[2.5%]'>
                 <h1 className=' font-extrabold text-3xl lg:text-7xl mb-[50px] text-center'>Our Process</h1>
                 <div className=' w-full grid grid-cols-1 lg:grid-cols-3 mb-[20px]'>
                     <div className=' mx-2'>
-                        <div className=' h-[50px] w-[50px] flex items-center justify-center bg-[#000033] rounded-full font-extrabold mb-[10px]'>1</div>
+                        <div className=' text-white h-[50px] w-[50px] flex items-center justify-center bg-[#000033] rounded-full font-extrabold mb-[10px]'>1</div>
                         <h1 className=' font-extrabold text-xl mb-[5px]'>Strategic Consultation</h1>
                         <p>
                             We kick off with a strategic consultation to understand your brand, goals, and audience.
@@ -248,7 +248,7 @@ const Services = ({ type }: ServicesProps) => {
                     </div>
 
                     <div className=' mx-2'>
-                        <div className=' h-[50px] w-[50px] flex items-center justify-center bg-[#000033] rounded-full font-extrabold mb-[10px]'>2</div>
+                        <div className=' text-white h-[50px] w-[50px] flex items-center justify-center bg-[#000033] rounded-full font-extrabold mb-[10px]'>2</div>
                         <h1 className=' font-extrabold text-xl mb-[5px]'>Collaboration</h1>
                         <p>
                             We collaborate closely to ensure the end result meets your expectations and makes you happy.
@@ -256,7 +256,7 @@ const Services = ({ type }: ServicesProps) => {
                     </div>
 
                     <div className=' mx-2'>
-                        <div className=' h-[50px] w-[50px] flex items-center justify-center bg-[#000033] rounded-full font-extrabold mb-[10px]'>3</div>
+                        <div className=' text-white h-[50px] w-[50px] flex items-center justify-center bg-[#000033] rounded-full font-extrabold mb-[10px]'>3</div>
                         <h1 className=' font-extrabold text-xl mb-[5px]'>Delivery</h1>
                         <p>
                             Our delivery rate is 100%; our clients deserve nothing less.
@@ -267,7 +267,7 @@ const Services = ({ type }: ServicesProps) => {
                     <h1 className=' font-semibold text-3xl lg:text-5xl text-center'>Read to build something great?</h1>
                     <Link
                         href={"/contact"}
-                        className=' py-2 px-[20px] bg-[#000033] rounded-xl hover:bg-transparent hover:text-white transition-all duration-500'
+                        className=' text-white py-2 px-[20px] bg-[#000033] rounded-xl hover:bg-transparent hover:text-[#000033] transition-all duration-500'
                     >
                         Get Started
                     </Link>

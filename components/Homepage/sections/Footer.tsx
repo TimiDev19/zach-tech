@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div>
             <div
-                className=' w-full lg:h-[50vh] bg-[#fff]/20 flex flex-col lg:flex-row items-start p-[10px] lg:items-center justify-between text-white'
+                className=' w-full lg:h-[50vh] bg-[#000033]/80 flex flex-col lg:flex-row items-start p-[10px] lg:items-center justify-between text-white'
             >
                 <div className=' lg:w-[30%] h-full flex flex-col items-start lg:items-center justify-center'>
                     <Image src={transparentLogo} alt="zach tech logo" className=' h-[50%] w-auto mb-[10px]'/>
@@ -194,7 +194,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className=' w-full h-[50px] flex items-center text-center justify-center bg-[#fff]/20 text-white'>
+            <div className=' w-full h-[50px] flex items-center text-center justify-center bg-[#000033]/80 text-white'>
                 <p>© 2025 Zach Technologies Industries. All right reserved.</p>
             </div>
         </div>
