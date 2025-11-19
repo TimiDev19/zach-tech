@@ -22,7 +22,7 @@ const WhyUs = () => {
         <>
             <div
                 id="whyus"
-                className=" w-[100vw] min-h-[100vh] bg-white lg:h-[100vh] flex flex-col lg:flex-row items-center justify-between p-[50px] pt-[90px]"
+                className=" w-[100vw] min-h-[100vh] bg-white lg:min-h-[100vh] flex flex-col lg:flex-row items-center justify-between p-[50px] pt-[90px]"
             >
                 <div className=" w-[100%] lg:w-[45%] h-full flex items-center justify-center mb-[50px]">
                     <FadeInFromBottom>
@@ -31,7 +31,7 @@ const WhyUs = () => {
                 </div>
 
                 <div className=" w-[100%] lg:w-[45%] h-full flex flex-col items-center justify-start text-[#000033]">
-                    <div className=" mb-[30px] w-full min-h-[40vh] bg-transparent flex flex-col items-center justify-center text-justify ">
+                    <div className=" mb-[30px] w-full min-h-[40vh] bg-transparent block text-justify ">
                         <h1 className=" text-4xl font-extrabold mb-[10px]">Why Trust Us?</h1>
                         <p className=" text-justify">
                             <strong>Where Innovation Meets Execution. Where Vision Becomes Reality</strong> <br />
@@ -45,7 +45,7 @@ const WhyUs = () => {
                         </p>
                     </div>
 
-                    <div className=" w-full h-[40%] bg-transparent flex flex-col lg:flex-row items-center justify-between">
+                    <div className=" w-full mt-[30px] min-h-[40vh] bg-transparent flex flex-col lg:flex-row items-center justify-between">
                         <div className=" bg-transparent mb-[20px] flex flex-col items-center justify-center rounded-lg text-[#000033] font-extrabold text-3xl lg:text-6xl">
                             <div>
                                 <CountUp
