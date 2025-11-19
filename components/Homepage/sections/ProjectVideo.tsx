@@ -1,4 +1,5 @@
 "use client"
+import CardStack from '@/components/CardStack';
 import React from 'react'
 import { useEffect, useState } from "react";
 import { ReactNode } from "react";
@@ -53,15 +54,15 @@ const ProjectVideo = () => {
     return (
         <div
             id='projects'
-            className=' lg:h-[90vh] w-[100vw] pt-[85px] block px-[20px] bg-white'
+            className=' lg:min-h-[90vh] w-[100vw] pt-[85px] block px-[20px] bg-white'
         >
             <h1
-                className={`text-center text-[#000033] text-[45px]`}
+                className={`text-center text-[#000033] text-[45px] block mb-[100px]`}
             >
                 Our <span className=" text-[#EEAD0E]">Projects</span>
             </h1>
-            
-            <div
+
+            {/* <div
                 className="h-[50vh] lg:h-[70%] w-screen overflow-x-auto flex space-x-4 py-2 px-2 snap-x snap-mandatory"
             >
                 <div className="text-white p-4 flex-shrink-0 h-full w-[80vw] lg:w-[400px] bg-[#000033]/80 backdrop-blur-md border-2 border-[#000033] rounded-xl flex flex-col items-start justify-start snap-center">
@@ -90,8 +91,10 @@ const ProjectVideo = () => {
                         web3 HR service, mixing aesthetics with efficiency.
                     </p>
                 </div>
+            </div> */}
+            <div className=' w-[100vw] min-h-[100vh] items-center justify-center mb-[100px] block'>
+                <CardStack />
             </div>
-
         </div>
     )
 }
