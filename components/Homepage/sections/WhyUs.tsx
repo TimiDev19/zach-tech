@@ -31,7 +31,7 @@ const WhyUs = () => {
                 </div>
 
                 <div className=" w-[100%] lg:w-[45%] h-full flex flex-col items-center justify-start text-[#000033]">
-                    <div className=" mb-[30px] w-full h-[40%] bg-transparent flex flex-col items-center justify-center">
+                    <div className=" block mb-[30px] w-full min-h-[40vh] bg-transparent flex flex-col items-center justify-center text-justify ">
                         <h1 className=" text-4xl font-extrabold mb-[10px]">Why Trust Us?</h1>
                         <p>
                             <strong>Where Innovation Meets Execution. Where Vision Becomes Reality</strong> <br />
