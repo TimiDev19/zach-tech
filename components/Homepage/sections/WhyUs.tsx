@@ -38,61 +38,11 @@ const WhyUs = () => {
                             At ZachTech Industries, we're not just another tech company making bold claims, we're a team of passionate technologists, designers, and strategists who've made it our mission to redefine what's possible for businesses in Nigeria and beyond.
                         </p>
                         <p className=" mt-[10px] text-justify">
-                        Since our founding, we've had the privilege of partnering with startups finding their footing, SMEs scaling rapidly, and established enterprises pushing boundaries. What sets us apart isn't just our technical expertise, it's our relentless commitment to your success and our ability to transform complex technology into tangible business results.
+                            Since our founding, we've had the privilege of partnering with startups finding their footing, SMEs scaling rapidly, and established enterprises pushing boundaries. What sets us apart isn't just our technical expertise, it's our relentless commitment to your success and our ability to transform complex technology into tangible business results.
                         </p>
                         <p className=" mt-[10px] text-justify">
-                        <strong>Here's the truth:</strong> Technology alone doesn't build businesses. Strategy does. Execution does. Partnership does. And that's exactly what you get with Zach Technologies Industries, a dedicated partner who treats your success as our own, brings both creative vision and technical mastery to every project, and never settles for "good enough" when exceptional is possible.
+                            <strong>Here's the truth:</strong> Technology alone doesn't build businesses. Strategy does. Execution does. Partnership does. And that's exactly what you get with Zach Technologies Industries, a dedicated partner who treats your success as our own, brings both creative vision and technical mastery to every project, and never settles for "good enough" when exceptional is possible.
                         </p>
-                    </div>
-
-                    <div className=" w-full mt-[30px] min-h-[40vh] bg-transparent flex flex-col lg:flex-row items-center justify-between">
-                        <div className=" bg-transparent mb-[20px] flex flex-col items-center justify-center rounded-lg text-[#000033] font-extrabold text-3xl lg:text-6xl">
-                            <div>
-                                <CountUp
-                                    from={0}
-                                    to={100}
-                                    separator=","
-                                    direction="up"
-                                    duration={1}
-                                    onStart={() => { }}
-                                    onEnd={() => { }}
-                                    className="count-up-text text-[#000033] font-extrabold text-6xl"
-                                />%
-                            </div>
-                            <h1 className="text-lg lg:text-xl">Customer Satisfaction</h1>
-                        </div>
-
-                        <div className=" bg-transparent mb-[20px] flex flex-col items-center justify-center rounded-lg text-[#000033] font-extrabold text-3xl lg:text-6xl">
-                            <div>
-                                <CountUp
-                                    from={0}
-                                    to={5}
-                                    separator=","
-                                    direction="up"
-                                    duration={1}
-                                    onStart={() => { }}
-                                    onEnd={() => { }}
-                                    className="count-up-text text-[#000033] font-extrabold text-6xl"
-                                />
-                            </div>
-                            <h1 className="text-lg lg:text-xl">Clients</h1>
-                        </div>
-
-                        <div className=" bg-transparent mb-[20px] flex flex-col items-center justify-center rounded-lg text-[#000033] font-extrabold text-3xl lg:text-6xl">
-                            <div>
-                                <CountUp
-                                    from={0}
-                                    to={6}
-                                    separator=","
-                                    direction="up"
-                                    duration={1}
-                                    onStart={() => { }}
-                                    onEnd={() => { }}
-                                    className="count-up-text text-[#000033] font-extrabold text-6xl"
-                                />+
-                            </div>
-                            <h1 className=" text-xl">Projects</h1>
-                        </div>
                     </div>
                 </div>
                 {/* <div className=" w-[45%] h-full">
@@ -131,7 +81,55 @@ const WhyUs = () => {
                 </div>
             </div> */}
             </div>
+            <div className=" w-full lg:w-[50%] mx-auto mt-[30px] min-h-[40vh] bg-transparent flex flex-col lg:flex-row items-center justify-between">
+                <div className=" bg-transparent mb-[20px] flex flex-col items-center justify-center rounded-lg text-[#000033] font-extrabold text-3xl lg:text-6xl">
+                    <div>
+                        <CountUp
+                            from={0}
+                            to={100}
+                            separator=","
+                            direction="up"
+                            duration={1}
+                            onStart={() => { }}
+                            onEnd={() => { }}
+                            className="count-up-text text-[#000033] font-extrabold text-6xl"
+                        />%
+                    </div>
+                    <h1 className="text-lg lg:text-xl">Customer Satisfaction</h1>
+                </div>
 
+                <div className=" bg-transparent mb-[20px] flex flex-col items-center justify-center rounded-lg text-[#000033] font-extrabold text-3xl lg:text-6xl">
+                    <div>
+                        <CountUp
+                            from={0}
+                            to={5}
+                            separator=","
+                            direction="up"
+                            duration={1}
+                            onStart={() => { }}
+                            onEnd={() => { }}
+                            className="count-up-text text-[#000033] font-extrabold text-6xl"
+                        />
+                    </div>
+                    <h1 className="text-lg lg:text-xl">Clients</h1>
+                </div>
+
+                <div className=" bg-transparent mb-[20px] flex flex-col items-center justify-center rounded-lg text-[#000033] font-extrabold text-3xl lg:text-6xl">
+                    <div>
+                        <CountUp
+                            from={0}
+                            to={6}
+                            separator=","
+                            direction="up"
+                            duration={1}
+                            onStart={() => { }}
+                            onEnd={() => { }}
+                            className="count-up-text text-[#000033] font-extrabold text-6xl"
+                        />+
+                    </div>
+                    <h1 className=" text-xl">Projects</h1>
+                </div>
+            </div>
             <div className=" w-full h-[50px] bg-white">
 
             </div>
