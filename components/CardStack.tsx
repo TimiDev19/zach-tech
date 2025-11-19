@@ -186,7 +186,7 @@ export default function CardStack() {
 
             {/* TEXT SECTION */}
             <div className="flex-1 flex flex-col p-6 overflow-y-auto">
-              <h3 className="text-2xl lg:text-4xl font-bold mb-3">{item.title}</h3>
+              <h3 className="text-2xl lg:text-2xl font-bold mb-3">{item.title}</h3>
 
               <p className="text-sm lg:text-xl opacity-80 leading-relaxed">
                 {item.description}
