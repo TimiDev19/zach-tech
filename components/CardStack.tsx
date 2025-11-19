@@ -137,8 +137,6 @@ export default function CardStack() {
   return (
     <div
       className="relative w-full h-[450px] sm:h-[550px] lg:h-[90vh] flex items-center justify-center"
-      onMouseEnter={() => setIsHovering(true)}
-      onMouseLeave={() => setIsHovering(false)}
     >
       {data.map((item, i) => {
         const order = (i - topIndex + data.length) % data.length;
@@ -161,6 +159,8 @@ export default function CardStack() {
               zIndex: data.length - order,
             }}
             transition={{ type: "spring", stiffness: 200, damping: 22 }}
+            onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
           >
             {/* IMAGE SECTION (much larger now) */}
             <div className="w-full h-[250px] sm:h-[350px] lg:h-[65vh] bg-gray-200 rounded-t-2xl overflow-hidden shadow-inner">
