@@ -148,7 +148,7 @@ export default function CardStack() {
               absolute 
               bg-white shadow-xl rounded-2xl overflow-hidden
               w-[95%] sm:w-[85%] lg:w-[80vw] 
-              h-auto lg:h-[100vh]
+              h-auto lg:h-[85vh]
               flex flex-col
             "
             initial={false}
@@ -163,7 +163,7 @@ export default function CardStack() {
       onMouseLeave={() => setIsHovering(false)}
           >
             {/* IMAGE SECTION (much larger now) */}
-            <div className="w-full h-[250px] sm:h-[350px] lg:h-[65vh] bg-gray-200 rounded-t-2xl overflow-hidden shadow-inner">
+            <div className="w-full h-[250px] sm:h-[350px] lg:h-[55vh] bg-gray-200 rounded-t-2xl overflow-hidden shadow-inner">
 
               {/* Browser top bar */}
               <div className="flex items-center gap-2 p-3 bg-gray-100 border-b">
