@@ -31,16 +31,16 @@ const WhyUs = () => {
                 </div>
 
                 <div className=" w-[100%] lg:w-[45%] h-full flex flex-col items-center justify-start text-[#000033]">
-                    <div className=" block mb-[30px] w-full min-h-[40vh] bg-transparent flex flex-col items-center justify-center text-justify ">
+                    <div className=" mb-[30px] w-full min-h-[40vh] bg-transparent flex flex-col items-center justify-center text-justify ">
                         <h1 className=" text-4xl font-extrabold mb-[10px]">Why Trust Us?</h1>
-                        <p>
+                        <p className=" text-justify">
                             <strong>Where Innovation Meets Execution. Where Vision Becomes Reality</strong> <br />
                             At ZachTech Industries, we're not just another tech company making bold claims, we're a team of passionate technologists, designers, and strategists who've made it our mission to redefine what's possible for businesses in Nigeria and beyond.
                         </p>
-                        <p className=" mt-[10px]">
+                        <p className=" mt-[10px] text-justify">
                         Since our founding, we've had the privilege of partnering with startups finding their footing, SMEs scaling rapidly, and established enterprises pushing boundaries. What sets us apart isn't just our technical expertise, it's our relentless commitment to your success and our ability to transform complex technology into tangible business results.
                         </p>
-                        <p className=" mt-[10px]">
+                        <p className=" mt-[10px] text-justify">
                         <strong>Here's the truth:</strong> Technology alone doesn't build businesses. Strategy does. Execution does. Partnership does. And that's exactly what you get with Zach Technologies Industries, a dedicated partner who treats your success as our own, brings both creative vision and technical mastery to every project, and never settles for "good enough" when exceptional is possible.
                         </p>
                     </div>
