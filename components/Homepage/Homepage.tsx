@@ -23,8 +23,8 @@ const Homepage = () => {
             <Hero />
             <OurServices />
             <WhyUs />
-            <ProjectVideo />
             <MissionVision />
+            <ProjectVideo />
             {/* <Mission />
             <Vision />
             <CoreValue /> */}
