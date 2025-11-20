@@ -1,42 +1,60 @@
+import { FadeInFromBottom } from '@/components/FadeInFromBottom'
+import { FadeInFromLeft } from '@/components/FadeInFromLeft'
 import { FadeInFromTop } from '@/components/FadeInFromTop'
 import React from 'react'
 
 const MissionVision = () => {
     return (
         <div id='about' className=' lg:h-[100vh] w-[100vw] bg-white pt-[85px]'>
-            <FadeInFromTop>
-                <div className=' h-full w-full flex flex-col lg:flex-row items-center justify-between px-[2%]'>
-                    <div className=' w-[95%] lg:w-[30%] h-[60vh] max-sm:mb-[20px] lg:h-[85%] bg-[#EEAD0E]/60 border-2 rounded-xl border-[#EEAD0E]/80 backdrop-blur-md text-[#000033] cursor-pointer hover:bg-[#EEAD0E]/40 transition-all duration-300 p-[20px] flex-col items-center justify-start'>
-                        <div className=' w-full h-[45%] mission-bg rounded-t-xl mb-[30px]'></div>
-                        <div className=' w-full'>
-                            <h1 className=' text-2xl font-extrabold'>Our Mission</h1>
-                            <p>
-                                To empower individuals and organizations by delivering innovative, future-ready technology solutions that drive growth, unlock potential, and create lasting impact.
-                            </p>
+            <div className=' min-h-[100dvh] w-[100dvw] flex items-center justify-center flex-col lg:flex-row'>
+                <div className=' min-h-[65vh] w-[90%] lg:w-[25vw] mx-[20px] cursor-pointer hover:rotate-[10deg] duration-500 flex flex-col items-end justify-end relative bg-transparent'>
+                    <div className=' h-[100%] w-[100%] absolute z-[20] mx-auto bg-transparent pt-[10%]'>
+                        <div className=' uppercase font-extrabold text-xl h-[50px] w-[50%] bg-[#EEAD0E] rounded-full mx-auto flex items-center justify-center'>
+                            Mission
                         </div>
+
+                        <h1 className=' text-7xl mx-auto text-center mt-[10px] mb-[20px]'>🎯</h1>
+
+                        <h1 className=' text-3xl font-extrabold text-center mb-[20px] text-white'>Empower & Impact</h1>
+
+                        <p className=' w-[80%] mx-auto justify-center text-white text-justify'>To empower individuals and organizations by delivering innovative, future-ready technology solutions that drive growth, unlock potential, and create lasting impact.</p>
                     </div>
 
-                    <div className=' w-[95%] lg:w-[30%] h-[60vh] max-sm:mb-[20px] lg:h-[85%] bg-[#EEAD0E]/60 border-2 rounded-xl border-[#EEAD0E]/80 backdrop-blur-md text-[#000033] cursor-pointer hover:bg-[#EEAD0E]/40 transition-all duration-300 p-[20px] flex-col items-center justify-start'>
-                        <div className=' w-full h-[45%] vision-bg rounded-t-xl mb-[30px]'></div>
-                        <div className=' w-full'>
-                            <h1 className=' text-2xl font-extrabold'>Our Vision</h1>
-                            <p>
-                            To be a leading force in global technology transformation—pushing the boundaries of possibility, fostering innovation, and shaping a smarter, more connected world.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className=' w-[95%] lg:w-[30%] h-[60vh] max-sm:mb-[20px] lg:h-[85%] bg-[#EEAD0E]/60 border-2 rounded-xl border-[#EEAD0E]/80 backdrop-blur-md text-[#000033] cursor-pointer hover:bg-[#EEAD0E]/40 transition-all duration-300 p-[20px] flex-col items-center justify-start'>
-                        <div className=' w-full h-[45%] core-bg rounded-t-xl mb-[30px]'></div>
-                        <div className=' w-full'>
-                            <h1 className=' text-2xl font-extrabold'>Our Core Values</h1>
-                            <p>
-                            At ZachTech Industries, we are driven by innovation, excellence, and integrity — putting our clients first, embracing collaboration, and continuously learning to deliver impactful technology solutions that shape the future.
-                            </p>
-                        </div>
-                    </div>
+                    <div className=' h-[90%] w-full bg-[#000033] shadow-md shadow-slate-300 rounded-xl absolute'></div>
                 </div>
-            </FadeInFromTop>
+
+                <div className=' min-h-[65vh] w-[90%] lg:w-[25vw] mx-[20px] cursor-pointer hover:rotate-[10deg] duration-500 flex flex-col items-end justify-end relative bg-transparent'>
+                    <div className=' h-[100%] w-[100%] absolute z-[20] mx-auto bg-transparent pt-[10%]'>
+                        <div className=' uppercase font-extrabold text-xl h-[50px] w-[50%] bg-[#EEAD0E] rounded-full mx-auto flex items-center justify-center'>
+                            Vision
+                        </div>
+
+                        <h1 className=' text-7xl mx-auto text-center mt-[10px] mb-[20px]'>🚀</h1>
+
+                        <h1 className=' text-3xl font-extrabold text-center mb-[20px] text-white'>Lead & Transform</h1>
+
+                        <p className=' w-[80%] mx-auto justify-center text-white text-justify'>To be a leading force in global technology transformation—pushing the boundaries of possibility, fostering innovation, and shaping a smarter, more connected world.</p>
+                    </div>
+
+                    <div className=' h-[90%] w-full bg-[#000033] shadow-md shadow-slate-300 rounded-xl absolute'></div>
+                </div>
+
+                <div className=' min-h-[65vh] w-[90%] lg:w-[25vw] mx-[20px] cursor-pointer hover:rotate-[10deg] duration-500 flex flex-col items-end justify-end relative bg-transparent'>
+                    <div className=' h-[100%] w-[100%] absolute z-[20] mx-auto bg-transparent pt-[10%]'>
+                        <div className=' uppercase font-extrabold text-xl h-[50px] w-[50%] bg-[#EEAD0E] rounded-full mx-auto flex items-center justify-center'>
+                            Values
+                        </div>
+
+                        <h1 className=' text-7xl mx-auto text-center mt-[10px] mb-[20px]'>💎</h1>
+
+                        <h1 className=' text-3xl font-extrabold text-center mb-[20px] text-white'>Excellence & Integrity</h1>
+
+                        <p className=' w-[80%] mx-auto justify-center text-white text-justify'>Driven by innovation, excellence, and integrity—putting clients first, embracing collaboration, and continuously learning to deliver impactful solutions.</p>
+                    </div>
+
+                    <div className=' h-[90%] w-full bg-[#000033] shadow-md shadow-slate-300 rounded-xl absolute'></div>
+                </div>
+            </div>
         </div>
     )
 }
