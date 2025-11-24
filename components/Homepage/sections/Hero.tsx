@@ -109,13 +109,24 @@ const Hero = () => {
 
     return (
         <section id="home" className="h-screen relative bg-black">
-            <video
+            {/* <video
                 src="/bg-vid.mp4"
                 className="absolute inset-0 object-cover w-full h-full opacity-50"
                 autoPlay
                 loop
                 playsInline
                 muted
+                controls={false}
+            ></video> */}
+            <video
+                src="/bg-vid.mp4"
+                className="absolute inset-0 object-cover w-full h-full opacity-50"
+                autoPlay
+                loop
+                muted
+                playsInline
+                webkit-playsinline
+                preload="auto"
                 controls={false}
             ></video>
             <div
