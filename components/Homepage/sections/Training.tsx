@@ -34,8 +34,7 @@ const Training = () => {
                     Trainings <span className=" text-[#EEAD0E]">We Offer</span>
                 </h1>
                 <div className=' min-h-[100vh] w-full grid grid-cols-1 lg:grid-cols-3 px-[2%]'>
-                    <div className=' mb-[20px] w-[95%] block min-h-[80vh] lg:h-[70vh] max-sm:mb-[20px] text-[#000033]  bg-[#EEAD0E]/60 border-2 rounded-xl border-[#EEAD0E]/80 backdrop-blur-md  hover:bg-[#EEAD0E]/40 cursor-pointer transition-all duration-300 p-[20px] flex-col items-center justify-start'>
-                        <div className=' w-full h-[45%] data-bg rounded-t-xl mb-[30px]'></div>
+                    <div className=' mb-[20px] w-[95%] min-h-[30vh] lg:h-[30vh] max-sm:mb-[20px] text-[#fff]  data-bg border-2 rounded-xl backdrop-blur-md  hover:bg-[#EEAD0E]/40 cursor-pointer transition-all duration-300 p-[20px] flex flex-col items-center justify-center hover:w-[100%]'>
                         <div className=' w-full'>
                             <h1 className=' text-2xl font-extrabold'>Data Analysis</h1>
                             <p className=" text-sm">
@@ -44,8 +43,7 @@ const Training = () => {
                         </div>
                     </div>
 
-                    <div className=' mb-[20px] w-[95%] block min-h-[80vh] lg:h-[70vh] max-sm:mb-[20px] text-[#000033] bg-[#EEAD0E]/60 border-2 rounded-xl border-[#EEAD0E]/80 backdrop-blur-md  hover:bg-[#EEAD0E]/40 cursor-pointer transition-all duration-300 p-[20px] flex-col items-center justify-start'>
-                        <div className=' w-full h-[45%] mobile-bg rounded-t-xl mb-[30px]'></div>
+                    <div className=' mb-[20px] w-[95%] min-h-[30vh] lg:h-[30vh] max-sm:mb-[20px] text-[#fff] mobile-bg border-2 rounded-xl backdrop-blur-md  hover:bg-[#EEAD0E]/40 cursor-pointer transition-all duration-300 p-[20px] flex flex-col items-center justify-center hover:w-[100%]'>
                         <div className=' w-full'>
                             <h1 className=' text-2xl font-extrabold'>Mobile Dev</h1>
                             <p className=" text-sm">
@@ -54,8 +52,7 @@ const Training = () => {
                         </div>
                     </div>
 
-                    <div className=' mb-[20px] w-[95%] block min-h-[80vh] lg:h-[70vh] max-sm:mb-[20px] text-[#000033] bg-[#EEAD0E]/60 border-2 rounded-xl border-[#EEAD0E]/80 backdrop-blur-md  hover:bg-[#EEAD0E]/40 cursor-pointer transition-all duration-300 p-[20px] flex-col items-center justify-start'>
-                        <div className=' w-full h-[45%] webDev-bg rounded-t-xl mb-[30px]'></div>
+                    <div className=' mb-[20px] w-[95%] min-h-[30vh] lg:h-[30vh] max-sm:mb-[20px] text-[#fff] webDev-bg border-2 rounded-xl backdrop-blur-md  hover:bg-[#EEAD0E]/40 cursor-pointer transition-all duration-300 p-[20px] flex flex-col items-center justify-center hover:w-[100%]'>
                         <div className=' w-full'>
                             <h1 className=' text-2xl font-extrabold'>Frontend Development</h1>
                             <p className=" text-sm">
@@ -65,8 +62,7 @@ const Training = () => {
                         </div>
                     </div>
 
-                    <div className=' mb-[20px] w-[95%] block min-h-[80vh] lg:h-[70vh] max-sm:mb-[20px] text-[#000033] bg-[#EEAD0E]/60 border-2 rounded-xl border-[#EEAD0E]/80 backdrop-blur-md  hover:bg-[#EEAD0E]/40 cursor-pointer transition-all duration-300 p-[20px] flex-col items-center justify-start'>
-                        <div className=' w-full h-[45%] backend-bg rounded-t-xl mb-[30px]'></div>
+                    <div className=' mb-[20px] w-[95%] min-h-[30vh] lg:h-[30vh] max-sm:mb-[20px] text-[#fff] backend-bg border-2 rounded-xl backdrop-blur-md  hover:bg-[#EEAD0E]/40 cursor-pointer transition-all duration-300 p-[20px] flex flex-col items-center justify-center hover:w-[100%]'>
                         <div className=' w-full'>
                             <h1 className=' text-2xl font-extrabold'>Backend Development</h1>
                             <p className=" text-sm">
@@ -76,8 +72,7 @@ const Training = () => {
                         </div>
                     </div>
 
-                    <div className=' mb-[20px] w-[95%] block min-h-[80vh] lg:h-[70vh] max-sm:mb-[20px] text-[#000033] bg-[#EEAD0E]/60 border-2 rounded-xl border-[#EEAD0E]/80 backdrop-blur-md  hover:bg-[#EEAD0E]/40 cursor-pointer transition-all duration-300 p-[20px] flex-col items-center justify-start'>
-                        <div className=' w-full h-[45%] backend-bg rounded-t-xl mb-[30px]'></div>
+                    <div className=' mb-[20px] w-[95%] min-h-[30vh] lg:h-[30vh] max-sm:mb-[20px] text-[#fff] fs-bg border-2 rounded-xl backdrop-blur-md  hover:bg-[#EEAD0E]/40 cursor-pointer transition-all duration-300 p-[20px] flex flex-col items-center justify-center hover:w-[100%]'>
                         <div className=' w-full'>
                             <h1 className=' text-2xl font-extrabold'>Full Stack Development</h1>
                             <p className=" text-sm">
@@ -87,8 +82,7 @@ const Training = () => {
                         </div>
                     </div>
 
-                    <div className=' mb-[20px] w-[95%] block min-h-[80vh] lg:h-[70vh] max-sm:mb-[20px] text-[#000033] bg-[#EEAD0E]/60 border-2 rounded-xl border-[#EEAD0E]/80 backdrop-blur-md  hover:bg-[#EEAD0E]/40 cursor-pointer transition-all duration-300 p-[20px] flex-col items-center justify-start'>
-                        <div className=' w-full h-[45%] graphics-bg rounded-t-xl mb-[30px]'></div>
+                    <div className=' mb-[20px] w-[95%] min-h-[30vh] lg:h-[30vh] max-sm:mb-[20px] text-[#fff] graphics-bg border-2 rounded-xl backdrop-blur-md  hover:bg-[#EEAD0E]/40 cursor-pointer transition-all duration-300 p-[20px] flex flex-col items-center justify-center hover:w-[100%]'>
                         <div className=' w-full'>
                             <h1 className=' text-2xl font-extrabold'>Graphics Design</h1>
                             <p className=" text-sm">
@@ -98,8 +92,7 @@ const Training = () => {
                         </div>
                     </div>
 
-                    <div className=' mb-[20px] w-[95%] block min-h-[80vh] lg:h-[70vh] max-sm:mb-[20px] text-[#000033] bg-[#EEAD0E]/60 border-2 rounded-xl border-[#EEAD0E]/80 backdrop-blur-md  hover:bg-[#EEAD0E]/40 cursor-pointer transition-all duration-300 p-[20px] flex-col items-center justify-start'>
-                        <div className=' w-full h-[45%] uiux-bg rounded-t-xl mb-[30px]'></div>
+                    <div className=' mb-[20px] w-[95%] min-h-[30vh] lg:h-[30vh] max-sm:mb-[20px] text-[#fff] uiux-bg border-2 rounded-xl backdrop-blur-md  hover:bg-[#EEAD0E]/40 cursor-pointer transition-all duration-300 p-[20px] flex flex-col items-center justify-center hover:w-[100%]'>
                         <div className=' w-full'>
                             <h1 className=' text-2xl font-extrabold'>Ui/Ux Design</h1>
                             <p className=" text-sm">
@@ -109,8 +102,7 @@ const Training = () => {
                         </div>
                     </div>
 
-                    <div className=' mb-[20px] w-[95%] block min-h-[80vh] lg:h-[70vh] max-sm:mb-[20px] text-[#000033] bg-[#EEAD0E]/60 border-2 rounded-xl border-[#EEAD0E]/80 backdrop-blur-md  hover:bg-[#EEAD0E]/40 cursor-pointer transition-all duration-300 p-[20px] flex-col items-center justify-start'>
-                        <div className=' w-full h-[45%] motion-bg rounded-t-xl mb-[30px]'></div>
+                    <div className=' mb-[20px] w-[95%] min-h-[30vh] lg:h-[30vh] max-sm:mb-[20px] text-[#fff] motion-bg border-2 rounded-xl backdrop-blur-md  hover:bg-[#EEAD0E]/40 cursor-pointer transition-all duration-300 p-[20px] flex flex-col items-center justify-center hover:w-[100%]'>
                         <div className=' w-full'>
                             <h1 className=' text-2xl font-extrabold'>Motion Graphics</h1>
                             <p className=" text-sm">

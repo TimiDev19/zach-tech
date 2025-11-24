@@ -79,56 +79,56 @@
 }
 
 .webDev-bg {
-  background-image: url(../assets/webDev.jpg);
+  background-image: linear-gradient(rgba(12, 13, 17, 0.7), rgba(15, 18, 29, 0.7)), url(../assets/webDev.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .uiux-bg {
-  background-image: url(../assets/uiux.jpg);
+  background-image: linear-gradient(rgba(12, 13, 17, 0.7), rgba(15, 18, 29, 0.7)), url(../assets/uiux.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .mobile-bg {
-  background-image: url(../assets/mobile.jpg);
+  background-image: linear-gradient(rgba(12, 13, 17, 0.7), rgba(15, 18, 29, 0.7)), url(../assets/mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .graphics-bg {
-  background-image: url(../assets/graphics.jpg);
+  background-image: linear-gradient(rgba(12, 13, 17, 0.7), rgba(15, 18, 29, 0.7)), url(../assets/graphics.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .backend-bg {
-  background-image: url(../assets/backend.jpg);
+  background-image: linear-gradient(rgba(12, 13, 17, 0.7), rgba(15, 18, 29, 0.7)), url(../assets/backend.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .data-bg {
-  background-image: url(../assets/data\ analysis.jpg);
+  background-image: linear-gradient(rgba(12, 13, 17, 0.7), rgba(15, 18, 29, 0.7)), url(../assets/data\ analysis.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .fs-bg {
-  background-image: url(../assets/fullstack.jpg);
+  background-image: linear-gradient(rgba(12, 13, 17, 0.7), rgba(15, 18, 29, 0.7)), url(../assets/fullstack.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .motion-bg {
-  background-image: url(../assets/motion\ graphics.jpg);
+  background-image: linear-gradient(rgba(12, 13, 17, 0.7), rgba(15, 18, 29, 0.7)), url(../assets/motion\ graphics.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

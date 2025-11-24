@@ -5,8 +5,8 @@ import React from 'react'
 
 const MissionVision = () => {
     return (
-        <div id='about' className=' lg:h-[100vh] w-[100vw] bg-white pt-[85px]'>
-            <div className=' min-h-[100dvh] w-[100dvw] flex items-center justify-center flex-col lg:flex-row'>
+        <div id='about' className=' lg:h-[80vh] w-[100vw] bg-white pt-[85px]'>
+            <div className=' min-h-[65dvh] w-[100dvw] flex items-center justify-center flex-col lg:flex-row'>
                 <div className=' min-h-[65vh] w-[90%] lg:w-[25vw] mx-[20px] cursor-pointer hover:rotate-[10deg] duration-500 flex flex-col items-end justify-end relative bg-transparent'>
                     <div className=' h-[100%] w-[100%] absolute z-[20] mx-auto bg-transparent pt-[10%]'>
                         <div className=' uppercase font-extrabold text-xl h-[50px] w-[50%] bg-[#EEAD0E] rounded-full mx-auto flex items-center justify-center'>
