@@ -118,7 +118,7 @@ const Hero = () => {
                 muted
                 controls={false}
             ></video> */}
-            <video
+            {/* <video
                 src="/bg-vid.mp4"
                 className="absolute inset-0 object-cover w-full h-full opacity-50"
                 autoPlay
@@ -128,7 +128,17 @@ const Hero = () => {
                 webkit-playsinline
                 preload="auto"
                 controls={false}
-            ></video>
+            ></video> */}
+            <video
+  src="/bg-vid.mp4"
+  className="absolute inset-0 object-cover w-full h-full opacity-50"
+  autoPlay
+  playsInline
+  webkit-playsinline="true"
+  muted
+  loop
+/>
+
             <div
                 className=" w-full pt-[80px] h-[100vh] relative flex items-center justify-center text-white"
             >
