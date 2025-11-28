@@ -46,7 +46,7 @@ const Training = () => {
                                 Join our Data Analysis Training to master Excel, Power BI, SQL, and Python through hands-on sessions that teach you to turn raw data into clear, actionable insights.
                             </p>
                             <Link
-                                href={""}
+                                href={"/trainings/data"}
                                 className=" text-[16px] w-full text-center py-[10px] bg-[#000033] block rounded-xl text-white hover:bg-opacity-80 duration-300"
                             >
                                 View Details
@@ -71,7 +71,7 @@ const Training = () => {
                                 Learn how to design, build, and launch Android and iOS apps using Flutter, React Native, and Next.js, taking you from idea to app store.
                             </p>
                             <Link
-                                href={""}
+                                href={"/trainings/mobile"}
                                 className=" text-[16px] w-full text-center py-[10px] bg-[#000033] block rounded-xl text-white hover:bg-opacity-80 duration-300"
                             >
                                 View Details
@@ -96,7 +96,7 @@ const Training = () => {
                                 Master HTML, CSS, JavaScript, React, and Next.js so you can build responsive, interactive websites and become job-ready with confidence.
                             </p>
                             <Link
-                                href={""}
+                                href={"/trainings/frontend"}
                                 className=" text-[16px] w-full text-center py-[10px] bg-[#000033] block rounded-xl text-white hover:bg-opacity-80 duration-300"
                             >
                                 View Details
@@ -122,7 +122,7 @@ const Training = () => {
                                 Learn to build fast, secure, and scalable server-side apps using Node.js, Express, Python, and databases like MongoDB and MySQL while mastering API design and data management.
                             </p>
                             <Link
-                                href={""}
+                                href={"/trainings/backend"}
                                 className=" text-[16px] w-full text-center py-[10px] bg-[#000033] block rounded-xl text-white hover:bg-opacity-80 duration-300"
                             >
                                 View Details
@@ -148,7 +148,7 @@ const Training = () => {
                                 Learn how to build complete web applications using HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB through real-world, industry-ready projects.
                             </p>
                             <Link
-                                href={""}
+                                href={"/trainings/fullstack"}
                                 className=" text-[16px] w-full text-center py-[10px] bg-[#000033] block rounded-xl text-white hover:bg-opacity-80 duration-300"
                             >
                                 View Details
@@ -174,7 +174,7 @@ const Training = () => {
                                 Master Photoshop, Illustrator, Canva, and core design principles so you can create stunning visuals and build professional-level design skills.
                             </p>
                             <Link
-                                href={""}
+                                href={"/trainings/graphics"}
                                 className=" text-[16px] w-full text-center py-[10px] bg-[#000033] block rounded-xl text-white hover:bg-opacity-80 duration-300"
                             >
                                 View Details
@@ -200,7 +200,7 @@ const Training = () => {
                                 Join our UI/UX Design Training to master Figma, Adobe XD, and FigJam while gaining hands-on experience in wireframing, prototyping, and user-centered design.
                             </p>
                             <Link
-                                href={""}
+                                href={"/trainings/ui"}
                                 className=" text-[16px] w-full text-center py-[10px] bg-[#000033] block rounded-xl text-white hover:bg-opacity-80 duration-300"
                             >
                                 View Details
@@ -226,7 +226,7 @@ const Training = () => {
                             Join our Motion Graphics Training and learn how to turn static visuals into stunning animations.
                             </p>
                             <Link
-                                href={""}
+                                href={"/trainings/motiongraphics"}
                                 className=" text-[16px] w-full text-center py-[10px] bg-[#000033] block rounded-xl text-white hover:bg-opacity-80 duration-300"
                             >
                                 View Details
