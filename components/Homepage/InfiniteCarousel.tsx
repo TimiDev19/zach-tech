@@ -50,13 +50,13 @@ const InfiniteCarousel = () => {
                 }}
             >
                 {[...images, ...images].map((src, index) => (
-                    <div key={index} className="w-64 h-40 flex-shrink-0 overflow-hidden relative py-2">
+                    <div key={index} className="w-64 h-[260px] flex-shrink-0 overflow-hidden relative py-2">
                         <Image
                             src={src}
                             alt={`carousel-image-${index}`}
                             width={100}
                             height={100}
-                            className="w-[100px] h-auto mb-2 object-cover border border-[#EEAD0E] rounded-full mx-[3px]"
+                            className="w-[200px] h-auto mb-2 object-cover border border-[#EEAD0E] rounded-full mx-[3px]"
                         />
                     </div>
                 ))}

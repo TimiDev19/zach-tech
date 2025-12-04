@@ -29,7 +29,7 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body
-        className={`antialiased ${inter.className} overflow-x-hidden bg-[#fff] max-w-[100dvw]`}
+        className={`antialiased ${inter.className} overflow-x-hidden bg-[#fff] max-w-[100dvw] no-scrollbar`}
       >
         <Navbar />
         <main className=" max-w-[100dvw] overflow-x-hidden">{children}

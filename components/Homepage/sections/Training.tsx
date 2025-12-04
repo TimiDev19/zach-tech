@@ -38,7 +38,7 @@ const Training = () => {
                     <p className=" text-[18px] font-light w-full lg:w-[55%] text-center mx-auto">We believe in continuous growth. Our training program are designed to empower you with the knowledge and skills to excel in your career and drive innovation.</p>
                 </div>
                 <div className=' min-h-[100vh] w-full grid grid-cols-1 lg:grid-cols-4 px-[2%]'>
-                    <div className=" w-[95%] mb-[20px] min-h-[65vh] border border-slate-100 rounded-xl">
+                    <div className=" w-[95%] mb-[20px] min-h-[65vh] border border-slate-100 rounded-xl shadow-md shadow-slate-400">
                         <div className=" h-[50%] w-full data-bg rounded-t-xl"></div>
                         <div className=" p-[4%] flex flex-col items-start justify-between h-[50%]">
                             <h1 className=' text-[18px] font-semibold mb-[10px]'>Data Analysis</h1>
@@ -63,7 +63,7 @@ const Training = () => {
                         </div>
                     </div> */}
 
-                    <div className=" w-[95%] mb-[20px] min-h-[65vh] border border-slate-100 rounded-xl">
+                    <div className=" w-[95%] mb-[20px] min-h-[65vh] border border-slate-100 rounded-xl shadow-md shadow-slate-400">
                         <div className=" h-[50%] w-full mobile-bg rounded-t-xl"></div>
                         <div className=" p-[4%] flex flex-col items-start justify-between h-[50%]">
                             <h1 className=' text-[18px] font-semibold mb-[10px]'>Mobile Dev</h1>
@@ -88,7 +88,7 @@ const Training = () => {
                         </div>
                     </div> */}
 
-                    <div className=" w-[95%] mb-[20px] min-h-[65vh] border border-slate-100 rounded-xl">
+                    <div className=" w-[95%] mb-[20px] min-h-[65vh] border border-slate-100 rounded-xl shadow-md shadow-slate-400">
                         <div className=" h-[50%] w-full webDev-bg rounded-t-xl"></div>
                         <div className=" p-[4%] flex flex-col items-start justify-between h-[50%]">
                             <h1 className=' text-[18px] font-semibold mb-[10px]'>Frontend Development</h1>
@@ -114,7 +114,7 @@ const Training = () => {
                         </div>
                     </div> */}
 
-                    <div className=" w-[95%] mb-[20px] min-h-[65vh] border border-slate-100 rounded-xl">
+                    <div className=" w-[95%] mb-[20px] min-h-[65vh] border border-slate-100 rounded-xl shadow-md shadow-slate-400">
                         <div className=" h-[50%] w-full backend-bg rounded-t-xl"></div>
                         <div className=" p-[4%] flex flex-col items-start justify-between h-[50%]">
                             <h1 className=' text-[18px] font-semibold mb-[10px]'>Backend Development</h1>
@@ -140,7 +140,7 @@ const Training = () => {
                         </div>
                     </div> */}
 
-                    <div className=" w-[95%] mb-[20px] min-h-[65vh] border border-slate-100 rounded-xl">
+                    <div className=" w-[95%] mb-[20px] min-h-[65vh] border border-slate-100 rounded-xl shadow-md shadow-slate-400">
                         <div className=" h-[50%] w-full fs-bg rounded-t-xl"></div>
                         <div className=" p-[4%] flex flex-col items-start justify-between h-[50%]">
                             <h1 className=' text-[18px] font-semibold mb-[10px]'>Full Stack Development</h1>
@@ -166,7 +166,7 @@ const Training = () => {
                         </div>
                     </div> */}
 
-                    <div className=" w-[95%] mb-[20px] min-h-[65vh] border border-slate-100 rounded-xl">
+                    <div className=" w-[95%] mb-[20px] min-h-[65vh] border border-slate-100 rounded-xl shadow-md shadow-slate-400">
                         <div className=" h-[50%] w-full graphics-bg rounded-t-xl"></div>
                         <div className=" p-[4%] flex flex-col items-start justify-between h-[50%]">
                             <h1 className=' text-[18px] font-semibold mb-[10px]'>Graphics Design</h1>
@@ -192,7 +192,7 @@ const Training = () => {
                         </div>
                     </div> */}
 
-                    <div className=" w-[95%] mb-[20px] min-h-[65vh] border border-slate-100 rounded-xl">
+                    <div className=" w-[95%] mb-[20px] min-h-[65vh] border border-slate-100 rounded-xl shadow-md shadow-slate-400">
                         <div className=" h-[50%] w-full uiux-bg rounded-t-xl"></div>
                         <div className=" p-[4%] flex flex-col items-start justify-between h-[50%]">
                             <h1 className=' text-[18px] font-semibold mb-[10px]'>Ui/Ux Design</h1>
@@ -218,7 +218,7 @@ const Training = () => {
                         </div>
                     </div> */}
 
-                    <div className=" w-[95%] mb-[20px] min-h-[65vh] border border-slate-100 rounded-xl">
+                    <div className=" w-[95%] mb-[20px] min-h-[65vh] border border-slate-100 rounded-xl shadow-md shadow-slate-400">
                         <div className=" h-[50%] w-full motion-bg rounded-t-xl"></div>
                         <div className=" p-[4%] flex flex-col items-start justify-between h-[50%]">
                             <h1 className=' text-[18px] font-semibold mb-[10px]'>Motion Graphics</h1>

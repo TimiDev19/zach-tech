@@ -58,43 +58,43 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li className=' mb-2'>
-                                <Link href={"/#home"} className=' relative group'>
+                                <Link href={"/#service"} className=' relative group'>
                                     Services
                                     <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                 </Link>
                             </li>
                             <li className=' mb-2'>
-                                <Link href={"/#home"} className=' relative group'>
+                                <Link href={"/#about"} className=' relative group'>
                                     About
                                     <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                 </Link>
                             </li>
                             <li className=' mb-2'>
-                                <Link href={"/#home"} className=' relative group'>
+                                <Link href={"/#whyus"} className=' relative group'>
                                     Why Us?
                                     <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                 </Link>
                             </li>
                             <li className=' mb-2'>
-                                <Link href={"/#home"} className=' relative group'>
+                                <Link href={"/#projects"} className=' relative group'>
                                     Projects
                                     <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                 </Link>
                             </li>
                             <li className=' mb-2'>
-                                <Link href={"/#home"} className=' relative group'>
+                                <Link href={"/#team"} className=' relative group'>
                                     Team
                                     <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                 </Link>
                             </li>
                             <li className=' mb-2'>
-                                <Link href={"/#home"} className=' relative group'>
+                                <Link href={"/#clients"} className=' relative group'>
                                     Clients
                                     <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                 </Link>
                             </li>
                             <li className=' mb-2'>
-                                <Link href={"/#home"} className=' relative group'>
+                                <Link href={"/contact"} className=' relative group'>
                                     Contact
                                     <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                                 </Link>

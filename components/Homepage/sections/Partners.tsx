@@ -19,23 +19,12 @@ const Partners = () => {
     return (
         <div id="partners" className='pt-[100px] bg-white'>
             <h1 className={` text-center text-[#000033] text-[45px] mb-4`}>Our <span className=' text-[#EEAD0E]'>Partners</span></h1>
-            {/* <InfiniteCarousel /> */}
+            <h1 className=' text-[14px] lg:text-[18px]  w-[95%] lg:w-[65%] mx-auto text-justify mb-[20px]'>
+                We’re proud to collaborate with industry-leading organizations who share our commitment to excellence, innovation, and impact. Together, we combine expertise, resources, and vision to deliver meaningful results for the communities and clients we serve. Explore the partners who help make our mission possible.
+            </h1>
+            <InfiniteCarousel />
 
-            <div className=' w-[95%] mx-auto min-h-[50vh] flex flex-col lg:flex-row items-center justify-center lg:justify-between'>
-                <div className=' lg:w-[47%] w-full mb-[20px]'>
-                    <FadeInFromTop>
-                        <h1 className=' text-xl  max-sm:text-xl w-full mx-auto text-justify'>
-                            We’re proud to collaborate with industry-leading organizations who share our commitment to excellence, innovation, and impact. Together, we combine expertise, resources, and vision to deliver meaningful results for the communities and clients we serve. Explore the partners who help make our mission possible.
-                        </h1>
-                    </FadeInFromTop>
-                </div>
-
-                <div className=' lg:w-[47%] w-full h-[40vh] mb-[20px]'>
-                    <FadeInFromBottom>
-                        <PartnerScroll />
-                    </FadeInFromBottom>
-                </div>
-            </div>
+            {/*  */}
         </div>
     )
 }
