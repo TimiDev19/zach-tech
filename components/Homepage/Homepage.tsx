@@ -16,6 +16,7 @@ import MissionVision from './sections/MissionVision'
 import Carousel from '../Carousel'
 import InfiniteCarousel from './InfiniteCarousel'
 import Training from './sections/Training'
+import Testimonials from './sections/Testimonials'
 
 const Homepage = () => {
     return (
@@ -33,6 +34,7 @@ const Homepage = () => {
             <Team />
             <Client />
             <Partners />
+            <Testimonials />
             {/* <Contact /> */}
             <Footer />
         </div>

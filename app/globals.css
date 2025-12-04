@@ -174,6 +174,41 @@
   background-size: cover;
 }
 
+.aClass {
+  background-image: url(/images/aClass.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.phase3 {
+  background-image: url(/images/phase3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mavent {
+  background-image: url(/images/mavent.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.p1 {
+  background-image: url(/images/deskp1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.desina {
+  background-image: url(/images/desina.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .eCommerce {
   background-image: url(../assets/ecommercewebsite.png);
   background-repeat: no-repeat;
