@@ -53,7 +53,7 @@ const InfiniteCarousel = () => {
                             alt={`carousel-image-${index}`}
                             width={100}
                             height={100}
-                            className="w-[200px] h-auto mb-2 object-cover border border-[#EEAD0E] rounded-full mx-[3px]"
+                            className="w-[200px] h-auto mb-2 object-cover border-[#EEAD0E] rounded-full mx-[3px]"
                         />
                     </div>
                 ))}
