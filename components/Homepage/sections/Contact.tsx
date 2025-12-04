@@ -72,14 +72,14 @@ const Contact = () => {
     }
     return (
         <>
-            <div id="contact" className={` bg-white pt-[100px]`}>
+            <div id="contact" className={` bg-white pt-[100px] no-scrollbar`}>
                 <h1
                     className={`  text-center text-[#000033] text-[45px] mb-4`}
                 >
                     Contact <span className=" text-[#EEAD0E]">Us</span>
                 </h1>
                 <form
-                    action="" className=" min-h-[50vh] max-sm:h-auto w-screen block ">
+                    action="" className=" min-h-[50vh] max-sm:h-auto w-screen block no-scrollbar">
                     <div
 
                         className=" flex items-center justify-between w-[90%] mx-auto h-full max-sm:flex-col"
@@ -132,7 +132,7 @@ const Contact = () => {
                     </div>
                 </form>
 
-                <div className=" min-h-[90vh] max-sm:h-auto w-screen mt-[30px] flex max-sm:flex-col items-center justify-between px-[2.5%]">
+                <div className=" min-h-[90vh] max-sm:h-auto w-[100vw] no-scrollba mt-[30px] flex max-sm:flex-col items-center justify-between px-[2.5%]">
                     <div className=" w-[45%] max-sm:w-full  h-full">
                         <h1 className=" text-6xl max-sm:text-3xl mb-5">
                             Make sure to keep in touch with us!

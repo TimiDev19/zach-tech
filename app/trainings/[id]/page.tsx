@@ -12,7 +12,7 @@ export default async function page({
     const { id } = await params; // ✅ unwrap Promise
 
     return (
-        <div className=' min-h-[100vh] w-[100vw] lg:h-[100vh] lg:overflow-y-hidden overflow-x-hidden overflow-y-scroll text-white'>
+        <div className=' min-h-[100vh] w-[100vw] lg:h-[100vh] lg:overflow-y-hidden overflow-x-hidden overflow-y-scroll text-white no-scrollbar'>
             <Trainings type={id} />
             {/* <Footer /> */}
         </div>
