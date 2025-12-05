@@ -46,13 +46,13 @@ const OurServices = () => {
                 </h1>
 
                 <div className=' min-h-[100vh] w-full grid grid-cols-1 lg:grid-cols-3 px-[2%]'>
-                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
+                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
 
                         {/* Image area that shrinks on hover */}
-                        <div className="w-full h-[300px] webDev-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px]"></div>
+                        <div className="w-full h-[300px] webDev-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px] will-change-transform will-change-height"></div>
                         <h1 className="text-xl font-extrabold group-hover:opacity-0 group-hover:translate-y-3 transition-all duration-500 opacity-100 translate-y-0">Web Development</h1>
                         {/* Text area appears + pushes card taller */}
-                        <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px]">
+                        <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px] will-change-opacity will-change-transform">
                             <h1 className="text-xl font-extrabold">Web Development</h1>
                             <p className=" text-sm">
                                 <b className="text-black">Your Website. Your Digital Empire. Your Success Story.</b> <br />
@@ -62,13 +62,13 @@ const OurServices = () => {
                         </div>
                     </div>
 
-                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
+                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
 
                         {/* Image area that shrinks on hover */}
-                        <div className="w-full h-[300px] uiux-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px]"></div>
+                        <div className="w-full h-[300px] uiux-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px] will-change-transform will-change-height"></div>
                         <h1 className="text-xl font-extrabold group-hover:opacity-0 group-hover:translate-y-3 transition-all duration-500 opacity-100 translate-y-0">Ui/Ux Design</h1>
                         {/* Text area appears + pushes card taller */}
-                        <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px]">
+                        <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px] will-change-opacity will-change-transform">
                             <h1 className="text-xl font-extrabold">Ui/Ux Design</h1>
                             <p className=" text-sm">
                                 <b className="text-black">Beautiful Designs That Make People Click, Buy & Come Back.</b> <br />
@@ -78,13 +78,13 @@ const OurServices = () => {
                         </div>
                     </div>
 
-                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
+                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
 
                         {/* Image area that shrinks on hover */}
-                        <div className="w-full h-[300px] graphics-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px]"></div>
+                        <div className="w-full h-[300px] graphics-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px] will-change-transform will-change-height"></div>
                         <h1 className="text-xl font-extrabold group-hover:opacity-0 group-hover:translate-y-3 transition-all duration-500 opacity-100 translate-y-0">Graphics Design</h1>
                         {/* Text area appears + pushes card taller */}
-                        <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px]">
+                        <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px] will-change-opacity will-change-transform">
                             <h1 className="text-xl font-extrabold">Graphics Design</h1>
                             <p className=" text-sm">
                                 <b className="text-black">Visuals That Stop Scrolls, Spark Emotions & Sell Ideas.</b> <br />
@@ -94,10 +94,10 @@ const OurServices = () => {
                         </div>
                     </div>
 
-                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
+                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
 
                         {/* Image area that shrinks on hover */}
-                        <div className="w-full h-[300px] mobile-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px]"></div>
+                        <div className="w-full h-[300px] mobile-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px] will-change-transform will-change-height"></div>
                         <h1 className="text-xl font-extrabold group-hover:opacity-0 group-hover:translate-y-3 transition-all duration-500 opacity-100 translate-y-0">Mobile Development</h1>
                         {/* Text area appears + pushes card taller */}
                         <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[300px]">
@@ -111,13 +111,13 @@ const OurServices = () => {
                         </div>
                     </div>
 
-                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
+                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
 
                         {/* Image area that shrinks on hover */}
-                        <div className="w-full h-[300px] backend-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px]"></div>
+                        <div className="w-full h-[300px] backend-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px] will-change-transform will-change-height"></div>
                         <h1 className="text-xl font-extrabold group-hover:opacity-0 group-hover:translate-y-3 transition-all duration-500 opacity-100 translate-y-0">Backend Development</h1>
                         {/* Text area appears + pushes card taller */}
-                        <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px]">
+                        <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px] will-change-opacity will-change-transform">
                             <h1 className="text-xl font-extrabold">Backend Development</h1>
                             <p className=" text-sm">
                                 <b className="text-black">The Invisible Power Behind Every Great Digital Experience.</b> <br />
@@ -127,13 +127,13 @@ const OurServices = () => {
                         </div>
                     </div>
 
-                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
+                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
 
                         {/* Image area that shrinks on hover */}
-                        <div className="w-full h-[300px] fs-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px]"></div>
+                        <div className="w-full h-[300px] fs-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px] will-change-transform will-change-height"></div>
                         <h1 className="text-xl font-extrabold group-hover:opacity-0 group-hover:translate-y-3 transition-all duration-500 opacity-100 translate-y-0">Full Stack Development</h1>
                         {/* Text area appears + pushes card taller */}
-                        <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px]">
+                        <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px] will-change-opacity will-change-transform">
                             <h1 className="text-xl font-extrabold">Full Stack Development</h1>
                             <p className=" text-sm">
                                 <b className="text-black">Complete Solutions. From Idea to Launch. One Expert Team.</b> <br />
@@ -143,13 +143,13 @@ const OurServices = () => {
                         </div>
                     </div>
 
-                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 backdrop-blur-md text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
+                    <div className=" cursor-pointer group h-fit mb-[20px] w-[95%] bg-[#EEAD0E]/40 border-2 rounded-xl border-[#EEAD0E]/60 text-[#EEAD0E] hover:bg-[#EEAD0E]/30 transition-all duration-300 p-[20px] flex flex-col items-center justify-start overflow-hidden">
 
                         {/* Image area that shrinks on hover */}
-                        <div className="w-full h-[300px] data-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px]"></div>
+                        <div className="w-full h-[300px] data-bg rounded-xl mb-[30px] transition-all duration-500 group-hover:h-[120px] will-change-transform will-change-height"></div>
                         <h1 className="text-xl font-extrabold group-hover:opacity-0 group-hover:translate-y-3 transition-all duration-500 opacity-100 translate-y-0">Data Analysis</h1>
                         {/* Text area appears + pushes card taller */}
-                        <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px]">
+                        <div className="w-full opacity-0 max-h-0 overflow-hidden translate-y-3 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-[400px] will-change-opacity will-change-transform">
                             <h1 className="text-xl font-extrabold">Data Analysis</h1>
                             <p className=" text-sm">
                                 <b className="text-black">Turn Your Data Into Your Competitive Advantage.</b> <br />
