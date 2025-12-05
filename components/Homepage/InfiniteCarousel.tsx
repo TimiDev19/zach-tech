@@ -6,32 +6,60 @@ import Image from "next/image";
 const images = [
     "/images/aClass.png",
     "/images/phase3.png",
+    "/images/mavent.jpg",
+    // "/images/new/Apex.png",
     "/images/aClass.png",
     "/images/phase3.png",
+    "/images/mavent.jpg",
+    // "/images/new/Apex.png",
     "/images/aClass.png",
     "/images/phase3.png",
+    "/images/mavent.jpg",
+    // "/images/new/Apex.png",
     "/images/aClass.png",
     "/images/phase3.png",
+    "/images/mavent.jpg",
+    // "/images/new/Apex.png",
     "/images/aClass.png",
     "/images/phase3.png",
+    "/images/mavent.jpg",
+    // "/images/new/Apex.png",
     "/images/aClass.png",
     "/images/phase3.png",
+    "/images/mavent.jpg",
+    // "/images/new/Apex.png",
     "/images/aClass.png",
     "/images/phase3.png",
+    "/images/mavent.jpg",
+    // "/images/new/Apex.png",
     "/images/aClass.png",
     "/images/phase3.png",
+    "/images/mavent.jpg",
+    // "/images/new/Apex.png",
     "/images/aClass.png",
     "/images/phase3.png",
+    "/images/mavent.jpg",
+    // "/images/new/Apex.png",
     "/images/aClass.png",
     "/images/phase3.png",
+    "/images/mavent.jpg",
+    // "/images/new/Apex.png",
     "/images/aClass.png",
     "/images/phase3.png",
+    "/images/mavent.jpg",
+    // "/images/new/Apex.png",
     "/images/aClass.png",
     "/images/phase3.png",
+    "/images/mavent.jpg",
+    // "/images/new/Apex.png",
     "/images/aClass.png",
     "/images/phase3.png",
+    "/images/mavent.jpg",
+    // "/images/new/Apex.png",
     "/images/aClass.png",
     "/images/phase3.png",
+    "/images/mavent.jpg",
+    // "/images/new/Apex.png",
 
 ];
 
@@ -50,7 +78,7 @@ const InfiniteCarousel = () => {
                 }}
             >
                 {[...images, ...images].map((src, index) => (
-                    <div key={index} className="w-64 h-[260px] flex-shrink-0 overflow-hidden relative py-2">
+                    <div key={index} className="w-64 h-[260px] flex items-center justify-center flex-shrink-0 overflow-hidden relative py-2">
                         <Image
                             src={src}
                             alt={`carousel-image-${index}`}

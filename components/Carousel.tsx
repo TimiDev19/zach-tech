@@ -6,30 +6,43 @@ import Image from "next/image";
 const images = [
     "/images/desina.png",
     "/images/partner_one.png",
+    "/images/mavent.jpg",
     "/images/desina.png",
     "/images/partner_one.png",
+    "/images/mavent.jpg",
     "/images/desina.png",
     "/images/partner_one.png",
+    "/images/mavent.jpg",
     "/images/desina.png",
     "/images/partner_one.png",
+    "/images/mavent.jpg",
     "/images/desina.png",
     "/images/partner_one.png",
+    "/images/mavent.jpg",
     "/images/desina.png",
     "/images/partner_one.png",
+    "/images/mavent.jpg",
     "/images/desina.png",
     "/images/partner_one.png",
+    "/images/mavent.jpg",
     "/images/desina.png",
     "/images/partner_one.png",
+    "/images/mavent.jpg",
     "/images/desina.png",
     "/images/partner_one.png",
+    "/images/mavent.jpg",
     "/images/desina.png",
     "/images/partner_one.png",
+    "/images/mavent.jpg",
     "/images/desina.png",
     "/images/partner_one.png",
+    "/images/mavent.jpg",
     "/images/desina.png",
     "/images/partner_one.png",
+    "/images/mavent.jpg",
     "/images/desina.png",
     "/images/partner_one.png",
+    "/images/mavent.jpg",
 ];
 
 const InfiniteCarousel = () => {
@@ -47,7 +60,7 @@ const InfiniteCarousel = () => {
                 }}
             >
                 {[...images, ...images].map((src, index) => (
-                    <div key={index} className="w-[256px] h-[260px] flex-shrink-0 overflow-hidden relative py-2">
+                    <div key={index} className="w-[256px] h-[260px] flex items-center justify-center flex-shrink-0 overflow-hidden relative py-2">
                         <Image
                             src={src}
                             alt={`carousel-image-${index}`}

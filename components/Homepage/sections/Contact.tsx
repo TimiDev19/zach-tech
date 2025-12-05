@@ -73,66 +73,76 @@ const Contact = () => {
     return (
         <>
             <div id="contact" className={` bg-white pt-[100px] no-scrollbar`}>
-                <h1
-                    className={`  text-center text-[#000033] text-[45px] mb-4`}
-                >
-                    Contact <span className=" text-[#EEAD0E]">Us</span>
-                </h1>
                 <form
-                    action="" className=" min-h-[50vh] max-sm:h-auto w-screen block no-scrollbar">
+                    action="" className=" min-h-[50vh] max-sm:h-auto w-[100dvw] flex max-sm:flex-col items-start justify-between no-scrollbar">
+                    <div
+                        className=" flex flex-col items-center justify-between max-sm:w-[95%] w-[45%] mx-auto h-full max-sm:flex-col text-justify"
+                    >
+                        <h1
+                            className={`  text-center text-[#000033] text-[45px] mb-4`}
+                        >
+                            Contact <span className=" text-[#EEAD0E]">Us</span>
+                        </h1>
+                        <p className=" mb-[20px]">
+                            At Zach Technologies, we are committed to providing reliable, innovative, and human-centered digital solutions that drive growth and efficiency. Whether you're looking to transform your business with modern technology, integrate smarter systems, or simply learn more about our services, our team is here to support you every step of the way. We believe in building strong, lasting partnerships by delivering exceptional value and transparent communication.
+                            <br /> <br /> <br />
+                            If you have questions, project inquiries, or need technical assistance, we’d love to hear from you. Reach out to us through our available channels, and a member of our team will respond promptly. Your goals matter to us, and we look forward to helping you achieve them with the expertise, passion, and innovation that define Zach Technologies.
+                        </p>
+                        <div className=" w-full h-[50vh] contact-bg"></div>
+                    </div>
                     <div
 
-                        className=" flex items-center justify-between w-[90%] mx-auto h-full max-sm:flex-col"
+                        className=" flex flex-col items-center justify-between max-sm:w-[95%] w-[45%] mx-auto h-full max-sm:flex-col"
                     >
-                        <div className=" h-full w-[45%] flex-col items-center justify-between max-sm:w-full ">
+                        <div className=" h-full w-[100%] flex-col items-center justify-between max-sm:w-full ">
                             <input
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                                 type="text"
                                 placeholder="Name"
-                                className=" w-full border-b-2 border-b-[#eead0e] text-black mb-[90px] h-[50px] focus:outline-none"
+                                className=" w-full border-b-2 border-b-[#eead0e] text-black bg-white placeholder:font-semibold mb-[90px] h-[50px] focus:outline-none"
                             />
                             <input
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 type="email"
                                 placeholder="Email"
-                                className=" w-full border-b-2 border-b-[#eead0e] text-black mb-[90px] h-[50px] focus:outline-none"
+                                className=" w-full border-b-2 border-b-[#eead0e] text-black bg-white placeholder:font-semibold mb-[90px] h-[50px] focus:outline-none"
                             />
                             <input
                                 value={phone}
                                 onChange={(e) => setPhone(e.target.value)}
                                 type="text"
                                 placeholder="Phone"
-                                className=" w-full border-b-2 border-b-[#eead0e] text-black mb-[90px] h-[50px] focus:outline-none"
+                                className=" w-full border-b-2 border-b-[#eead0e] text-black bg-white placeholder:font-semibold mb-[90px] h-[50px] focus:outline-none"
                             />
                         </div>
-                        <div className=" h-full w-[45%] flex-col items-center  max-sm:w-full justify-between ">
+                        <div className=" h-full w-[100%] flex-col items-center  max-sm:w-full justify-between ">
                             <textarea
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
-                                className="w-full min-h-[50vh] resize-none p-2 rounded border border-[#eead0e] focus:outline-none focus:shadow-[#eead0e] focus:shadow-sm"
+                                className="w-full min-h-[50vh] resize-none p-2 rounded bg-white placeholder:font-semibold border border-[#eead0e] focus:outline-none focus:shadow-[#eead0e] focus:shadow-sm"
                                 placeholder="Leave message..."
                             />
                         </div>
-                    </div>
-                    <div className=" w-[90%] mx-auto mt-[10px]">
-                        <button
-                            onClick={sendEmail}
-                            disabled={isLoading}
-                            className={`relative text-white text-2xl px-4 py-2 rounded-md bg-[#EEAD0E] flex items-center justify-center ${isLoading ? 'bg-[#EEAD0E]/50 cursor-not-allowed' : 'hover:bg-[#e0a30d]'
-                                }`}
-                        >
-                            {isLoading ? (
-                                <span className="loading-spinner w-6 h-6 border-4 border-white border-t-transparent rounded-full animate-spin"></span>
-                            ) : (
-                                "Send Email"
-                            )}
-                        </button>
+                        <div className=" w-[100%] mx-auto mt-[10px]">
+                            <button
+                                onClick={sendEmail}
+                                disabled={isLoading}
+                                className={`relative text-white text-2xl px-4 py-2 rounded-md bg-[#EEAD0E] flex items-center justify-center ${isLoading ? 'bg-[#EEAD0E]/50 cursor-not-allowed' : 'hover:bg-[#e0a30d]'
+                                    }`}
+                            >
+                                {isLoading ? (
+                                    <span className="loading-spinner w-6 h-6 border-4 border-white border-t-transparent rounded-full animate-spin"></span>
+                                ) : (
+                                    "Send Email"
+                                )}
+                            </button>
+                        </div>
                     </div>
                 </form>
 
-                <div className=" min-h-[90vh] max-sm:h-auto w-[100vw] no-scrollba mt-[30px] flex max-sm:flex-col items-center justify-between px-[2.5%]">
+                {/* <div className=" min-h-[90vh] max-sm:h-auto w-[100vw] no-scrollba mt-[30px] flex max-sm:flex-col items-center justify-between px-[2.5%]">
                     <div className=" w-[45%] max-sm:w-full  h-full">
                         <h1 className=" text-6xl max-sm:text-3xl mb-5">
                             Make sure to keep in touch with us!
@@ -218,7 +228,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className=" w-full lg:w-[50%] min-h-[90vh] contact-bg"></div>
-                </div>
+                </div> */}
             </div>
             <div className=" h-[100px] w-full bg-white"></div>
             <Footer />
