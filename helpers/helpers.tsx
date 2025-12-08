@@ -29,6 +29,7 @@ import phase3 from "@/assets/phase3.png"
 import aClass from "@/assets/aClass.png"
 import p1 from "@/assets/partner_one.png"
 import p2 from "@/assets/desina.jpg"
+import abdul from "@/assets/abdul.png"
 
 const techstack = {
     "languages": [
@@ -192,22 +193,22 @@ const techstack = {
         {
             image: paul,
             name: "Udah Paulzack E. M",
-            role: "Mobile Developer"
+            role: "Software Developer"
         },
         {
             image: ebenezer,
             name: "Undie Ebenezer",
-            role: "Senior software Developer"
+            role: "Software Developer"
         },
         {
             image: faith,
             name: "Ajiboye Faith Kehinde",
-            role: "Lead UI/UX designer and graphic designer"
+            role: "UI/UX and graphic designer"
         },
         {
             image: teemi,
             name: "Oluwatimilehin Ayodeji Rotimi",
-            role: "Full stack Developer"
+            role: "Software Developer"
         },
         {
             image: patience,
@@ -217,7 +218,12 @@ const techstack = {
         {
             image: ayomide,
             name: "Ayomide Christopher A",
-            role: "Senior full stack Developer"
+            role: "Software Developer"
+        },
+        {
+            image: abdul,
+            name: "Abdallah Emmanuel",
+            role: "Data Analyst"
         }
     ],
     "clients": [
