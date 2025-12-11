@@ -519,7 +519,7 @@ export default function TeamSection() {
             />
 
             <h3 className="text-2xl font-bold text-center">{member.name}</h3>
-            <p className="text-black mb-4">{member.role}</p>
+            <p className="text-black mb-4 text-center">{member.role}</p>
             <Link href={""}
               target="_blank"
               className=" flex items-center justify-center bg-[#000033] text-white p-2 rounded-md hover:text-[#EEAD0E] duration-500"
