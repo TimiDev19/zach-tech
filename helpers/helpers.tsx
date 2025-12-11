@@ -198,7 +198,7 @@ const techstack = {
         {
             image: ebenezer,
             name: "Undie Ebenezer",
-            role: "Software Developer"
+            role: "Software Developer/Robotics Engineer"
         },
         {
             image: faith,
