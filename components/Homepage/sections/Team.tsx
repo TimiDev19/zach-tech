@@ -351,6 +351,8 @@ import { motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 import { Github, Linkedin, Twitter } from "lucide-react";
 import techstack from "@/helpers/helpers";
+import Link from "next/link";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 type TeamMember = {
   name: string;
@@ -385,118 +387,146 @@ const cardVariants = {
 
 export default function TeamSection() {
   return (
-    <section id="team" className="relative py-28 overflow-hidden bg-white  text-white">
-      {/* Background Glow */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/3 left-1/4 w-[300px] h-[300px] bg-indigo-500/30 blur-[120px] rounded-full"></div>
-        <div className="absolute bottom-1/4 right-1/3 w-[250px] h-[250px] bg-cyan-400/20 blur-[100px] rounded-full"></div>
+    // <section id="team" className="relative py-28 overflow-hidden bg-white  text-white">
+    //   {/* Background Glow */}
+    //   <div className="absolute inset-0">
+    //     <div className="absolute top-1/3 left-1/4 w-[300px] h-[300px] bg-indigo-500/30 blur-[120px] rounded-full"></div>
+    //     <div className="absolute bottom-1/4 right-1/3 w-[250px] h-[250px] bg-cyan-400/20 blur-[100px] rounded-full"></div>
+    //   </div>
+
+    //   {/* Section Header */}
+    //   <motion.div
+    //     initial={{ opacity: 0, y: 40 }}
+    //     whileInView={{ opacity: 1, y: 0 }}
+    //     transition={{ duration: 1 }}
+    //     viewport={{ once: true }}
+    //     className="relative z-10 text-center mb-16"
+    //   >
+    //     <h2 className="text-5xl font-extrabold mb-4 bg-[#000033] bg-clip-text text-transparent">
+    //       Meet Our Team
+    //     </h2>
+    //     <p className="text-cyan-400 text-lg">
+    //       Innovative minds behind our creative solutions.
+    //     </p>
+    //   </motion.div>
+
+    //   {/* Team Grid */}
+    //   <motion.div
+    //     variants={containerVariants}
+    //     initial="hidden"
+    //     whileInView="visible"
+    //     viewport={{ once: true, amount: 0.2 }}
+    //     className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto px-6"
+    //   >
+    //     {techstack.team.map((member, i) => (
+    //       <motion.div
+    //         key={i}
+    //         variants={cardVariants}
+    //         whileHover={{
+    //           y: -10,
+    //           rotateX: 2,
+    //           rotateY: -2,
+    //           scale: 1.03,
+    //         }}
+    //         transition={{ type: "spring", stiffness: 150, damping: 10 }}
+    //         className="group relative bg-[#000033] backdrop-blur-lg rounded-3xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 cursor-pointer"
+    //       >
+    //         {/* Image */}
+    //         <div className="overflow-hidden">
+    //           <motion.div
+    //             whileHover={{ scale: 1.1 }}
+    //             transition={{ duration: 0.5 }}
+    //             className="w-full h-64"
+    //           >
+    //             <Image
+    //               src={member.image}
+    //               alt={member.name}
+    //               width={400}
+    //               height={400}
+    //               className="w-full h-full object-cover"
+    //             />
+    //           </motion.div>
+    //         </div>
+
+    //         {/* Content */}
+    //         <div className="p-6 text-center">
+    //           <h3 className="text-2xl font-bold">{member.name}</h3>
+    //           <p className="text-cyan-300 mb-4">{member.role}</p>
+
+    //           {/* Social icons now respond to card hover */}
+    //           <motion.div
+    //             initial={{ opacity: 0, y: 10 }}
+    //             animate={{ opacity: 0 }}
+    //             whileHover={{ opacity: 1, y: 0 }}
+    //             transition={{ duration: 0.4 }}
+    //             className="flex justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+    //           >
+    //             {/* {member.socials.twitter && ( */}
+    //               <a
+    //                 href={""}
+    //                 target="_blank"
+    //                 rel="noreferrer"
+    //               >
+    //                 <Twitter className="w-5 h-5 hover:text-cyan-400 transition-colors" />
+    //               </a>
+    //             {/* )} */}
+    //             {/* {member.socials.linkedin && ( */}
+    //               <a
+    //                 href={""}
+    //                 target="_blank"
+    //                 rel="noreferrer"
+    //               >
+    //                 <Linkedin className="w-5 h-5 hover:text-indigo-400 transition-colors" />
+    //               </a>
+    //             {/* // )} */}
+    //             {/* {member.socials.github && ( */}
+    //               <a
+    //                 href={""}
+    //                 target="_blank"
+    //                 rel="noreferrer"
+    //               >
+    //                 <Github className="w-5 h-5 hover:text-gray-300 transition-colors" />
+    //               </a>
+    //             {/* )} */}
+    //           </motion.div>
+    //         </div>
+
+    //         {/* Glow border animation */}
+    //         <motion.div
+    //           className="absolute inset-0 border-2 border-transparent rounded-3xl group-hover:border-cyan-400/30 transition-all duration-500"
+    //           layoutId={`border-${i}`}
+    //         />
+    //       </motion.div>
+    //     ))}
+    //   </motion.div>
+    // </section>
+    <div
+      id="team"
+      className=" pt-[100px] min-h-[100vh] w-[100vw] bg-white px-[2.5%]"
+    >
+      <div className=" text-white w-[95%] mx-auto min-h-[35vh] bg-[#000033] rounded-xl mb-[20px] p-[2.5%] flex flex-col items-center justify-center">
+        <h1 className=" text-[36px] lg:text-[48px] font-semibold mb-[20px] text-center capitalize">The people behind the mission</h1>
+        <p className=" text-[18px] font-light w-full lg:w-[55%] text-center mx-auto">Meet the talented individuals driving our vision forward. A set of diverse creators, thinkers and doers.</p>
       </div>
 
-      {/* Section Header */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-        className="relative z-10 text-center mb-16"
-      >
-        <h2 className="text-5xl font-extrabold mb-4 bg-[#000033] bg-clip-text text-transparent">
-          Meet Our Team
-        </h2>
-        <p className="text-cyan-400 text-lg">
-          Innovative minds behind our creative solutions.
-        </p>
-      </motion.div>
-
-      {/* Team Grid */}
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto px-6"
-      >
+      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto px-6">
         {techstack.team.map((member, i) => (
-          <motion.div
-            key={i}
-            variants={cardVariants}
-            whileHover={{
-              y: -10,
-              rotateX: 2,
-              rotateY: -2,
-              scale: 1.03,
-            }}
-            transition={{ type: "spring", stiffness: 150, damping: 10 }}
-            className="group relative bg-[#000033] backdrop-blur-lg rounded-3xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 cursor-pointer"
-          >
-            {/* Image */}
-            <div className="overflow-hidden">
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.5 }}
-                className="w-full h-64"
-              >
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  width={400}
-                  height={400}
-                  className="w-full h-full object-cover"
-                />
-              </motion.div>
-            </div>
-
-            {/* Content */}
-            <div className="p-6 text-center">
-              <h3 className="text-2xl font-bold">{member.name}</h3>
-              <p className="text-cyan-300 mb-4">{member.role}</p>
-
-              {/* Social icons now respond to card hover */}
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 0 }}
-                whileHover={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4 }}
-                className="flex justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              >
-                {/* {member.socials.twitter && ( */}
-                  <a
-                    href={""}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Twitter className="w-5 h-5 hover:text-cyan-400 transition-colors" />
-                  </a>
-                {/* )} */}
-                {/* {member.socials.linkedin && ( */}
-                  <a
-                    href={""}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Linkedin className="w-5 h-5 hover:text-indigo-400 transition-colors" />
-                  </a>
-                {/* // )} */}
-                {/* {member.socials.github && ( */}
-                  <a
-                    href={""}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Github className="w-5 h-5 hover:text-gray-300 transition-colors" />
-                  </a>
-                {/* )} */}
-              </motion.div>
-            </div>
-
-            {/* Glow border animation */}
-            <motion.div
-              className="absolute inset-0 border-2 border-transparent rounded-3xl group-hover:border-cyan-400/30 transition-all duration-500"
-              layoutId={`border-${i}`}
+          <div key={i} className=" flex flex-col items-center justify-start bg-white shadow-sm shadow-black/50 px-[2.5%] py-[5%] rounded-2xl">
+            <Image
+              src={member.image}
+              alt=""
+              className=" w-[150px] rounded-full border border-[#000033] mb-[20px]"
             />
-          </motion.div>
+
+            <h3 className="text-2xl font-bold text-center">{member.name}</h3>
+            <p className="text-black mb-4">{member.role}</p>
+            <Link href={""}
+              target="_blank"
+              className=" flex items-center justify-center bg-[#000033] text-white p-2 rounded-md hover:text-[#EEAD0E] duration-500"
+            ><LinkedInIcon className=" mr-2" /> Connect On LinkedIn</Link>
+          </div>
         ))}
-      </motion.div>
-    </section>
+      </div>
+    </div>
   );
 }
