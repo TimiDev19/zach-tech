@@ -68,7 +68,7 @@ const Training = () => {
                         <div className=" p-[4%] flex flex-col items-start justify-between h-[50%]">
                             <h1 className=' text-[18px] font-semibold mb-[10px]'>Mobile Dev</h1>
                             <p className=" text-sm mb-[10px]">
-                                Learn how to design, build, and launch Android and iOS apps using Flutter, React Native, and Next.js, taking you from idea to app store.
+                                Learn how to design, build, and launch Android and iOS apps using Flutter, taking you from idea to app store.
                             </p>
                             <Link
                                 href={"/trainings/mobile"}
@@ -145,7 +145,7 @@ const Training = () => {
                         <div className=" p-[4%] flex flex-col items-start justify-between h-[50%]">
                             <h1 className=' text-[18px] font-semibold mb-[10px]'>Full Stack Development</h1>
                             <p className=" text-sm mb-[10px]">
-                                Learn how to build complete web applications using HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB through real-world, industry-ready projects.
+                            Welcome to the Complete Web Development training, the only course you need to learn to code and become a full-stack web developer
                             </p>
                             <Link
                                 href={"/trainings/fullstack"}
@@ -223,7 +223,7 @@ const Training = () => {
                         <div className=" p-[4%] flex flex-col items-start justify-between h-[50%]">
                             <h1 className=' text-[18px] font-semibold mb-[10px]'>Motion Graphics</h1>
                             <p className=" text-sm mb-[10px]">
-                            Join our Motion Graphics Training and learn how to turn static visuals into stunning animations.
+                                Join our Motion Graphics Training and learn how to turn static visuals into stunning animations.
                             </p>
                             <Link
                                 href={"/trainings/motiongraphics"}
