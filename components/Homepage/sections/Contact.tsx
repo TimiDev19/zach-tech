@@ -74,62 +74,69 @@ const Contact = () => {
         <>
             <div id="contact" className={` bg-white pt-[100px] no-scrollbar`}>
                 <form
-                    action="" className=" min-h-[50vh] max-sm:h-auto w-[100dvw] flex max-sm:flex-col items-start justify-between no-scrollbar">
+                    action="" className=" min-h-[50vh] max-sm:h-auto w-[100dvw] flex max-sm:flex-col items-start justify-between no-scrollbar lg:px-[5%]">
                     <div
                         className=" flex flex-col items-center justify-between max-sm:w-[95%] w-[45%] mx-auto h-full max-sm:flex-col text-justify"
                     >
-                        <h1
-                            className={`  text-center text-[#000033] text-[45px] mb-4`}
-                        >
-                            Contact <span className=" text-[#EEAD0E]">Us</span>
-                        </h1>
-                        <p className=" mb-[20px]">
-                            At Zach Technologies, we are committed to providing reliable, innovative, and human-centered digital solutions that drive growth and efficiency. Whether you're looking to transform your business with modern technology, integrate smarter systems, or simply learn more about our services, our team is here to support you every step of the way. We believe in building strong, lasting partnerships by delivering exceptional value and transparent communication.
-                            <br /> <br /> <br />
-                            If you have questions, project inquiries, or need technical assistance, we’d love to hear from you. Reach out to us through our available channels, and a member of our team will respond promptly. Your goals matter to us, and we look forward to helping you achieve them with the expertise, passion, and innovation that define Zach Technologies.
-                        </p>
-                        <div className=" w-full h-[50vh] contact-bg"></div>
+                        <div className=" w-[95%] mx-auto">
+                            <div className=" bg-[#060348] py-2 rounded-full w-[140px] h-[41px] px-[10px] flex items-center justify-center text-white mb-[50px]">
+                                <h1>Contact Us</h1>
+                            </div>
+
+                            <h1 className=" text-black text-[42px] mb-[50px]">Let’s Get In Touch</h1>
+
+                            <p className=" text-black text-[16px] mb-[50px]">
+                                At Zach Technologies, we are committed to providing reliable, innovative, and human-centered digital solutions that drive growth and efficiency. Whether you're looking to transform your business with modern technology, integrate smarter systems, or simply learn more about our services, our team is here to support you every step of the way. We believe in building strong, lasting partnerships by delivering exceptional value and transparent communication. <br /> <br /> If you have questions, project inquiries, or need technical assistance, we’d love to hear from you. Reach out to us through our available channels, and a member of our team will respond promptly. Your goals matter to us, and we look forward to helping you achieve them with the expertise, passion, and innovation that define Zach Technologies
+                            </p>
+                        </div>
+                        <div className=" w-[95%] h-[50vh] contact-bg"></div>
                     </div>
+
                     <div
 
-                        className=" flex flex-col items-center justify-between max-sm:w-[95%] w-[45%] mx-auto h-full max-sm:flex-col"
+                        className=" flex flex-col items-center justify-center max-sm:w-[95%] w-[45%] mx-auto h-full max-sm:flex-col"
                     >
-                        <div className=" h-full w-[100%] flex-col items-center justify-between max-sm:w-full ">
+                        <div className=" h-fit w-[95%] flex-col items-center justify-center max-sm:w-full ">
+                            <label htmlFor="name" className=" text-black text-[14px]">Full Name</label>
                             <input
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                                 type="text"
                                 placeholder="Name"
-                                className=" w-full border-b-2 border-b-[#eead0e] text-black bg-white placeholder:font-semibold mb-[90px] h-[50px] focus:outline-none"
+                                className=" w-full border border-[#00000080] text-black bg-white placeholder:font-light h-[50px] focus:outline-none rounded-full p-2 text-[14px] mb-[20px]"
                             />
+
+                            <label htmlFor="name" className=" text-black text-[14px]">Email Address</label>
                             <input
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 type="email"
                                 placeholder="Email"
-                                className=" w-full border-b-2 border-b-[#eead0e] text-black bg-white placeholder:font-semibold mb-[90px] h-[50px] focus:outline-none"
+                                className=" w-full border border-[#00000080] text-black bg-white placeholder:font-light h-[50px] focus:outline-none rounded-full p-2 text-[14px] mb-[20px]"
                             />
+
+                            <label htmlFor="name" className=" text-black text-[14px]">Phone Number</label>
                             <input
                                 value={phone}
                                 onChange={(e) => setPhone(e.target.value)}
                                 type="text"
                                 placeholder="Phone"
-                                className=" w-full border-b-2 border-b-[#eead0e] text-black bg-white placeholder:font-semibold mb-[90px] h-[50px] focus:outline-none"
+                                className=" w-full border border-[#00000080] text-black bg-white placeholder:font-light h-[50px] focus:outline-none rounded-full p-2 text-[14px] mb-[20px]"
                             />
                         </div>
-                        <div className=" h-full w-[100%] flex-col items-center  max-sm:w-full justify-between ">
+                        <div className=" h-full w-[95%] flex-col items-center  max-sm:w-full justify-between ">
                             <textarea
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
-                                className="w-full min-h-[50vh] resize-none p-2 rounded bg-white placeholder:font-semibold border border-[#eead0e] focus:outline-none focus:shadow-[#eead0e] focus:shadow-sm"
+                                className="w-full min-h-[167px] resize-none p-2 rounded-xl bg-white placeholder:font-light border border-[#00000080] focus:outline-none"
                                 placeholder="Leave message..."
                             />
                         </div>
-                        <div className=" w-[100%] mx-auto mt-[10px]">
+                        <div className=" w-[95%] mx-auto mt-[10px]">
                             <button
                                 onClick={sendEmail}
                                 disabled={isLoading}
-                                className={`relative text-white text-2xl px-4 py-2 rounded-md bg-[#EEAD0E] flex items-center justify-center ${isLoading ? 'bg-[#EEAD0E]/50 cursor-not-allowed' : 'hover:bg-[#e0a30d]'
+                                className={`relative text-white w-full text-2xl px-4 py-2 rounded-md bg-[#060348] flex items-center justify-center ${isLoading ? 'bg-[#060348]/50 cursor-not-allowed' : 'hover:bg-[#060348]'
                                     }`}
                             >
                                 {isLoading ? (
@@ -141,97 +148,9 @@ const Contact = () => {
                         </div>
                     </div>
                 </form>
-
-                {/* <div className=" min-h-[90vh] max-sm:h-auto w-[100vw] no-scrollba mt-[30px] flex max-sm:flex-col items-center justify-between px-[2.5%]">
-                    <div className=" w-[45%] max-sm:w-full  h-full">
-                        <h1 className=" text-6xl max-sm:text-3xl mb-5">
-                            Make sure to keep in touch with us!
-                        </h1>
-                        <p className=" mb-[20px] text-justify">
-                            Every project we take on is approached with creativity, technical
-                            excellence, and a clear focus on delivering real-world impact.
-                            Whether you're looking to launch a new product, streamline
-                            operations, or gain deeper insights from your data, we're here to
-                            make it happen.
-                        </p>
-                        <div className=" w-full border-b border-b-black">
-                            <div className=" flex items-center justify-between max-sm:justify-start  text-3xl mb-[20px]">
-                                <CallIcon className="text-[#eead0e]" />
-                                <h1 className="max-sm:text-xl">( +234 ) 9076827649</h1>
-                            </div>
-                            <div className=" max-sm:justify-start flex items-center justify-between text-3xl mb-[20px]">
-                                <MailIcon className="text-[#eead0e]" />
-                                <h1 className="max-sm:text-xl" >Zachtech56@gmail.com</h1>
-                            </div>
-                            <div className=" max-sm:justify-start flex items-center justify-between text-3xl mb-[20px]">
-                                <BusinessIcon className="text-[#eead0e]" />
-                                <h1 className="max-sm:text-[14px]">Abuja</h1>
-                            </div>
-                        </div>
-
-                        <div className=" w-full flex items-center justify-between pt-[30px]">
-                            <ol className=" w-[45%] max-sm:w-full">
-                                <li className=" mb-[30px]">
-                                    <Link href="/#home" className="relative group ml-[25px]">
-                                        Home
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-black transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
-                                    </Link>
-                                </li>
-                                <li className=" mb-[30px]">
-                                    <Link href="/#service" className="relative group ml-[25px]">
-                                        Service
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-black transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
-                                    </Link>
-                                </li>
-                                <li className=" mb-[30px]">
-                                    <Link href="/#whyus" className="relative group ml-[25px]">
-                                        Why Us?
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-black transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
-                                    </Link>
-                                </li>
-                                <li className=" mb-[30px]">
-                                    <Link href="/#about" className="relative group ml-[25px]">
-                                        About
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-black transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
-                                    </Link>
-                                </li>
-                            </ol>
-                            <ol className=" w-[45%] max-sm:w-full">
-                                <li className=" mb-[30px]">
-                                    <Link href="/#projects" className="relative group ml-[25px]">
-                                        Projects
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-black transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
-                                    </Link>
-                                </li>
-                                <li className=" mb-[30px]">
-                                    <Link href="/#team" className="relative group ml-[25px]">
-                                        Team
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-black transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
-                                    </Link>
-                                </li>
-                                <li className=" mb-[30px]">
-                                    <Link href="/#clients" className="relative group ml-[25px]">
-                                        Clients
-                                        <span className="absolute left-1/2 bottom-0 w-0 h-[1px] bg-black transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
-                                    </Link>
-                                </li>
-                                <li className=" mb-[30px]">
-                                    <Link
-                                        href="/#contact"
-                                        className="relative group ml-[25px] mr-[25px]"
-                                    >
-                                        Contact
-                                        <span className="absolute left-blackottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
-                                    </Link>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div className=" w-full lg:w-[50%] min-h-[90vh] contact-bg"></div>
-                </div> */}
             </div>
             <div className=" h-[100px] w-full bg-white"></div>
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 };
