@@ -10,61 +10,179 @@ const Trainings = ({ type }: TrainingsProps) => {
         <div className=' min-h-[100vh] w-[100vw] overflow-x-hidden overflow-y-scroll text-[#000033] block text-justify'>
             {
                 type === "data" &&
-                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] lg:h-[100vh] lg:overflow-y-hidden w-[100vw] bg-white flex flex-col lg:flex-row items-start lg:justify-between '>
-                    <div className=' w-full lg:w-[45%] h-[40vh] lg:h-[65vh] block mt-[20px] data-bg rounded-2xl'></div>
-                    <div className=' h-full lg:w-[45%] w-full lg:overflow-y-scroll'>
-                        <h1 className=' text-[48px] font-semibold mb-[10px]'>Data Analysis</h1>
-                        <p className=' mb-[20px]'>Join our Data Analysis Training to master Excel, Power BI, SQL, and Python through hands-on sessions that teach you to turn raw data into clear, actionable insights.</p>
-                        <h1 className=' text-[28px] font-semibold mb-[10px]'>About this course</h1>
-                        <p className=' mb-[20px]'>You will learn how to turn raw data into real insights using tools like Excel, Power BI, SQL, and Python. Whether you’re a beginner or looking to upskill, our hands-on sessions will help you analyze, visualize, and present data like a pro.</p>
-                        <Link
-                            href={"/contact"}
-                            className=" text-[16px] w-[40%] text-center py-[10px] bg-[#000033] block rounded-xl text-white hover:bg-opacity-80 duration-300"
-                        >
-                            Register Now
-                        </Link>
+                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] lg:overflow-y-hidden w-[100vw] bg-white flex flex-col items-start lg:justify-between mb-[10vh]'>
+                    <div className=' w-full h-[40vh] lg:h-[30vh] block mt-[20px] data-bg rounded-2xl mb-[10vh]'></div>
+                    <div className=' w-full flex flex-col lg:flex-row items-start justify-between'>
+                        <div className=' h-fit lg:w-[45%] w-full'>
+                            <h1 className=' text-[48px] font-semibold mb-[10px]'>Data Analysis</h1>
+                            {/* <p className=' mb-[20px]'>
+                                Welcome to the Complete Web Development training, the only course you need to learn to code and become a full-stack web developer
+                            </p> */}
+                            <h1 className=' text-[28px] font-semibold mb-[10px]'>About this course</h1>
+                            <p className=' mb-[20px]'>
+                                Master Data Analysis: Python, Stats, Gen AI, EDA, AWS, SQL ,Excel, Power BI, Tableau,ETL,Snowflake & Feature Engineering.
+                            </p>
+                            <h1 className=' text-[28px] font-semibold mb-[10px]'>Learning Outcomes</h1>
+                            <p className=' mb-[20px]'>
+                                1. Learn how to efficiently manipulate, analyze, and visualize data using Python and its powerful libraries such as Pandas, NumPy, Matplotlib, and Seaborn. <br />
+                                2. Develop the skills to retrieve, manipulate, and aggregate data using SQL. You'll work with SQL Server to manage complex databases and execute advanced queries. <br />
+                                3. Discover how to perform EDA to uncover insights, identify patterns, and prepare data for further analysis through effective data visualization <br />
+                                4. Learn to build interactive and insightful dashboards using Power BI, applying DAX for complex calculations, and integrating real-world data to produce reports. <br />
+                            </p>
+                        </div>
+
+                        <div className=' h-fit lg:w-[45%] w-full'>
+                            <h1 className=' text-[28px] font-semibold mb-[10px]'>Requirements</h1>
+                            <p className=' mb-[20px]'>
+                                1. A basic understanding of how to navigate your computer, including installing software and managing files, is essential. <br />
+                                2. Some experience with spreadsheet software like Microsoft Excel or Google Sheets will be helpful, as it will give you a foundation for data manipulation and basic analysis concepts <br />
+                                3. This course starts from the basics of Python, so no prior programming knowledge is necessary. However, a willingness to learn coding is important. <br />
+                                4. An eagerness to explore data, solve problems, and develop new skills is key to getting the most out of this bootcamp. <br />
+                            </p>
+
+                            <h1 className=' text-[28px] font-semibold mb-[10px]'>Who is this course for?</h1>
+                            <p className=' mb-[20px]'>
+                                1. Individuals looking to start a career in data analysis and gain a comprehensive skill set from the ground up. <br />
+                                2. Professionals from other fields who want to transition into data analysis and need a structured, all-inclusive learning path. <br />
+                                3. Those pursuing degrees in fields like computer science, statistics, business, or related areas who want to enhance their job prospects with practical, industry-relevant skills. <br />
+                                4. Anyone with an interest in data, who wants to learn how to analyze, visualize, and make data-driven decisions, whether for professional development or personal projects. <br />
+                                5. Individuals already in the data industry or related fields who wish to sharpen their skills, learn new tools like Python, SQL, and Power BI, and take on more advanced data analysis tasks <br />
+                            </p>
+
+                            <Link
+                                href={"https://forms.gle/CMR6sx7BkRW6zQCv5"}
+                                target='_blank'
+                                className=" text-[16px] w-[40%] text-center py-[10px] bg-[#000033] block rounded-xl text-white hover:bg-opacity-80 duration-300"
+                            >
+                                Register Now
+                            </Link>
+                        </div>
                     </div>
                 </div>
             }
 
             {
                 type === "ui" &&
-                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] lg:h-[100vh] lg:overflow-y-hidden w-[100vw] bg-white flex flex-col lg:flex-row items-start lg:justify-between '>
-                    <div className=' w-full lg:w-[45%] h-[40vh] lg:h-[65vh] block mt-[20px] uiux-bg rounded-2xl'></div>
-                    <div className=' h-full lg:w-[45%] w-full lg:overflow-y-scroll'>
-                        <h1 className=' text-[48px] font-semibold mb-[10px]'>Ui/Ux Design</h1>
-                        <p className=' mb-[20px]'>Join our UI/UX Design Training to master Figma, Adobe XD, and FigJam while gaining hands-on experience in wireframing, prototyping, and user-centered design.</p>
-                        <h1 className=' text-[28px] font-semibold mb-[10px]'>About this course</h1>
-                        <p className=' mb-[20px]'>You will learn how to craft intuitive, beautiful, and user-centered digital products.
-                            Master tools like Figma, Adobe XD, and FigJam, and gain hands-on experience in wireframing, prototyping, and user research.</p>
-                        <Link
-                            href={"/contact"}
-                            className=" text-[16px] w-[40%] text-center py-[10px] bg-[#000033] block rounded-xl text-white hover:bg-opacity-80 duration-300"
-                        >
-                            Register Now
-                        </Link>
+                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] lg:overflow-y-hidden w-[100vw] bg-white flex flex-col items-start lg:justify-between mb-[10vh]'>
+                    <div className=' w-full h-[40vh] lg:h-[30vh] block mt-[20px] uiux-bg rounded-2xl mb-[10vh]'></div>
+                    <div className=' w-full flex flex-col lg:flex-row items-start justify-between'>
+                        <div className=' h-fit lg:w-[45%] w-full'>
+                            <h1 className=' text-[48px] font-semibold mb-[10px]'>Ui/Ux Desgin</h1>
+                            {/* <p className=' mb-[20px]'>
+                                Welcome to the Complete Web Development training, the only course you need to learn to code and become a full-stack web developer
+                            </p> */}
+                            <h1 className=' text-[28px] font-semibold mb-[10px]'>About this course</h1>
+                            <p className=' mb-[20px]'>
+                                This course will completely change the way you think about design whether you're just starting or looking to level up. Become a UI/UX Designer in 2026 with Real Projects, Components, Auto Layout, and AI Tools
+                            </p>
+                            <h1 className=' text-[28px] font-semibold mb-[10px]'>Learning Outcomes</h1>
+                            <p className=' mb-[20px]'>
+                                1. Design Real-World User Interfaces Using Figma <br />
+                                2. Apply AI Tools to Speed Up and Improve the UI/UX Design Process <br />
+                                3. Build a Real, Live UI/UX Project from Start to Finish <br />
+                                4. Understand Design Thinking, UX Principles, and How to Create Portfolio-Worthy Case Studies <br />
+                            </p>
+                        </div>
+
+                        <div className=' h-fit lg:w-[45%] w-full'>
+                            <h1 className=' text-[28px] font-semibold mb-[10px]'>Requirements</h1>
+                            <p className=' mb-[20px]'>
+                                1. No prior design or technical experience required – this course is perfect for complete beginners! <br />
+                                2. A computer or laptop with internet access <br />
+                                3. A free Figma account – we’ll show you how to set it up if needed <br />
+                                4. Curiosity, creativity, and a willingness to learn. <br />
+                                5. (Optional but helpful) Basic understanding of how websites or mobile apps work. <br />
+                            </p>
+
+                            <h1 className=' text-[28px] font-semibold mb-[10px]'>Who is this course for?</h1>
+                            <p className=' mb-[20px]'>
+                                1. Beginners who want to start a career in UI/UX design with no prior experience. <br />
+                                2. Students or job seekers looking to build a strong portfolio and gain real-world design skills. <br />
+                                3. Freelancers who want to offer UI/UX design services and land clients in 2025. <br />
+                                4. Aspiring product designers who want to learn how to use Figma and AI tools to speed up their design process. <br />
+                                5. Anyone curious about how real apps are designed from scratch, using modern tools and workflows. <br />
+                            </p>
+
+                            <Link
+                                href={"https://forms.gle/CMR6sx7BkRW6zQCv5"}
+                                target='_blank'
+                                className=" text-[16px] w-[40%] text-center py-[10px] bg-[#000033] block rounded-xl text-white hover:bg-opacity-80 duration-300"
+                            >
+                                Register Now
+                            </Link>
+                        </div>
                     </div>
                 </div>
             }
 
             {
                 type === "graphics" &&
-                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] lg:h-[100vh] lg:overflow-y-hidden w-[100vw] bg-white flex flex-col lg:flex-row items-start lg:justify-between '>
-                    <div className=' w-full lg:w-[45%] h-[40vh] lg:h-[65vh] block mt-[20px] graphics-bg rounded-2xl'></div>
-                    <div className=' h-full lg:w-[45%] w-full lg:overflow-y-scroll'>
-                        <h1 className=' text-[48px] font-semibold mb-[10px]'>Graphics Design</h1>
-                        <p className=' mb-[20px]'>Master Photoshop, Illustrator, Canva, and core design principles so you can create stunning visuals and build professional-level design skills.</p>
-                        <h1 className=' text-[28px] font-semibold mb-[10px]'>About this course</h1>
-                        <p className=' mb-[20px]'>
-                            You will learn how to create stunning visuals that captivate and communicate.
-                            From Adobe Photoshop, Illustrator, and Canva to design principles and branding, we’ll teach you everything you need to become a professional designer.
-                        </p>
-                        <Link
-                            href={"/contact"}
-                            className=" text-[16px] w-[40%] text-center py-[10px] bg-[#000033] block rounded-xl text-white hover:bg-opacity-80 duration-300"
-                        >
-                            Register Now
-                        </Link>
+                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] lg:overflow-y-hidden w-[100vw] bg-white flex flex-col items-start lg:justify-between mb-[10vh]'>
+                    <div className=' w-full h-[40vh] lg:h-[30vh] block mt-[20px] graphics-bg rounded-2xl mb-[10vh]'></div>
+                    <div className=' w-full flex flex-col lg:flex-row items-start justify-between'>
+                        <div className=' h-fit lg:w-[45%] w-full'>
+                            <h1 className=' text-[48px] font-semibold mb-[10px]'>Graphics Design</h1>
+                            {/* <p className=' mb-[20px]'>
+                                Welcome to the Complete Web Development training, the only course you need to learn to code and become a full-stack web developer
+                            </p> */}
+                            <h1 className=' text-[28px] font-semibold mb-[10px]'>About this course</h1>
+                            <p className=' mb-[20px]'>
+                                Learn Graphic Design Theory and the Basic Principles of Color Theory, Typography, Branding, Logo Design, Layout & More!.
+                            </p>
+                            <h1 className=' text-[28px] font-semibold mb-[10px]'>Learning Outcomes</h1>
+                            <p className=' mb-[20px]'>
+                                1. Intermediate to expert level knowledge of graphic design theory that you will immediately be able to apply to your career, job, hobby, or company. <br />
+                                2. Major overview of the most common graphic design practices and the thought process behind these principles. <br />
+                                3. Real-world, applicable projects that you can follow along with and practice. <br />
+                                4. Experience and knowledge to take graphic design fundamentals and apply them in your everyday life. <br />
+                                5. Color theory and how it applies to the world around us, from products and art to branding and advertising. <br />
+                                6. Typography theory and how type plays a major role in both print mediums and digital media. <br />
+                                7. photography composition and how it interacts with graphic design elements to create stunning looking artwork. <br />
+                                8. Layout, user interface and experience design, and composition to understand how to control what you want the viewer to see. <br />
+                                9. Logo design and branding, and the way that you or your company can use these ideas to get in the eyes of more people. <br />
+                                10. Past and current design trends that you can use as a source for creating your own original work. <br />
+                                11. Legal side of design and how you can take safe measures to make sure you are following the proper laws of copyright and trademarks. <br />
+                                12. Step-By-Step process to becoming a graphic designer <br />
+                                13. NEW! Learn some 2026 design trends to look out for with three new student projects <br />
+                            </p>
+                        </div>
+
+                        <div className=' h-fit lg:w-[45%] w-full'>
+                            <h1 className=' text-[28px] font-semibold mb-[10px]'>Requirements</h1>
+                            <p className=' mb-[20px]'>
+                                1. This course is for beginners to graphic design theory and for anyone who wants to learn the basic principles of color theory, typography, layout design, photography, logo design, branding, and more as it relates to graphic design. <br />
+                                2. You will learn intermediate and advanced terminology that you can use to incorporate in graphic design, user interfaces, mobile app design, logo design, t-shirt design, and other digital or print mediums. <br />
+                                3. Though programs like Adobe Photoshop CC and Canva are used throughout this course, you will not need them unless you would like to follow along.  <br />
+                                4. The principles outlined in this course are transfereable to many applications, both digital and physical. <br />
+                                Project files and resources can be found in available lessons located directly in this course. <br />
+                            </p>
+
+                            <h1 className=' text-[28px] font-semibold mb-[10px]'>Who is this course for?</h1>
+                            <p className=' mb-[20px]'>
+                                This course is specifically design for beginners interested in graphic design theory. Philosophies and practical projects are given so that you not only understand the reasoning behind the theory, but you also get a chance to practice it to.
+                            </p>
+                            <p className=' mb-[20px]'>
+                                This course is great for:
+                                - Graphic Designers <br />
+                                - Website Designers <br />
+                                - Logo Designers <br />
+                                - UI / UX Designers <br />
+                                - Product Designers <br />
+                                - T-Shirt Designers <br />
+                                - Businesses <br />
+                                - Marketers <br />
+                                - Social Media Experts <br />
+                                any anyone else interested in learning the fundamentals of graphic design theory!
+                            </p>
+
+                            <Link
+                                href={"https://forms.gle/CMR6sx7BkRW6zQCv5"}
+                                target='_blank'
+                                className=" text-[16px] w-[40%] text-center py-[10px] bg-[#000033] block rounded-xl text-white hover:bg-opacity-80 duration-300"
+                            >
+                                Register Now
+                            </Link>
+                        </div>
                     </div>
                 </div>
             }
@@ -127,24 +245,56 @@ const Trainings = ({ type }: TrainingsProps) => {
 
             {
                 type === "backend" &&
-                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] lg:h-[100vh] lg:overflow-y-hidden w-[100vw] bg-white flex flex-col lg:flex-row items-start lg:justify-between '>
-                    <div className=' w-full lg:w-[45%] h-[40vh] lg:h-[65vh] block mt-[20px] backend-bg rounded-2xl'></div>
-                    <div className=' h-full lg:w-[45%] w-full lg:overflow-y-scroll'>
-                        <h1 className=' text-[48px] font-semibold mb-[10px]'>Backend Development</h1>
-                        <p className=' mb-[20px]'>
-                            Learn to build fast, secure, and scalable server-side apps using Node.js, Express, Python, and databases like MongoDB and MySQL while mastering API design and data management.
-                        </p>
-                        <h1 className=' text-[28px] font-semibold mb-[10px]'>About this course</h1>
-                        <p className=' mb-[20px]'>
-                            You will learn how to build fast, secure, and scalable server-side applications using Node.js, Express, Python, and databases like MongoDB & MySQL.
-                            Gain the skills to design APIs, manage data, and bring logic to life behind every great app.
-                        </p>
-                        <Link
-                            href={"/contact"}
-                            className=" text-[16px] w-[40%] text-center py-[10px] bg-[#000033] block rounded-xl text-white hover:bg-opacity-80 duration-300"
-                        >
-                            Register Now
-                        </Link>
+                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] lg:overflow-y-hidden w-[100vw] bg-white flex flex-col items-start lg:justify-between mb-[10vh]'>
+                    <div className=' w-full h-[40vh] lg:h-[30vh] block mt-[20px] backend-bg rounded-2xl mb-[10vh]'></div>
+                    <div className=' w-full flex flex-col lg:flex-row items-start justify-between'>
+                        <div className=' h-fit lg:w-[45%] w-full'>
+                            <h1 className=' text-[48px] font-semibold mb-[10px]'>Backend Development</h1>
+                            {/* <p className=' mb-[20px]'>
+                                Welcome to the Complete Web Development training, the only course you need to learn to code and become a full-stack web developer
+                            </p> */}
+                            <h1 className=' text-[28px] font-semibold mb-[10px]'>About this course</h1>
+                            <p className=' mb-[20px]'>
+                                Understand backend communication design patterns, protocols, execution and proxying
+                            </p>
+                            <h1 className=' text-[28px] font-semibold mb-[10px]'>Learning Outcomes</h1>
+                            <p className=' mb-[20px]'>
+                                1. Learn the fundamentals of backend engineering <br />
+                                2. Backend communication design patterns <br />
+                                3. Understand how backend communication protocols work <br />
+                                4. Comprehend how OS Kernel communicate with Backend Applications <br />
+                                5. Operating System fundamentals (Thread, Process, async IO in linux) <br />
+                                6. Learn HTTP/1.1, HTTP/2, HTTP/3 <br />
+                                7. Learn gRPC, WebRTC, WebSockets <br />
+                                8. Learn TLS 1.2, TLS 1.3, QUIC 0RTT <br />
+                            </p>
+                        </div>
+
+                        <div className=' h-fit lg:w-[45%] w-full'>
+                            <h1 className=' text-[28px] font-semibold mb-[10px]'>Requirements</h1>
+                            <p className=' mb-[20px]'>
+                                1. Intermediate programming skills (1-2 years) <br />
+                                2. Having built a backend application <br />
+                                3. Basic network fundamentals <br />
+                            </p>
+
+                            <h1 className=' text-[28px] font-semibold mb-[10px]'>Who is this course for?</h1>
+                            <p className=' mb-[20px]'>
+                                1. Backend Engineers <br />
+                                2. FullStack Engineers <br />
+                                3. Frontend Engineers interested in the Backend (must have built a backend app) <br />
+                                4. Network engineers who want to get better at backend design <br />
+                                5. Site reliability engineers <br />
+                            </p>
+
+                            <Link
+                                href={"https://forms.gle/CMR6sx7BkRW6zQCv5"}
+                                target='_blank'
+                                className=" text-[16px] w-[40%] text-center py-[10px] bg-[#000033] block rounded-xl text-white hover:bg-opacity-80 duration-300"
+                            >
+                                Register Now
+                            </Link>
+                        </div>
                     </div>
                 </div>
             }
@@ -198,24 +348,56 @@ const Trainings = ({ type }: TrainingsProps) => {
 
             {
                 type === "frontend" &&
-                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] lg:h-[100vh] lg:overflow-y-hidden w-[100vw] bg-white flex flex-col lg:flex-row items-start lg:justify-between '>
-                    <div className=' w-full lg:w-[45%] h-[40vh] lg:h-[65vh] block mt-[20px] webDev-bg rounded-2xl'></div>
-                    <div className=' h-full lg:w-[45%] w-full lg:overflow-y-scroll'>
-                        <h1 className=' text-[48px] font-semibold mb-[10px]'>Frontend Development</h1>
-                        <p className=' mb-[20px]'>
-                            Master HTML, CSS, JavaScript, React, and Next.js so you can build responsive, interactive websites and become job-ready with confidence.
-                        </p>
-                        <h1 className=' text-[28px] font-semibold mb-[10px]'>About this course</h1>
-                        <p className=' mb-[20px]'>
-                            You will learn how to build beautiful, responsive, and interactive websites using HTML, CSS, JavaScript, React, and Next.js.
-                            From beginner to job-ready — we’ll help you code with confidence and create projects that stand out.
-                        </p>
-                        <Link
-                            href={"/contact"}
-                            className=" text-[16px] w-[40%] text-center py-[10px] bg-[#000033] block rounded-xl text-white hover:bg-opacity-80 duration-300"
-                        >
-                            Register Now
-                        </Link>
+                <div className=' pt-[85px] p-[2.5%] min-h-[100vh] lg:overflow-y-hidden w-[100vw] bg-white flex flex-col items-start lg:justify-between mb-[10vh]'>
+                    <div className=' w-full h-[40vh] lg:h-[30vh] block mt-[20px] webDev-bg rounded-2xl mb-[10vh]'></div>
+                    <div className=' w-full flex flex-col lg:flex-row items-start justify-between'>
+                        <div className=' h-fit lg:w-[45%] w-full'>
+                            <h1 className=' text-[48px] font-semibold mb-[10px]'>Fronted Development</h1>
+                            {/* <p className=' mb-[20px]'>
+                                Welcome to the Complete Web Development training, the only course you need to learn to code and become a full-stack web developer
+                            </p> */}
+                            <h1 className=' text-[28px] font-semibold mb-[10px]'>About this course</h1>
+                            <p className=' mb-[20px]'>
+                                Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps
+                            </p>
+                            <h1 className=' text-[28px] font-semibold mb-[10px]'>Learning Outcomes</h1>
+                            <p className=' mb-[20px]'>
+                                1.  Build 16 web development projects for your portfolio, ready to apply for junior developer jobs. <br />
+                                2. Learn the latest technologies, including Javascript, React, Node and even Web3 development. <br />
+                                3. After the course you will be able to build ANY website you want. <br />
+                                4. Build fully-fledged websites and web apps for your startup or business. <br />
+                                5. Work as a freelance web developer. <br />
+                                6. Master frontend development with React <br />
+                                7. Master backend development with Node <br />
+                                8. Learn professional developer best practices. <br />
+                            </p>
+                        </div>
+
+                        <div className=' h-fit lg:w-[45%] w-full'>
+                            <h1 className=' text-[28px] font-semibold mb-[10px]'>Requirements</h1>
+                            <p className=' mb-[20px]'>
+                                1. No programming experience needed - I'll teach you everything you need to know. <br />
+                                2. A computer with access to the internet. <br />
+                                3. No paid software required. <br />
+                                4. I’ll walk you through, step-by-step how to get all the software installed and set up. <br />
+                            </p>
+
+                            <h1 className=' text-[28px] font-semibold mb-[10px]'>Who is this course for?</h1>
+                            <p className=' mb-[20px]'>
+                                1. If you want to learn to code through building fun and useful projects, then take this course. <br />
+                                2. If you want to start your own startup by building your own websites and web apps. <br />
+                                3. If you are a seasoned programmer, then take this course to to get up to speed quickly with the latest frameworks and NodeJS <br />
+                                4. If you want to take ONE COURSE and learn everything you need to know about web development, take this course <br />
+                            </p>
+
+                            <Link
+                                href={"https://forms.gle/CMR6sx7BkRW6zQCv5"}
+                                target='_blank'
+                                className=" text-[16px] w-[40%] text-center py-[10px] bg-[#000033] block rounded-xl text-white hover:bg-opacity-80 duration-300"
+                            >
+                                Register Now
+                            </Link>
+                        </div>
                     </div>
                 </div>
             }
