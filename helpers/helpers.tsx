@@ -193,27 +193,32 @@ const techstack = {
         {
             image: paul,
             name: "Udah Paulzack E. M",
-            role: "Software Developer"
+            role: "Software Developer",
+            linked: "https://www.linkedin.com/in/paul-udah/"
         },
         {
             image: ebenezer,
             name: "Undie Ebenezer",
-            role: "Software Developer/Robotics Engineer"
+            role: "Software Developer/Robotics Engineer",
+            linked: "https://www.linkedin.com/in/ebenezer-undie/"
         },
         {
             image: faith,
             name: "Ajiboye Faith Kehinde",
-            role: "UI/UX and graphic designer"
+            role: "UI/UX and graphic designer",
+            linked: "https://www.linkedin.com/in/kehinde-ajiboye-6b1348254/"
         },
         {
             image: teemi,
             name: "Oluwatimilehin Ayodeji Rotimi",
-            role: "Software Developer"
+            role: "Software Developer",
+            linked: "www.linkedin.com/in/oluwatimilehin-rotimi-96b248256"
         },
         {
             image: patience,
             name: "Omahi Patience Aricha",
-            role: "Project Manager"
+            role: "Project Manager",
+            linked: "https://www.linkedin.com/in/omahi-patience-14b75b292/"
         },
         {
             image: ayomide,
@@ -223,7 +228,8 @@ const techstack = {
         {
             image: abdul,
             name: "Abdallah Emmanuel",
-            role: "Data Analyst"
+            role: "Data Analyst",
+            linked: "https://www.linkedin.com/in/emmanuel-abdallah-158504184/"
         }
     ],
     "clients": [
