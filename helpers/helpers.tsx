@@ -212,7 +212,7 @@ const techstack = {
             image: teemi,
             name: "Oluwatimilehin Ayodeji Rotimi",
             role: "Software Developer",
-            linked: "www.linkedin.com/in/oluwatimilehin-rotimi-96b248256"
+            linked: "https://www.linkedin.com/in/oluwatimilehin-rotimi-96b248256"
         },
         {
             image: patience,
